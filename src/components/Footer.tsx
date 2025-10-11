@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
             </h3>
             <div className="space-y-2 text-sm text-gray-500 dark:text-gray-400">
               <p>
-                📧 <a href="quantumpandaprog@gmail.com">quantumpandaprog@gmail.com</a>
+                📧 <a href="mailto:quantumpandaprog@gmail.com">quantumpandaprog@gmail.com</a>
               </p>
               <p>
                 💬 <a href="https://discord.gg/calebephrem">https://discord.gg/calebephrem</a>
