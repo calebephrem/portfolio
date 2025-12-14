@@ -30,46 +30,40 @@ const Projects: React.FC = () => {
       image:
         'https://repository-images.githubusercontent.com/1034837676/1428342b-8dba-4146-83d4-b07d9569e6c9',
       liveUrl:
-        'https://marketplace.visualstudio.com/items?itemName=CalebEphrem.quantum',
-      githubUrl: 'https://github.com/calebephrem/quantum',
+        'https://quantum-theme.vercel.app',
+      githubUrl: 'https://github.com/calebephrem/quantum-vscode',
       gradient: 'from-blue-500 to-cyan-500',
-      emoji: '🎨',
+    },
+    {
+      title: 'PandaBot',
+      description:
+        "PandaBot is a multifunctional Discord bot designed to enhance your server with moderation tools, fun commands, and utility features. Built with Discord.js and Node.js, PandaBot offers seamless integration and easy customization to fit a community's needs.",
+      tech: ['JavaScript', 'Node.js', 'Discord.js', 'MongoDB', 'Express'],
+      image:
+        'https://media.gettyimages.com/id/1477731951/vector/chat-bot-robot-virtual-assistance-artificial-intelligence.jpg?s=612x612&w=gi&k=20&c=gvkIyWMHK7LyfkLGNpGlqmaiwREmtU_QMGh4crUne6c=',
+      liveUrl: 'https://discord.gg/MuZFAeVHgp',
+      gradient: 'from-green-500 to-teal-500',
     },
     {
       title: 'UCID',
       description:
-        "UCID (Unique Custom ID) is a blazing-fast, secure, and customizable JavaScript library for generating unique identifiers — with full control over format and randomness. Whether you're building distributed systems, tagging resources, or creating unique filenames, UCID gives you the power to generate IDs that are readable, reliable, and collision-resistant.",
-      tech: ["JavaScript", "Node.js"],
+        "UCID (Unique Custom ID) is a blazing-fast, secure, and customizable JavaScript library for generating unique identifiers, with full control over format and randomness. Whether you're building distributed systems, tagging resources, or creating unique filenames, UCID gives you the power to generate IDs that are readable, reliable, and collision-resistant.",
+      tech: ['JavaScript', 'Node.js'],
       image:
         'https://repository-images.githubusercontent.com/1048472827/edab0d1f-6a6e-4764-bcfa-fe73ff50eee1',
       liveUrl: 'https://npmjs.com/package/unique-custom-id',
       githubUrl: 'https://github.com/calebephrem/unique-custom-id',
       gradient: 'from-purple-500 to-pink-500',
-      emoji: '🔥',
     },
     {
-      title: 'Taskline',
+      title: 'QuillBot',
       description:
-        'Taskline transforms your .todo files into a sleek, interactive todo app—right inside VS Code. No more typing out tasks manually. Just click, complete, and conquer your day. ⚡',
-      tech: ['JavaScript', 'Azure DevOps', 'Node.js', 'VS Code API'],
-      image:
-        'https://github.com/calebephrem/taskline/raw/main/assets/icon.png?raw=true',
-      liveUrl: 'https://marketplace.visualstudio.com/items?itemName=CalebEphrem.taskline',
-      githubUrl: 'https://github.com/calebephrem/taskline',
-      gradient: 'from-green-500 to-teal-500',
-      emoji: '✅',
-    },
-    {
-      title: 'Mars Explorer',
-      description:
-        'explorer-mars is a web-based experience that lets you explore the Red Planet in 3D.',
-      tech: ['JavaScript', 'Tailwind', 'Three.js', 'CSS', 'HTML'],
+        'A Discord bot that provides code compilation and math expression solving capabilities, making it a versatile tool for developers and students alike.',
+      tech: ['JavaScript', 'Node.js', 'Discord.js', 'Piston API'],
       image:
         'https://media.istockphoto.com/id/2057625445/photo/earth-and-mars.jpg?s=612x612&w=0&k=20&c=lNQ6zZYf2gJPV3s_3ts51EG633BVrxHgnvF0xEN3PhU=',
-      liveUrl: 'https://explorer-mars.netlify.app',
-      githubUrl: 'https://github.com/calebephrem/mars-explorer',
-      gradient: 'from-orange-500 to-red-500',
-      emoji: '🪐',
+      liveUrl: 'https://discord.gg/MuZFAeVHgp',
+      gradient: 'from-red-500 to-pink-500',
     },
     {
       title: 'Joycipe',
@@ -81,19 +75,48 @@ const Projects: React.FC = () => {
       liveUrl: '#',
       githubUrl: 'https://github.com/calebephrem/joycipe',
       gradient: 'from-indigo-500 to-purple-500',
-      emoji: '🍲',
     },
     {
-      title: 'JS Fireworks',
+      title: 'Jtilities',
       description:
-        'A simple web project that triggers fireworks wherever you click on the page. No libraries, no build tools — just HTML, CSS, and JavaScript.',
-      tech: ['JavaScript', 'CSS', 'HTML'],
+        'A lightweight, modular library of JavaScript utility functions designed to simplify everyday coding tasks',
+      tech: ['JavaScript', 'Node.js'],
       image:
-        'https://github.com/calebephrem/js-fireworks/raw/main/assets/screenshot.png',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwbS_dEn-t4ZT8hGbVL3OLN9e_GD8waB6rhQ&s',
       liveUrl: 'https://js-fireworks.netlify.app',
       githubUrl: 'https://github.com/calebephrem/js-fireworks',
       gradient: 'from-yellow-500 to-orange-500',
-      emoji: '🎆',
+    },
+    {
+      title: 'Zap TCM',
+      description:
+        'Zap TCM (Zap Todo Control Manager) is a blazing-fast, Git-inspired CLI tool for managing todos like code. Create branches for different projects, switch between them, and keep your workflow lightning clean ⚡',
+      tech: ['JavaScript', 'Node.js', 'NPM'],
+      image:
+        'https://thumbs.dreamstime.com/b/comic-book-illustration-13696258.jpg',
+      githubUrl: 'https://github.com/calebephrem/js-fireworks',
+      gradient: 'from-purple-500 to-orange-500',
+    },
+    {
+      title: 'Mars Explorer',
+      description:
+        'explorer-mars is a web-based experience that lets you explore the Red Planet in 3D.',
+      tech: ['JavaScript', 'Tailwind', 'Three.js', 'CSS', 'HTML'],
+      image:
+        'https://media.istockphoto.com/id/2057625445/photo/earth-and-mars.jpg?s=612x612&w=0&k=20&c=lNQ6zZYf2gJPV3s_3ts51EG633BVrxHgnvF0xEN3PhU=',
+      liveUrl: 'https://explorer-mars.netlify.app',
+      githubUrl: 'https://github.com/calebephrem/mars-explorer',
+      gradient: 'from-orange-500 to-red-500',
+    },
+    {
+      title: 'HangmanBot',
+      description:
+        'HangmanBot is an interactive Discord bot that brings the classic Hangman game to your server. Challenge your friends, guess letters, and have fun!',
+      tech: ['JavaScript', 'Node.js', 'Discord.js'],
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2gQag-KM5bFfcimPeLTl8DLXA_RyVziA6JA&s',
+      liveUrl: 'https://discord.gg/MuZFAeVHgp',
+      gradient: 'from-orange-500 to-red-500',
     },
   ];
 
@@ -147,11 +170,6 @@ const Projects: React.FC = () => {
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}
                 ></div>
-
-                {/* Floating emoji */}
-                <div className="absolute top-4 right-4 text-3xl transform transition-transform duration-300 group-hover:scale-125 group-hover:rotate-12">
-                  {project.emoji}
-                </div>
               </div>
 
               {/* Content */}
@@ -193,15 +211,17 @@ const Projects: React.FC = () => {
                     <span>View Live</span>
                   </button>
 
-                  <button
-                    onClick={() => openLink(project.githubUrl)}
-                    className="flex items-center justify-center p-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg transition-all duration-200 transform hover:scale-105 group/btn"
-                  >
-                    <Github
-                      size={16}
-                      className="text-gray-700 dark:text-white group-hover/btn:rotate-12 transition-transform duration-200"
-                    />
-                  </button>
+                  {project.githubUrl && (
+                    <button
+                      onClick={() => openLink(project.githubUrl)}
+                      className="flex items-center justify-center p-3 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 rounded-lg transition-all duration-200 transform hover:scale-105 group/btn"
+                    >
+                      <Github
+                        size={16}
+                        className="text-gray-700 dark:text-white group-hover/btn:rotate-12 transition-transform duration-200"
+                      />
+                    </button>
+                  )}
                 </div>
               </div>
 
