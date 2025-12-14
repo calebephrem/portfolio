@@ -89,26 +89,8 @@ const Skills: React.FC = () => {
       gradient: 'from-purple-500 via-pink-500 to-red-500',
       bgPattern:
         'bg-gradient-to-br from-purple-50 to-red-50 dark:from-purple-900/20 dark:to-red-900/20',
-      level: 75,
+      level: 72,
       shadow: 'shadow-purple-500/25',
-    },
-    {
-      name: 'React Native',
-      category: 'Mobile',
-      gradient: 'from-indigo-500 via-purple-500 to-pink-500',
-      bgPattern:
-        'bg-gradient-to-br from-indigo-50 to-pink-50 dark:from-indigo-900/20 dark:to-pink-900/20',
-      level: 90,
-      shadow: 'shadow-indigo-500/25',
-    },
-    {
-      name: 'Expo',
-      category: 'Mobile',
-      gradient: 'from-gray-700 via-gray-800 to-black',
-      bgPattern:
-        'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/20 dark:to-gray-900/20',
-      level: 90,
-      shadow: 'shadow-gray-500/25',
     },
     {
       name: 'Node.js',
@@ -125,7 +107,34 @@ const Skills: React.FC = () => {
       gradient: 'from-gray-600 via-gray-700 to-gray-800',
       bgPattern:
         'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/20 dark:to-gray-900/20',
+      level: 92,
+      shadow: 'shadow-gray-500/25',
+    },
+    {
+      name: 'Discord.js',
+      category: 'Backend',
+      gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+      bgPattern:
+        'bg-gradient-to-br from-indigo-50 to-pink-50 dark:from-indigo-900/20 dark:to-pink-900/20',
       level: 87,
+      shadow: 'shadow-indigo-500/25',
+    },
+    {
+      name: 'React Native',
+      category: 'Mobile',
+      gradient: 'from-indigo-500 via-purple-500 to-pink-500',
+      bgPattern:
+        'bg-gradient-to-br from-indigo-50 to-pink-50 dark:from-indigo-900/20 dark:to-pink-900/20',
+      level: 88,
+      shadow: 'shadow-indigo-500/25',
+    },
+    {
+      name: 'Expo',
+      category: 'Mobile',
+      gradient: 'from-gray-700 via-gray-800 to-black',
+      bgPattern:
+        'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800/20 dark:to-gray-900/20',
+      level: 89,
       shadow: 'shadow-gray-500/25',
     },
     {
@@ -134,7 +143,7 @@ const Skills: React.FC = () => {
       gradient: 'from-green-600 via-green-700 to-green-800',
       bgPattern:
         'bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20',
-      level: 85,
+      level: 91,
       shadow: 'shadow-green-600/25',
     },
     {
@@ -145,15 +154,6 @@ const Skills: React.FC = () => {
         'bg-gradient-to-br from-orange-50 to-yellow-50 dark:from-orange-900/20 dark:to-yellow-900/20',
       level: 94,
       shadow: 'shadow-orange-500/25',
-    },
-    {
-      name: 'Azure DevOps',
-      category: 'Cloud',
-      gradient: 'from-blue-500 via-blue-600 to-blue-700',
-      bgPattern:
-        'bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20',
-      level: 78,
-      shadow: 'shadow-blue-600/25',
     },
   ];
 

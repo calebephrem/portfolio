@@ -59,7 +59,7 @@ const Projects: React.FC = () => {
       title: 'QuillBot',
       description:
         'A Discord bot that provides code compilation and math expression solving capabilities, making it a versatile tool for developers and students alike.',
-      tech: ['JavaScript', 'Node.js', 'Discord.js', 'Piston API'],
+      tech: ['JavaScript', 'Node.js', 'Discord.js', 'Piston API', 'Groq API'],
       image:
         'https://media.istockphoto.com/id/2057625445/photo/earth-and-mars.jpg?s=612x612&w=0&k=20&c=lNQ6zZYf2gJPV3s_3ts51EG633BVrxHgnvF0xEN3PhU=',
       liveUrl: 'https://discord.gg/MuZFAeVHgp',
