@@ -1,4 +1,4 @@
-import { ChevronDown, Code2, Coffee, Sparkles } from 'lucide-react';
+import { ChevronDown, Sparkles } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 
 const Hero: React.FC = () => {
@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
     }
   };
 
-  const greetings = ['Hello! 👋', 'Hi there! 🌟', 'Welcome! ✨', 'Hey! 🚀'];
+  const greetings = ['Hello! 👋', 'Hi there! 🌟', 'Welcome! ✨', 'Hiya! 🚀'];
   const [currentGreeting, setCurrentGreeting] = useState(0);
 
   useEffect(() => {
@@ -74,18 +74,18 @@ const Hero: React.FC = () => {
             <span className="text-gray-600 dark:text-gray-300">
               Crafting digital experiences
             </span>
-            <Code2 className="text-blue-400 animate-spin-slow" />
+            {/* <Code2 className="text-blue-400 animate-spin-slow" /> */}
             <span className="text-gray-600 dark:text-gray-300">
               with passion
             </span>
-            <Coffee className="text-purple-400 animate-bounce" />
+            {/* <Coffee className="text-purple-400 animate-bounce" /> */}
           </div>
 
           {/* Description */}
           <p className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed">
             Full-stack developer with a love for clean code, beautiful
             interfaces, and solving complex problems. I turn coffee into code
-            and ideas into reality! ☕→💻
+            and ideas into reality!
           </p>
 
           {/* CTA Buttons */}

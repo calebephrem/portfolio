@@ -48,9 +48,9 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
   return (
     <header
-      className={`fixed top-3 left-[50%] rounded-full overflow-hidden right-0 translate-x-[-50%] w-[85%] z-50 transition-all duration-300 ${
+      className={`fixed w-full top-0 left-[50%] translate-x-[-50%] z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg border-b border-gray-100/50 dark:border-gray-700/50'
+          ? 'top-3 left-[50%] rounded-full overflow-hidden translate-x-[-50%] w-[85%] bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg border-b border-gray-100/50 dark:border-gray-700/50'
           : 'bg-transparent'
       }`}
     >
