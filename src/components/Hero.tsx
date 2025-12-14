@@ -116,22 +116,6 @@ const Hero: React.FC = () => {
               Get In Touch 💬
             </button>
           </div>
-
-          {/* Floating illustration elements */}
-          <div className="relative">
-            <div className="absolute -top-20 left-10 text-6xl animate-float">
-              🚀
-            </div>
-            <div className="absolute -top-10 right-10 text-4xl animate-float animation-delay-1000">
-              ⚡
-            </div>
-            <div className="absolute top-10 left-1/4 text-3xl animate-float animation-delay-2000">
-              💡
-            </div>
-            <div className="absolute top-5 right-1/4 text-5xl animate-float animation-delay-3000">
-              🎯
-            </div>
-          </div>
         </div>
       </div>
 
