@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
 import {
-  Menu,
-  X,
-  Code,
-  User,
   Briefcase,
+  Code,
   FileText,
   Mail,
-  Sun,
+  Menu,
   Moon,
+  Sun,
+  User,
+  X,
 } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 
 interface HeaderProps {
@@ -48,16 +48,16 @@ const Header: React.FC<HeaderProps> = ({ activeSection }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-3 left-[50%] rounded-full overflow-hidden right-0 translate-x-[-50%] w-[85%] z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg border-b border-gray-200/20 dark:border-gray-700/20'
+          ? 'bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-lg border-b border-gray-100/50 dark:border-gray-700/50'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div
-            className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent cursor-pointer transform transition-transform hover:scale-105"
+            className="text-2xl font-bold whitespace-nowrap bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent cursor-pointer transform transition-transform hover:scale-105"
             onClick={() => scrollToSection('hero')}
           >
             Caleb ✨
