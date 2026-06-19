@@ -45,7 +45,7 @@ function App() {
       />
       <Route
         path="/discord"
-        element={<ExternalRedirect to="https://discord.gg/calebephrem" />}
+        element={<ExternalRedirect to="https://discord.com/users/1411006542916091975" />}
       />
       <Route path="*" element={<NotFound />} />
     </Routes>
