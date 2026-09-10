@@ -89,8 +89,10 @@
         @apply bg-accent/80;
     }
 
-    ::selection,
-    ::moz-selection {
+    ::selection {
+        @apply bg-accent/30;
+    }
+    ::-moz-selection {
         @apply bg-accent/30;
     }
 }

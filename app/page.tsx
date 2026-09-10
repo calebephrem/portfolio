@@ -18,9 +18,6 @@ export default async function Home() {
   //   .json()
   //   .catch(() => undefined);
 
-  const graph =
-    "https://github-contributions-api.jogruber.de/v4/calebephrem?y=last";
-
   return (
     <div>
       <div className="flex items-center gap-md">
@@ -248,7 +245,7 @@ export default async function Home() {
               title: "Hookto",
               description:
                 "Hookto is a self-hostable, all-in-one GitHub app built to automate the boring stuff in your org, account, or repo.",
-              link: `${staticData.external.github}/hookto`,
+              link: `/r/hookto`,
               // featured: true,
             },
             {
@@ -291,7 +288,7 @@ export default async function Home() {
         </div>
 
         <Link
-          href={`${staticData.external.github}?tab=repositories&q=&type=&language=&sort=stargazers`}
+          href={`/gh?tab=repositories&q=&type=&language=&sort=stargazers`}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center"
@@ -305,11 +302,7 @@ export default async function Home() {
       <div className="py-md flex flex-col gap-md">
         <h1 className="text-xl">GitHub Activity</h1>
 
-        <Link
-          href={staticData.external.github}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="/github" target="_blank" rel="noopener noreferrer">
           <Image
             src="https://ghchart.rshah.org/3f7fff/calebephrem"
             height={160}
@@ -330,12 +323,12 @@ export default async function Home() {
             {
               icon: "https://img.icons8.com/?size=100&id=106562&format=png&color=FFFFFF",
               label: "GitHub",
-              link: staticData.external.github,
+              link: "/github",
             },
             {
               icon: "https://img.icons8.com/?size=100&id=M725CLW4L7wE&format=png&color=000000",
               label: "Discord",
-              link: staticData.external.discord,
+              link: "/discord",
             },
             {
               icon: "https://img.icons8.com/?size=100&id=0vJNjSJWpHy7&format=png&color=000000",
@@ -345,7 +338,7 @@ export default async function Home() {
             {
               icon: "https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=FFFFFF",
               label: "Twitter / X",
-              link: staticData.external.twitter,
+              link: "/x",
             },
 
             {
@@ -356,7 +349,7 @@ export default async function Home() {
             {
               icon: "https://img.icons8.com/?size=100&id=12463&format=png&color=FF4500",
               label: "Reddit",
-              link: staticData.external.reddit,
+              link: "/reddit",
             },
           ].map(({ icon, label, link }) => (
             <Link

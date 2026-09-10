@@ -28,7 +28,7 @@ export default function Header() {
           <Button icon={ArrowRight}>Contact</Button>
         </Link>
         <Link
-          href={`${staticData.external.github}/portfolio`}
+          href={`/r/portfolio`}
           target="_blank"
           rel="noopener noreferrer"
         >
