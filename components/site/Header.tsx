@@ -27,11 +27,7 @@ export default function Header() {
         >
           <Button icon={ArrowRight}>Contact</Button>
         </Link>
-        <Link
-          href={`/r/portfolio`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href={`/r/portfolio`} target="_blank" rel="noopener noreferrer">
           <Button variant="primary" icon={Code2} />
         </Link>
       </nav>
