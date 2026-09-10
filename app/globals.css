@@ -132,4 +132,15 @@
       background-size: 100% 1px;
     }
   }
+
+  .wave-zoom {
+    clip-path: inset(0 100% 100% 0);
+    animation: waveReveal 1s ease-in-out forwards;
+  }
+
+  @keyframes waveReveal {
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
 }
