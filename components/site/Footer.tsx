@@ -17,7 +17,7 @@ export default function Footer() {
           </Link>
           . Licensed under{" "}
           <Link
-            href="https://github.com/calebephrem/portfolio/blob/main/LICENSE"
+            href="https://raw.githubusercontent.com/calebephrem/portfolio/refs/heads/main/LICENSE"
             className="underlined"
             target="_blank"
             rel="noopener noreferrer"
