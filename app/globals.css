@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* vars */
+:root {
+  /* colors */
+  --background-primary: #0a0a0a;
+  --background-secondary: #101010;
+  --background-tertiary: #171717;
+  --foreground-primary: #e0d0ff;
+  --foreground-secondary: #a090bf;
+  --foreground-tertiary: #8f7faf;
+  --border: #3f2f4f;
+  --accent: #3f7fff;
+
+  /* spacing */
+  --p-xxs: 0.25rem;
+  --p-xs: 0.5rem;
+  --p-sm: 0.75rem;
+  --p-md: 1.5rem;
+  --p-lg: 3rem;
+  --p-xl: 6rem;
+}
+
+@theme {
+  --color-bg-primary: var(--background-primary);
+  --color-bg-secondary: var(--background-secondary);
+  --color-bg-tertiary: var(--background-tertiary);
+  --color-fg-primary: var(--foreground-primary);
+  --color-fg-secondary: var(--foreground-secondary);
+  --color-fg-tertiary: var(--foreground-tertiary);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+
+  --spacing-xxs: var(--p-xxs);
+  --spacing-xs: var(--p-xs);
+  --spacing-sm: var(--p-sm);
+  --spacing-md: var(--p-md);
+  --spacing-lg: var(--p-lg);
+  --spacing-xl: var(--p-xl);
+}
+
+@layer base {
+  * {
+    /*border-width: 2px; */
+    @apply p-0 m-0 box-border border-border border-dotted duration-300;
+  }
+
+  html,
+  body {
+    @apply bg-bg-primary text-fg-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
+
+  button,
+  a {
+    @apply cursor-pointer;
+  }
+
+  /*----*/
+
+  ::selection {
+    @apply bg-accent/40;
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1;
+  }
+
+  ::-webkit-scrollbar-track {
+    @applly bg-bg-secondary;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent/60 rounded-lg;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent/80;
+  }
+
+  ::selection {
+    @apply bg-accent/30;
+  }
+  ::-moz-selection {
+    @apply bg-accent/30;
+  }
+}
+
+@layer components {
+  .separator {
+    @apply border-b-2 h-0 w-full;
+
+    &.vertical {
+      @apply border-r-2 h-full w-0;
+    }
+  }
+
+  .underlined {
+    @apply w-fit inline text-fg-primary;
+    background-image: linear-gradient(currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+
+    animation: underlineIntro 375ms ease-in-out forwards;
+
+    &.delayed {
+      animation-delay: 1s;
+    }
+
+    /*&:hover {
+            background-size: 100% 1px;
+        }*/
+  }
+
+  @keyframes underlineIntro {
+    from {
+      background-size: 0% 1px;
+    }
+    to {
+      background-size: 100% 1px;
+    }
+  }
+
+  .wave-zoom {
+    clip-path: inset(0 100% 100% 0);
+    animation: waveReveal 1s ease-in-out forwards;
+  }
+
+  @keyframes waveReveal {
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+}
