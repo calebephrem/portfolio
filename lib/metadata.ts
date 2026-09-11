@@ -13,8 +13,8 @@ const metadata: Metadata = {
   creator: staticData.name.full,
   publisher: staticData.name.full,
   icons: {
-    icon: "/pfp.jpg",
-    shortcut: "/pfp.jpg",
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
     apple: "/pfp.jpg",
   },
 
