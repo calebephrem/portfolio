@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between py-md px-sm">
+    <footer className="flex flex-col md:flex-row gap-sm items-center justify-between py-md px-sm">
       <div className="text-fg-secondary flex items-center flex-col text-sm gap-xxs">
         <span>
           © 2026{" "}
