@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between py-md px-sm">
-      <div className="text-fg-secondary flex items-center flex-col text-sm gap-xxs">
+    <footer className="flex flex-col md:flex-row gap-sm items-center justify-between py-md px-sm">
+      <div className="text-fg-secondary flex items-center whitespace-nowrap flex-col text-sm gap-xxs">
         <span>
           © 2026{" "}
           <Link
@@ -17,7 +17,7 @@ export default function Footer() {
           </Link>
           . Licensed under{" "}
           <Link
-            href="https://github.com/calebephrem/portfolio/blob/main/LICENSE"
+            href="https://raw.githubusercontent.com/calebephrem/portfolio/refs/heads/main/LICENSE"
             className="underlined"
             target="_blank"
             rel="noopener noreferrer"

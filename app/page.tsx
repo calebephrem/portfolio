@@ -20,13 +20,13 @@ export default async function Home() {
 
   return (
     <div>
-      <div className="flex items-center gap-md">
+      <div className="flex flex-col md:flex-row items-center gap-md">
         <Image
-          src="/banner.jpg"
+          src="/me.jpg"
           height={160}
           width={160}
           alt="me"
-          className="rounded-lg border-2"
+          className="rounded-lg border-2 hidden md:flex"
         />
 
         <div className="flex flex-col gap-md py-md">
@@ -259,7 +259,7 @@ export default async function Home() {
           ].map(({ title, description, banner, link }) => (
             <div
               key={title}
-              className={`bg-bg-secondary hover:bg-bg-tertiary flex items-center p-sm rounded-lg gap-md border`}
+              className={`bg-bg-secondary hover:bg-bg-tertiary flex flex-col sm:flex-row items-center p-sm rounded-lg gap-md border`}
             >
               <Image
                 src={banner}
@@ -318,7 +318,7 @@ export default async function Home() {
       <div className="py-md flex flex-col gap-md">
         <h1 className="text-xl">Find me online</h1>
 
-        <div className="grid gap-sm grid-cols-3">
+        <div className="grid gap-sm grid-cols-2 sm:grid-cols-3">
           {[
             {
               icon: "https://img.icons8.com/?size=100&id=106562&format=png&color=FFFFFF",

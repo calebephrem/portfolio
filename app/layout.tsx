@@ -36,7 +36,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           />
         </div>
 
-        <ReactLenis root>
+        <ReactLenis root options={{ lerp: 0.2 }}>
           <Header />
 
           <div className="separator" />
