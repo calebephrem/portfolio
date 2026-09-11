@@ -4,9 +4,30 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex items-center justify-between py-md px-sm">
-      <span className="text-fg-secondary">
-        © 2026 Caleb Ephrem. All rights reserved.
-      </span>
+      <div className="text-fg-secondary flex items-center flex-col text-sm gap-xxs">
+        <span>
+          © 2026{" "}
+          <Link
+            href="https://github.com/calebephrem"
+            className="underlined"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Caleb Ephrem
+          </Link>
+          . Licensed under{" "}
+          <Link
+            href="https://github.com/calebephrem/portfolio/blob/main/LICENSE"
+            className="underlined"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            MIT
+          </Link>{" "}
+          License.
+        </span>
+        <span>Artwork & Content All Rights Reserved.</span>
+      </div>
 
       <div className="flex items-center gap-xs">
         <Link

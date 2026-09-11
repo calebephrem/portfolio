@@ -100,10 +100,6 @@
 @layer components {
   .separator {
     @apply border-b-2 h-0 w-full;
-
-    &.vertical {
-      @apply border-r-2 h-full w-0;
-    }
   }
 
   .underlined {
