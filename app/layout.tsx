@@ -27,12 +27,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="h-fit flex flex-col font-sans border-x-2 border-border w-full max-w-200 py-sm px-md bg-bg-primary/95">
         <div className="fixed inset-0 -z-10 flex items-center justify-center overflow-hidden wave-zoom">
+          <div className="h-full w-full" />
           <Image
             src="/wave.png"
             alt="Wave"
             fill
             priority
-            className="object-cover object-center opacity-20"
+            className="object-cover object-center opacity-20 -z-20"
           />
         </div>
 
