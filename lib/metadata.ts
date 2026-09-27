@@ -2,16 +2,17 @@ import type { Metadata } from "next";
 import staticData from "./staticdata";
 
 const metadata: Metadata = {
+  // metadataBase: "http://localhost:3000",
   metadataBase: new URL(staticData.site.url),
   // title: {
-  //   default: staticData.name.full,
+  //   default: staticData.name,
   //   template: "%s | Dev",
   // },
-  title: staticData.name.full,
+  title: staticData.name,
   description: staticData.site.description,
-  authors: [{ name: staticData.name.full }],
-  creator: staticData.name.full,
-  publisher: staticData.name.full,
+  authors: [{ name: staticData.name }],
+  creator: staticData.name,
+  publisher: staticData.name,
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
@@ -22,12 +23,12 @@ const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: staticData.site.url,
-    siteName: staticData.name.full,
-    title: staticData.name.full,
+    siteName: staticData.name,
+    title: staticData.name,
     description: staticData.site.description,
     images: [
       {
-        url: "/banner.jpg",
+        url: "/banner.png",
         width: 1200,
         height: 630,
         alt: "Banner",
@@ -37,9 +38,9 @@ const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: staticData.name.full,
+    title: staticData.name,
     description: staticData.site.description,
-    images: ["/banner.jpg"],
+    images: ["/banner.png"],
   },
 
   robots: {

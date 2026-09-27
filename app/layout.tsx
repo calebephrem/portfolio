@@ -2,51 +2,58 @@ import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
 import metadata from "@/lib/metadata";
 import ReactLenis from "lenis/react";
-import { Inter, Syne } from "next/font/google";
-import Image from "next/image";
+import { Caveat_Brush, Syne } from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
 
-const syne = Syne({
+const display = Caveat_Brush({
   variable: "--font-display",
   subsets: ["latin"],
   display: "swap",
-  // weight: "400",
+  weight: "400",
 });
 
-const inter = Inter({
+const sans = Syne({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",
+  weight: "400",
 });
+
+export function Paper({ children }: { children: ReactNode }) {
+  return (
+    <div
+      className="w-screen h-full min-h-screen px-md"
+      style={{
+        backgroundImage: `linear-gradient(to bottom, transparent 31px, #a5f3fc 31px, #a5f3fc 32px)`,
+        backgroundSize: "100% 32px",
+      }}
+    >
+      <div
+        className="min-h-full max-w-232 mx-auto"
+        style={{ lineHeight: "32px" }}
+      >
+        {children}
+      </div>
+    </div>
+  );
+}
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${inter.variable} h-full antialiased flex justify-center`}
+      className={`${display.variable} ${sans.variable} h-full antialiased `}
     >
-      <body className="h-fit flex flex-col font-sans border-x-2 border-border w-full max-w-200 py-sm px-md bg-bg-primary/95">
-        <div className="fixed inset-0 -z-10 flex items-center justify-center overflow-hidden wave-zoom">
-          <div className="h-full w-full" />
-          <Image
-            src="/wave.png"
-            alt="Wave"
-            fill
-            priority
-            className="object-cover object-center opacity-20 -z-20"
-          />
-        </div>
-
+      <body className="">
         <ReactLenis root options={{ lerp: 0.2 }}>
-          <Header />
+          <Paper>
+            <Header />
 
-          <div className="separator" />
+            <main>{children}</main>
 
-          <main>{children}</main>
-
-          <div className="separator" />
-
-          <Footer />
+            <Footer />
+          </Paper>
         </ReactLenis>
       </body>
     </html>
