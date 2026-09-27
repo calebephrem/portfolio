@@ -48,7 +48,7 @@
 
   html,
   body {
-    @apply bg-bg-primary text-fg-primary overflow-x-hidden;
+    @apply bg-bg-primary text-fg-primary overflow-x-hidden text-lg;
   }
 
   h1,

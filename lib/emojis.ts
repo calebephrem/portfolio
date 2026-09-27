@@ -1,5 +1,5 @@
 export const emojis = {
-  lol: "https://cdn3.emoji.gg/emojis/175472-pepelaugh.gif",
+  giggle: "https://cdn3.emoji.gg/emojis/175472-pepelaugh.gif",
   wave: "https://cdn3.emoji.gg/emojis/7362_ablobwavereverse.gif",
 };
 

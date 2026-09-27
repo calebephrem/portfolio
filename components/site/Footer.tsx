@@ -30,7 +30,7 @@ export default function Footer() {
         <span>Artwork & Content All Rights Reserved.</span>
       </div>
 
-      <div className="flex items-center gap-xs">
+      <div className="flex items-center gap-xxs">
         <Link
           href="https://voidlinux.org/"
           title="Void Linux"
