@@ -1,5 +1,6 @@
 import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
+import { Lenis } from "@/components/site/Lenis";
 import { TooltipOverlay } from "@/components/ui/Tooltip";
 import metadata from "@/lib/metadata";
 import ReactLenis from "lenis/react";
@@ -48,6 +49,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="">
         <ReactLenis root options={{ lerp: 0.2 }}>
+          <Lenis />
+
           <Paper>
             <TooltipOverlay />
 
