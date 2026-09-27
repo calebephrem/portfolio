@@ -1,6 +1,7 @@
 import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
+import Tooltip from "../ui/Tooltip";
 
 export default function Header() {
   return (
@@ -18,16 +19,20 @@ export default function Header() {
       </Link>
 
       <nav className="text-md flex items-center gap-md font-display">
-        <Link href={`mailto:${staticData.links.email}`}>Contact</Link>
+        <Tooltip text="Email me!">
+          <Link href={`mailto:${staticData.links.email}`}>Contact</Link>
+        </Tooltip>
 
-        <Link
-          href={`/r/portfolio`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="after:rotate-y-180"
-        >
-          {"</>"}
-        </Link>
+        <Tooltip text="Repo">
+          <Link
+            href={`/r/portfolio`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="after:rotate-y-180"
+          >
+            {"</>"}
+          </Link>
+        </Tooltip>
       </nav>
     </header>
   );

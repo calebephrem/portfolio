@@ -1,4 +1,5 @@
 import Emoji from "@/components/ui/Emoji";
+import Tooltip from "@/components/ui/Tooltip";
 import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,8 +8,10 @@ export default async function Home() {
   return (
     <div className="flex flex-col gap-md">
       <div className="flex gap-md flex-col items-center md:flex-row">
-        <div className="dotted min-w-fit">
-          <Image src="/me.jpg" height={24} width={200} alt="me" />
+        <div className="dotted min-w-fit shadow-md">
+          <Tooltip text="Me :3">
+            <Image src="/me.jpg" height={24} width={200} alt="me" />
+          </Tooltip>
         </div>
 
         <div className="flex justify-center flex-col gap-md">
@@ -32,7 +35,9 @@ export default async function Home() {
       </div>
 
       <div className="flex flex-col gap-md">
-        <h1 className="text-3xl">What I love to do</h1>
+        <h1 className="text-3xl">
+          What I love to do <Emoji name="pandaheart" size={28} />
+        </h1>
 
         <ul>
           <li>
@@ -66,7 +71,9 @@ export default async function Home() {
       </div>
 
       <div className="flex flex-col gap-md">
-        <h1 className="text-3xl">Things I work with</h1>
+        <h1 className="text-3xl">
+          Things I work with <Emoji name="tools" size={34} />
+        </h1>
 
         <div className="flex gap-sm flex-wrap">
           {[
@@ -191,7 +198,9 @@ export default async function Home() {
         </div>
 
         <div className="flex flex-col gap-md">
-          <h1 className="text-3xl">Some projects I liked</h1>
+          <h1 className="text-3xl">
+            Some projects I liked <Emoji name="cool" size={30} />
+          </h1>
 
           <div className="flex flex-col lg:flex-row gap-sm">
             {[
@@ -233,7 +242,7 @@ export default async function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   key={title}
-                  className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md after:bg-accent-secondary"
+                  className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md after:bg-accent-secondary shadow-md"
                   style={{ clipPath }}
                 >
                   <Image
@@ -256,7 +265,9 @@ export default async function Home() {
         </div>
 
         <div className="flex flex-col gap-md">
-          <h1 className="text-3xl">GitHub Activity</h1>
+          <h1 className="text-3xl">
+            GitHub Activity <Emoji name="cattyping" size={28} />
+          </h1>
 
           <Link
             href={staticData.links.github}
@@ -264,18 +275,25 @@ export default async function Home() {
             rel="noopener noreferrer"
             className="after:hidden"
           >
-            <Image
-              src="https://ghchart.rshah.org/4375ad/calebephrem"
-              height={24}
-              width={24}
-              alt="GitHub Activity"
+            <Tooltip
+              text={"@" + staticData.links.github.split("/").pop()}
               className="w-full"
-            />
+            >
+              <Image
+                src="https://ghchart.rshah.org/4375ad/calebephrem"
+                height={24}
+                width={24}
+                alt="GitHub Activity"
+                className="w-full"
+              />
+            </Tooltip>
           </Link>
         </div>
 
         <div className="flex flex-col gap-md">
-          <h1 className="text-3xl">Find me online</h1>
+          <h1 className="text-3xl">
+            Find me online <Emoji name="coffee" size={28} />
+          </h1>
 
           <div className="flex items-center gap-md flex-wrap">
             {[

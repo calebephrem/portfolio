@@ -1,6 +1,7 @@
 import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
+import Tooltip from "../ui/Tooltip";
 
 export default function Footer() {
   return (
@@ -16,15 +17,17 @@ export default function Footer() {
             Caleb Ephrem
           </Link>
           . Licensed under{" "}
-          <u>
-            <Link
-              href="https://raw.githubusercontent.com/calebephrem/portfolio/refs/heads/main/LICENSE"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              MIT License.
-            </Link>
-          </u>
+          <Tooltip text="© 2026 Caleb Ephrem">
+            <u>
+              <Link
+                href="https://raw.githubusercontent.com/calebephrem/portfolio/refs/heads/main/LICENSE"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                MIT License.
+              </Link>
+            </u>
+          </Tooltip>
         </span>
 
         <span>Artwork & Content All Rights Reserved.</span>
@@ -33,25 +36,27 @@ export default function Footer() {
       <div className="flex items-center gap-xxs">
         <Link
           href="https://voidlinux.org/"
-          title="Void Linux"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src="/void.webp" alt="Void Linux" width={88} height={31} />
+          <Tooltip text="Void Linux">
+            <Image src="/void.webp" alt="Void Linux" width={88} height={31} />
+          </Tooltip>
         </Link>
 
         <Link
           href="https://louiszn.fyi"
-          title="Cutie oreo"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            src="https://louiszn.fyi/assets/88x31/me.png"
-            alt="Oreo cat"
-            width={88}
-            height={31}
-          />
+          <Tooltip text="Cutie oreo">
+            <Image
+              src="https://louiszn.fyi/assets/88x31/me.png"
+              alt="Oreo cat"
+              width={88}
+              height={31}
+            />
+          </Tooltip>
         </Link>
       </div>
     </footer>

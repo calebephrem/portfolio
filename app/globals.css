@@ -191,4 +191,26 @@
   .dotted {
     @apply border-2 border-dotted border-accent-secondary;
   }
+
+  .tooltip {
+    @apply fixed pointer-events-none z-50 text-sm py-xs px-sm shadow-md transition-transform;
+
+    transform: translate(-50%, 0) rotate(-1deg);
+
+    &::before {
+      content: "";
+
+      @apply absolute inset-0 bg-accent-primary -z-10;
+
+      clip-path: polygon(2% 4%, 98% 2%, 96% 94%, 3% 97%);
+    }
+
+    &::after {
+      content: "";
+
+      @apply absolute left-1/2 -top-1.5 -translate-x-1/2 w-3 h-2 bg-accent-primary -z-10;
+
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  }
 }
