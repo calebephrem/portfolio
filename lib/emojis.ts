@@ -6,6 +6,7 @@ export const emojis = {
   tools: "https://cdn3.emoji.gg/emojis/73408-toolsicons.png",
   cool: "https://cdn3.emoji.gg/emojis/213649-blobcool.gif",
   coffee: "https://cdn3.emoji.gg/emojis/40920-sip.gif",
+  angel: "https://cdn3.emoji.gg/emojis/501919-florkangel.png",
 };
 
 export type Emoji = keyof typeof emojis;
