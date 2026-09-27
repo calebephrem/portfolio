@@ -36,35 +36,29 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          What I love to do <Emoji name="pandaheart" size={28} />
+          Stuff I like doing <Emoji name="pandaheart" size={28} />
         </h1>
 
         <ul>
           <li>
-            Build interfaces that are fast, accessible, and built to scale.{" "}
-            <u>React, Next.js, and Tailwind</u> are my tools of choice.
+            I build stuff in React, Next.js, and Tailwind. Making it look good
+            is the easy part. Making it not fall over is the actual job.
           </li>
           <li>
-            Design to production with careful attention to typography, spacing,
-            and interaction. Making sure the final product feels as considered
-            as it looks.
+            {"I've"} built bots, extensions, tools, and full stack sites for
+            clients, and {"there's"} a decent chance {"I'm"} mid-project for one
+            right now.
           </li>
           <li>
-            Build tools and bots that people actually want to use daily: from
-            Discord bots to browser extensions, focused on solving real,
-            recurring problems rather than building for the sake of it.
+            I try to write code the next person can actually read, since{" "}
+            {"that's"}
+            usually just me in three months having forgotten how any of it works{" "}
+            <Emoji name="giggle" />
           </li>
           <li>
-            Write code meant to be maintained: Clean structure, sensible naming,
-            and documentation that {"doesn't"} lie to the next person reading it
-            (usually future me <Emoji name="giggle" />
-            ).
-          </li>
-          <li>
-            Always curious -{" "}
             <mark className="secondary">
-              always picking up new tools when they solve a problem better than
-              what I already know.
+              Picking up new tools when they solve something better than what{" "}
+              {"I'm"} already using.
             </mark>
           </li>
         </ul>
