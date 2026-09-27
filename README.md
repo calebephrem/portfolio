@@ -1,16 +1,10 @@
 # Portfolio
 
-Welcome to my personal **developer portfolio**, built with **Next.js**, **Tailwind CSS**, **Lens**, **TypeScript**, and a touch of creativity :3
+Welcome to my personal **developer portfolio**, built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Lenis**, **Zustand**, and a touch of creativity :3
 
 **Live Demo:** [calev.pages.dev](https://calev.pages.dev)
 
-## Preview
-
 ![Portfolio Preview](./public/preview.png)
-
-## About
-
-This portfolio is a snapshot of who I am as a developer. My style, my craft, and my ongoing evolution.
 
 ## Features
 
