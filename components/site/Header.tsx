@@ -1,34 +1,32 @@
 import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Code2 } from "reicon-react";
-import Button from "../ui/Button";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between py-sm">
-      <Link href="/" className="flex items-center gap-xs">
+    <header className="flex items-center justify-between py-sm mb-sm">
+      <Link href="/" className="flex items-center gap-sm">
         <Image
           src="/pfp.jpg"
-          height={30}
-          width={30}
-          className="rounded-lg"
+          height={36}
+          width={36}
           alt="Caleb"
+          className="rounded-full"
         />
 
-        <h1 className="text-xl">Caleb</h1>
+        <h1 className="text-3xl">Caleb</h1>
       </Link>
 
-      <nav className="flex items-center gap-xs">
+      <nav className="text-md flex items-center gap-md font-display">
+        <Link href={`mailto:${staticData.links.email}`}>Contact</Link>
+
         <Link
-          href={`mailto:${staticData.external.email}`}
+          href={`/r/portfolio`}
           target="_blank"
           rel="noopener noreferrer"
+          className="after:rotate-y-180"
         >
-          <Button icon={ArrowRight}>Contact</Button>
-        </Link>
-        <Link href={`/r/portfolio`} target="_blank" rel="noopener noreferrer">
-          <Button variant="primary" icon={Code2} />
+          {"</>"}
         </Link>
       </nav>
     </header>
