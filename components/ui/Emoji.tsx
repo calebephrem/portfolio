@@ -1,20 +1,23 @@
 import { type Emoji, emojis } from "@/lib/emojis";
 import Image from "next/image";
+import Tooltip from "./Tooltip";
 
 type EmojiProps = {
   name: Emoji;
   size?: number;
 };
 
-export default function Emoji({ name, size = 16 }: EmojiProps) {
+export default function Emoji({ name, size = 20 }: EmojiProps) {
   return (
-    <Image
-      src={emojis[name]}
-      height={size}
-      width={size}
-      alt={name}
-      title={`:${name}:`}
-      className="inline"
-    />
+    <Tooltip text={`:${name}:`}>
+      <Image
+        src={emojis[name]}
+        height={size}
+        width={size}
+        alt={name}
+
+        className="inline"
+      />
+    </Tooltip>
   );
 }
