@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col gap-lg">
+    <div className="flex flex-col gap-md">
       <div className="flex gap-md flex-col items-center md:flex-row">
         <div className="dotted min-w-fit">
           <Image src="/me.jpg" height={24} width={200} alt="me" />
@@ -183,6 +183,7 @@ export default async function Home() {
                 style={{ clipPath }}
               >
                 <Image src={icon} height={24} width={24} alt={label} />
+
                 <span>{label}</span>
               </div>
             );

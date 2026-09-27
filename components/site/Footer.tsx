@@ -37,7 +37,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image src="/void.webp" alt="Oreo cat" width={88} height={31} />
+          <Image src="/void.webp" alt="Void Linux" width={88} height={31} />
         </Link>
 
         <Link
