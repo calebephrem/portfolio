@@ -66,7 +66,7 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          Things I work with <Emoji name="tools" size={34} />
+          Things I work with <Emoji name="cool" size={30} />
         </h1>
 
         <div className="flex gap-sm flex-wrap">
@@ -193,7 +193,7 @@ export default async function Home() {
 
         <div className="flex flex-col gap-md">
           <h1 className="text-3xl">
-            Some projects I liked <Emoji name="cool" size={30} />
+            Some projects I liked <Emoji name="tools" size={34} />
           </h1>
 
           <div className="flex flex-col lg:flex-row gap-sm">
