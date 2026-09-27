@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col gap-md">
-      <div className="flex gap-md flex-col items-center md:flex-row">
+    <div className="flex flex-col gap-lg">
+      <div className="flex gap-lg flex-col items-center md:flex-row">
         <div className="dotted min-w-fit shadow-md">
           <Tooltip text="Me :3">
-            <Image src="/me.jpg" height={24} width={200} alt="me" />
+            <Image src="/me.jpg" height={24} width={220} alt="me" />
           </Tooltip>
         </div>
 
@@ -41,8 +41,9 @@ export default async function Home() {
 
         <ul>
           <li>
-            Building stuff in React, Next.js, and Tailwind. Making it look good
-            is the easy part. Making it not fall over is the actual job.
+            Building stuff in <u>TypeScript, Next.js, and Tailwind</u>. Making
+            it look good is the easy part. Making it not fall over is the actual
+            job.
           </li>
           <li>
             Making bots, extensions, tools, and full stack sites for clients,
