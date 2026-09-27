@@ -19,6 +19,15 @@ const redirects: { sources: string[]; destination: string }[] = [
   },
 
   {
+    sources: ["/b"],
+    destination: "/blog",
+  },
+  {
+    sources: ["/b/:slug"],
+    destination: `/blog/:slug*`,
+  },
+
+  {
     sources: ["/repos", "/repositories"],
     destination: `${staticData.links.github}/repositories`,
   },

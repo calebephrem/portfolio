@@ -15,3 +15,6 @@
 
 /repo/*  https://github.com/calebephrem/:splat  302
 /r/*  https://github.com/calebephrem/:splat  302
+
+/b /blog 302
+/b/* /blog/:splat 302

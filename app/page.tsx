@@ -41,19 +41,18 @@ export default async function Home() {
 
         <ul>
           <li>
-            I build stuff in React, Next.js, and Tailwind. Making it look good
+            Building stuff in React, Next.js, and Tailwind. Making it look good
             is the easy part. Making it not fall over is the actual job.
           </li>
           <li>
-            {"I've"} built bots, extensions, tools, and full stack sites for
-            clients, and {"there's"} a decent chance {"I'm"} mid-project for one
-            right now.
+            Making bots, extensions, tools, and full stack sites for clients,
+            and {"there's"} a decent chance {"I'm"} mid-project for one right
+            now.
           </li>
           <li>
-            I try to write code the next person can actually read, since{" "}
-            {"that's"}
-            usually just me in three months having forgotten how any of it works{" "}
-            <Emoji name="giggle" />
+            Trying to write code the next person can actually read, since{" "}
+            {"that's"} usually just me in three months having forgotten how any
+            of it works <Emoji name="giggle" />
           </li>
           <li>
             <mark className="secondary">
@@ -72,12 +71,12 @@ export default async function Home() {
         <div className="flex gap-sm flex-wrap">
           {[
             {
-              label: "JavaScript",
-              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
-            },
-            {
               label: "TypeScript",
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+            },
+            {
+              label: "JavaScript",
+              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
             },
             {
               label: "Tailwind CSS",
@@ -92,6 +91,10 @@ export default async function Home() {
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
             },
             {
+              label: "React Native",
+              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg",
+            },
+            {
               label: "Vite",
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg",
             },
@@ -99,7 +102,6 @@ export default async function Home() {
               label: "Framer Motion",
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
             },
-
             {
               label: "Bootstrap",
               icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
@@ -107,10 +109,6 @@ export default async function Home() {
             {
               label: "React Bits",
               icon: "https://github.com/DavidHDev/react-bits/blob/main/public/favicon-32x32.png?raw=true",
-            },
-            {
-              label: "React Native",
-              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg",
             },
             {
               label: "Expo",
@@ -162,12 +160,8 @@ export default async function Home() {
               icon: "https://zed.dev/_next/static/media/logo_wordmark_black_bigger.2877pop7hmjx0.png",
             },
             {
-              label: "Figma",
-              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-            },
-            {
-              label: "Postman",
-              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+              label: "Bruno",
+              icon: "https://avatars.githubusercontent.com/u/114530840?s=200&v=4",
             },
           ].map(({ label, icon }, i) => {
             const clipPath = [

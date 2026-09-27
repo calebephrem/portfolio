@@ -19,11 +19,15 @@ export default function Header() {
       </Link>
 
       <nav className="text-md flex items-center gap-md font-display">
+        <Tooltip text="Blog!">
+          <Link href={`/blog`}>Blog</Link>
+        </Tooltip>
+
         <Tooltip text="Email me!">
           <Link href={`mailto:${staticData.links.email}`}>Contact</Link>
         </Tooltip>
 
-        <Tooltip text="Repo">
+        <Tooltip text="Repo!">
           <Link
             href={`/r/portfolio`}
             target="_blank"
