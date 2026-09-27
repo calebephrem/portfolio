@@ -8,6 +8,7 @@
     "build": "next build && cp _redirects out/_redirects",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
     "format": "prettier --write ."
   },
   "dependencies": {
