@@ -2,7 +2,7 @@ import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
 import metadata from "@/lib/metadata";
 import ReactLenis from "lenis/react";
-import { Caveat_Brush, Syne } from "next/font/google";
+import { Caveat_Brush, Patrick_Hand } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
 
@@ -13,7 +13,7 @@ const display = Caveat_Brush({
   weight: "400",
 });
 
-const sans = Syne({
+const sans = Patrick_Hand({
   variable: "--font-sans",
   subsets: ["latin"],
   display: "swap",

@@ -52,7 +52,7 @@ export default async function Home() {
           <li>
             Write code meant to be maintained: Clean structure, sensible naming,
             and documentation that {"doesn't"} lie to the next person reading it
-            (usually future me <Emoji name="lol" />
+            (usually future me <Emoji name="giggle" />
             ).
           </li>
           <li>
@@ -243,7 +243,7 @@ export default async function Home() {
                     className="w-full max-w-24 lg:max-w-18"
                   />
 
-                  <div className="flex flex-col gap-xs">
+                  <div className="flex flex-col \gap-xs">
                     <h1 className="text-2xl">{title}</h1>
 
                     <p>{description}</p>
