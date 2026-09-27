@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default async function Home() {
   return (
-    <div className="flex flex-col gap-md">
-      <div className="flex gap-md flex-col items-center md:flex-row">
+    <div className="flex flex-col gap-lg">
+      <div className="flex gap-lg flex-col items-center md:flex-row">
         <div className="dotted min-w-fit shadow-md">
           <Tooltip text="Me :3">
-            <Image src="/me.jpg" height={24} width={200} alt="me" />
+            <Image src="/me.jpg" height={24} width={220} alt="me" />
           </Tooltip>
         </div>
 
@@ -41,8 +41,9 @@ export default async function Home() {
 
         <ul>
           <li>
-            Building stuff in React, Next.js, and Tailwind. Making it look good
-            is the easy part. Making it not fall over is the actual job.
+            Building stuff in <u>TypeScript, Next.js, and Tailwind</u>. Making
+            it look good is the easy part. Making it not fall over is the actual
+            job.
           </li>
           <li>
             Making bots, extensions, tools, and full stack sites for clients,
@@ -184,157 +185,157 @@ export default async function Home() {
             );
           })}
         </div>
+      </div>
 
-        <div className="flex flex-col gap-md">
-          <h1 className="text-3xl">
-            Some projects I liked <Emoji name="tools" size={34} />
-          </h1>
+      <div className="flex flex-col gap-md">
+        <h1 className="text-3xl">
+          Some projects I liked <Emoji name="tools" size={34} />
+        </h1>
 
-          <div className="flex flex-col lg:flex-row gap-sm">
-            {[
-              {
-                banner:
-                  "https://github.com/calebephrem/quantum-vscode/raw/main/assets/icon.png?raw=true",
-                title: "Quantum VSCode Theme",
-                description:
-                  "Beautify your IDE with the best combos of blue, lime, yellow, purple and more!",
-                link: "https://marketplace.visualstudio.com/items?itemName=CalebEphrem.quantum",
-              },
-              {
-                banner:
-                  "https://github.com/open-devhub/quillbot/blob/main/assets/icon.png?raw=true",
-                title: "QuillBot",
-                description:
-                  "Advanced Discord developer assistant for coding, documentation lookup, and more",
-                link: "https://github.com/open-devhub/quillbot",
-              },
-              {
-                banner:
-                  "https://github.com/calebephrem/portfolio/blob/main/app/icon.svg?raw=true",
-                title: "Portfolio",
-                description:
-                  "a snapshot of who I am as a developer. My style, my craft, and my ongoing evolution.",
-                link: `/r/portfolio`,
-              },
-            ].map(({ banner, title, description, link }, i) => {
-              const clipPath = [
-                "polygon(0.5% 0.5%, 50% 1.8%, 99.5% 0.5%, 98.5% 50%, 99.5% 99.5%, 50% 98.2%, 0.5% 99.5%, 1.5% 50%)",
-                "polygon(1% 0.5%, 50% 2%, 99% 1%, 98% 50%, 99.5% 99%, 50% 98%, 0.5% 99.5%, 1% 50%)",
-                "polygon(0.5% 1%, 50% 1.5%, 99.5% 0.5%, 99% 50%, 99% 99.5%, 50% 98.5%, 1% 99%, 0.5% 50%)",
-                "polygon(1% 0.5%, 50% 1.8%, 99.5% 1%, 98.5% 50%, 99% 99%, 50% 98.2%, 0.5% 99.5%, 1% 50%)",
-              ][i % 4];
+        <div className="flex flex-col lg:flex-row gap-sm">
+          {[
+            {
+              banner:
+                "https://github.com/calebephrem/portfolio/blob/main/app/icon.svg?raw=true",
+              title: "Portfolio",
+              description:
+                "a snapshot of who I am as a developer. My style, my craft, and my ongoing evolution.",
+              link: `/r/portfolio`,
+            },
+            {
+              banner:
+                "https://github.com/calebephrem/quantum-vscode/raw/main/assets/icon.png?raw=true",
+              title: "Quantum VSCode Theme",
+              description:
+                "Beautify your IDE with the best combos of blue, lime, yellow, purple and more!",
+              link: "https://marketplace.visualstudio.com/items?itemName=CalebEphrem.quantum",
+            },
+            {
+              banner:
+                "https://github.com/open-devhub/quillbot/blob/main/assets/icon.png?raw=true",
+              title: "QuillBot",
+              description:
+                "Advanced Discord developer assistant for coding, documentation lookup, and more",
+              link: "https://github.com/open-devhub/quillbot",
+            },
+          ].map(({ banner, title, description, link }, i) => {
+            const clipPath = [
+              "polygon(0.5% 0.5%, 50% 1.8%, 99.5% 0.5%, 98.5% 50%, 99.5% 99.5%, 50% 98.2%, 0.5% 99.5%, 1.5% 50%)",
+              "polygon(1% 0.5%, 50% 2%, 99% 1%, 98% 50%, 99.5% 99%, 50% 98%, 0.5% 99.5%, 1% 50%)",
+              "polygon(0.5% 1%, 50% 1.5%, 99.5% 0.5%, 99% 50%, 99% 99.5%, 50% 98.5%, 1% 99%, 0.5% 50%)",
+              "polygon(1% 0.5%, 50% 1.8%, 99.5% 1%, 98.5% 50%, 99% 99%, 50% 98.2%, 0.5% 99.5%, 1% 50%)",
+            ][i % 4];
 
-              return (
-                <Link
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key={title}
-                  className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md after:bg-accent-secondary shadow-md"
-                  style={{ clipPath }}
-                >
-                  <Image
-                    src={banner}
-                    height={54}
-                    width={54}
-                    alt={title}
-                    className="w-full max-w-24 lg:max-w-18"
-                  />
-
-                  <div className="flex flex-col \gap-xs">
-                    <h1 className="text-2xl">{title}</h1>
-
-                    <p>{description}</p>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-md">
-          <h1 className="text-3xl">
-            GitHub Activity <Emoji name="cattyping" size={28} />
-          </h1>
-
-          <Link
-            href={staticData.links.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="after:hidden"
-          >
-            <Tooltip
-              text={"@" + staticData.links.github.split("/").pop()}
-              className="w-full"
-            >
-              <Image
-                src="https://ghchart.rshah.org/4375ad/calebephrem"
-                height={24}
-                width={24}
-                alt="GitHub Activity"
-                className="w-full"
-              />
-            </Tooltip>
-          </Link>
-        </div>
-
-        <div className="flex flex-col gap-md">
-          <h1 className="text-3xl">
-            Find me online <Emoji name="coffee" size={28} />
-          </h1>
-
-          <div className="flex items-center gap-md flex-wrap">
-            {[
-              {
-                icon: "https://img.icons8.com/?size=100&id=106562&format=png&color=000000",
-                label: "GitHub",
-                link: "/github",
-              },
-              {
-                icon: "https://img.icons8.com/?size=100&id=M725CLW4L7wE&format=png&color=000000",
-                label: "Discord",
-                link: "/discord",
-              },
-              {
-                icon: "https://img.icons8.com/?size=100&id=0vJNjSJWpHy7&format=png&color=000000",
-                label: "Discord Server",
-                link: "https://devhub.vercel.app/join",
-              },
-              {
-                icon: "https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=FFFFFF",
-                label: "Twitter / X",
-                link: "/x",
-              },
-              {
-                icon: "https://img.icons8.com/?size=100&id=53388&format=png&color=000000",
-                label: "Email",
-                link: `mailto:${staticData.links.email}`,
-              },
-              {
-                icon: "https://img.icons8.com/?size=100&id=12463&format=png&color=FF4500",
-                label: "Reddit",
-                link: "/reddit",
-              },
-            ].map(({ icon, label, link }) => (
+            return (
               <Link
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                key={label}
-                className="flex items-center gap-md bg-bg-secondary p-sm"
+                key={title}
+                className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md after:bg-accent-secondary shadow-md"
+                style={{ clipPath }}
               >
                 <Image
-                  src={icon}
-                  height={24}
-                  width={24}
-                  alt={label}
-                  className="shrink-0 w-8"
+                  src={banner}
+                  height={54}
+                  width={54}
+                  alt={title}
+                  className="w-full max-w-24 lg:max-w-18"
                 />
 
-                <span>{label}</span>
+                <div className="flex flex-col \gap-xs">
+                  <h1 className="text-2xl">{title}</h1>
+
+                  <p>{description}</p>
+                </div>
               </Link>
-            ))}
-          </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-md">
+        <h1 className="text-3xl">
+          GitHub Activity <Emoji name="cattyping" size={28} />
+        </h1>
+
+        <Link
+          href={staticData.links.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="after:hidden"
+        >
+          <Tooltip
+            text={"@" + staticData.links.github.split("/").pop()}
+            className="w-full"
+          >
+            <Image
+              src="https://ghchart.rshah.org/4375ad/calebephrem"
+              height={24}
+              width={24}
+              alt="GitHub Activity"
+              className="w-full"
+            />
+          </Tooltip>
+        </Link>
+      </div>
+
+      <div className="flex flex-col gap-md">
+        <h1 className="text-3xl">
+          Find me online <Emoji name="coffee" size={28} />
+        </h1>
+
+        <div className="flex items-center gap-md flex-wrap">
+          {[
+            {
+              icon: "https://img.icons8.com/?size=100&id=106562&format=png&color=000000",
+              label: "GitHub",
+              link: "/github",
+            },
+            {
+              icon: "https://img.icons8.com/?size=100&id=M725CLW4L7wE&format=png&color=000000",
+              label: "Discord",
+              link: "/discord",
+            },
+            {
+              icon: "https://img.icons8.com/?size=100&id=0vJNjSJWpHy7&format=png&color=000000",
+              label: "Discord Server",
+              link: "https://devhub.vercel.app/join",
+            },
+            {
+              icon: "https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=FFFFFF",
+              label: "Twitter / X",
+              link: "/x",
+            },
+            {
+              icon: "https://img.icons8.com/?size=100&id=53388&format=png&color=000000",
+              label: "Email",
+              link: `mailto:${staticData.links.email}`,
+            },
+            {
+              icon: "https://img.icons8.com/?size=100&id=12463&format=png&color=FF4500",
+              label: "Reddit",
+              link: "/reddit",
+            },
+          ].map(({ icon, label, link }) => (
+            <Link
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={label}
+              className="flex items-center gap-md bg-bg-secondary p-sm"
+            >
+              <Image
+                src={icon}
+                height={24}
+                width={24}
+                alt={label}
+                className="shrink-0 w-8"
+              />
+
+              <span>{label}</span>
+            </Link>
+          ))}
         </div>
       </div>
     </div>
