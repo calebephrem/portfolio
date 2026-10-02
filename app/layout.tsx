@@ -47,7 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${display.variable} ${sans.variable} h-full antialiased `}
     >
-      <body className="">
+      <body>
         <ReactLenis root options={{ lerp: 0.2 }}>
           <Lenis />
 
