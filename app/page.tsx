@@ -267,7 +267,7 @@ export default async function Home() {
         >
           <Tooltip
             text={"@" + staticData.links.github.split("/").pop()}
-            className="w-full"
+            className="w-full max-h-56"
           >
             <Image
               src="https://ghchart.rshah.org/4375ad/calebephrem"
