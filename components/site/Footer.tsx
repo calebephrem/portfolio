@@ -44,6 +44,15 @@ export default function Footer() {
           </Tooltip>
         </Link>
 
+        <Tooltip text="Made with my own two paws!">
+          <Image
+            src="/paws.gif"
+            alt="Made with my own two paws!"
+            width={88}
+            height={31}
+          />
+        </Tooltip>
+
         <Link
           href="https://louiszn.fyi"
           target="_blank"
