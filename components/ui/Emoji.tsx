@@ -1,8 +1,7 @@
 import { type Emoji, emojis } from "@/lib/emojis";
-import Image from "next/image";
 import Tooltip from "./Tooltip";
 
-interface EmojiProps {
+export interface EmojiProps {
   name: Emoji;
   size?: number;
   className?: string;
@@ -11,12 +10,13 @@ interface EmojiProps {
 export default function Emoji({ name, size = 20, className }: EmojiProps) {
   return (
     <Tooltip text={`:${name}:`}>
-      <Image
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
         src={emojis[name]}
         height={size}
         width={size}
         alt={name}
-        className={["inline", className].join(" ")}
+        className={["inline", className].filter(Boolean).join(" ")}
       />
     </Tooltip>
   );

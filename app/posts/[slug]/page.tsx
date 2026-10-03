@@ -1,6 +1,7 @@
 import { customAlerts } from "@/components/ui/customAlerts";
 import Emoji from "@/components/ui/Emoji";
 import TwitterCard, { TwitterCardProps } from "@/components/ui/TwitterCard";
+import type { Emoji as EmojiType } from "@/lib/emojis";
 import staticData from "@/lib/staticdata";
 import { Metadata } from "next";
 import Image from "next/image";
@@ -181,6 +182,9 @@ export default async function Post({
             {
               "twitter-card": (props: TwitterCardProps) => (
                 <TwitterCard {...props} />
+              ),
+              emoji: ({ name }: { name: string }) => (
+                <Emoji name={name as EmojiType} />
               ),
             } as Components
           }

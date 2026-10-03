@@ -122,4 +122,4 @@ GitHub has lots of other things to offer than just storing code. Among the gazil
 
 # The End...
 
-Just a small glimpse of what you can find on GitHub. There are dozens of repos filled with useful resources, interesting ideas, and things you probably didn’t even know existed. Hopefully, you found something worth bookmarking, exploring, or sharing, and maybe the next time you’re looking for something, you’ll check GitHub before opening another search tab ;)
+Just a small glimpse of what you can find on GitHub. There are dozens of repos filled with useful resources, interesting ideas, and things you probably didn’t even know existed. Hopefully, you found something worth bookmarking, exploring, or sharing, and maybe the next time you’re looking for something, you’ll check GitHub before opening another search tab :emoji{name="giggle"}
