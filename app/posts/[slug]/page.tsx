@@ -180,9 +180,7 @@ export default async function Post({
           rehypePlugins={[rehypeRaw]}
           components={
             {
-              "twitter-card": (props: TwitterCardProps) => (
-                <TwitterCard {...props} />
-              ),
+              card: (props: TwitterCardProps) => <TwitterCard {...props} />,
               emoji: ({ name }: { name: string }) => (
                 <Emoji name={name as EmojiType} />
               ),
