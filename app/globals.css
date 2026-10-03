@@ -1,4 +1,14 @@
 @import "tailwindcss";
+@import "lenis/dist/lenis.css";
+
+/* lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+/*.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}*/
 
 :root {
   --bg-primary: #faf6f0;
@@ -6,7 +16,7 @@
   --bg-tertiary: #dad6d0;
   --fg-primary: #484646;
   --fg-secondary: #686666;
-  --fg-tertiary: #888686;
+  --fg-tertiary: #8f8f9f;
   --accent-primary: #93c5fd;
   --accent-secondary: #fde78b;
   --border: #5f4f6f;
@@ -32,6 +42,7 @@
 
   --font-display: var(--font-display);
   --font-sans: var(--font-sans);
+  --font-code: var(--font-code);
 
   --spacing-xxs: var(--p-xxs);
   --spacing-xs: var(--p-xs);
@@ -43,7 +54,7 @@
 
 @layer base {
   * {
-    @apply p-0 m-0 box-border duration-500;
+    @apply p-0 m-0 box-border duration-200;
   }
 
   html,
@@ -183,9 +194,13 @@
   }
 }
 
-@layer utilities {
+@layer components {
   .outlined {
     -webkit-text-stroke: 2px var(--fg-primary);
+
+    &::selection {
+      @apply bg-accent-secondary;
+    }
   }
 
   .dotted {
@@ -211,6 +226,90 @@
       @apply absolute left-1/2 -top-1.5 -translate-x-1/2 w-3 h-2 bg-accent-primary -z-10;
 
       clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+  }
+}
+
+@layer utilities {
+  .markdown {
+    @apply flex flex-col gap-md;
+
+    h1 {
+      @apply text-3xl;
+    }
+    h2 {
+      @apply text-2xl;
+    }
+    h3 {
+      @apply text-xl;
+    }
+
+    img {
+      @apply max-h-[45dvh] mx-auto;
+    }
+
+    a {
+      @apply underline;
+    }
+
+    ul,
+    ol {
+      @apply marker:text-accent-primary;
+    }
+
+    code {
+      @apply bg-bg-secondary px-xxs font-code;
+    }
+    pre code {
+      @apply block p-sm;
+    }
+
+    blockquote {
+      @apply border-l-5 border-accent-primary px-sm py-xxs italic;
+    }
+    .markdown-alert {
+      @apply flex flex-col gap-xs border-l-5 border-accent-primary px-sm py-md bg-bg-secondary hover:bg-bg-tertiary;
+
+      .markdown-alert-title {
+        @apply text-2xl font-display;
+      }
+
+      &.markdown-alert-danger {
+        @apply border-red-400 bg-red-400/10;
+
+        .markdown-alert-title {
+          @apply text-red-500;
+        }
+      }
+
+      &.markdown-alert-warning {
+        @apply border-orange-400 bg-orange-400/10;
+
+        .markdown-alert-title {
+          @apply text-orange-500;
+        }
+      }
+    }
+
+    table {
+      /*@apply border-separate border-spacing-sm;*/
+
+      th {
+        @apply font-display font-normal text-xl bg-bg-tertiary;
+      }
+
+      th,
+      td {
+        @apply p-sm border-b border-accent-primary;
+      }
+
+      tr {
+        @apply whitespace-nowrap hover:bg-bg-secondary;
+      }
+
+      tr:nth-child(even) {
+        @apply bg-bg-secondary hover:bg-bg-tertiary;
+      }
     }
   }
 }

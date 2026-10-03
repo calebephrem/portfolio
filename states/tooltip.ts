@@ -1,11 +1,11 @@
 import { create } from "zustand";
 
-type TooltipState = {
+interface TooltipState {
   text: string;
   visible: boolean;
   setText: (text?: string) => void;
   setVisibility: (visible?: boolean) => void;
-};
+}
 
 export const useTooltip = create<TooltipState>((set, get) => ({
   text: "Tooltip",
