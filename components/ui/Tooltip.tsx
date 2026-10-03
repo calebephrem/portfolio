@@ -56,12 +56,12 @@ export default function Tooltip({
   };
 
   return (
-    <div
+    <span
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={className}
     >
       {children}
-    </div>
+    </span>
   );
 }
