@@ -19,12 +19,12 @@ const redirects: { sources: string[]; destination: string }[] = [
   },
 
   {
-    sources: ["/b"],
-    destination: "/blog",
+    sources: ["/p"],
+    destination: "/posts",
   },
   {
-    sources: ["/b/:slug"],
-    destination: `/blog/:slug*`,
+    sources: ["/p/:slug"],
+    destination: `/posts/:slug*`,
   },
 
   {

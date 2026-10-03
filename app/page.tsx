@@ -15,14 +15,12 @@ export default async function Home() {
         </div>
 
         <div className="flex justify-center flex-col gap-md">
-          <div className="flex items-center gap-xs">
-            <h1 className="text-5xl">
-              Hello, {"I'm"}{" "}
-              <span className="text-accent-primary outlined">
-                Caleb <Emoji name="wave" size={36} />
-              </span>
-            </h1>
-          </div>
+          <h1 className="text-5xl">
+            Hello, {"I'm"}{" "}
+            <span className="text-accent-primary outlined">
+              Caleb <Emoji name="wave" size={36} />
+            </span>
+          </h1>
 
           <p className="text-md">
             <u>A creative developer</u> based in{" "}
@@ -267,7 +265,7 @@ export default async function Home() {
         >
           <Tooltip
             text={"@" + staticData.links.github.split("/").pop()}
-            className="w-full"
+            className="w-full max-h-56"
           >
             <Image
               src="https://ghchart.rshah.org/4375ad/calebephrem"

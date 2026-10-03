@@ -1,10 +1,9 @@
 import Footer from "@/components/site/Footer";
 import Header from "@/components/site/Header";
-import { Lenis } from "@/components/site/Lenis";
 import { TooltipOverlay } from "@/components/ui/Tooltip";
 import metadata from "@/lib/metadata";
 import ReactLenis from "lenis/react";
-import { Caveat_Brush, Patrick_Hand } from "next/font/google";
+import { Caveat_Brush, Fira_Code, Patrick_Hand } from "next/font/google";
 import { ReactNode } from "react";
 import "./globals.css";
 
@@ -20,6 +19,12 @@ const sans = Patrick_Hand({
   subsets: ["latin"],
   display: "swap",
   weight: "400",
+});
+
+const code = Fira_Code({
+  variable: "--font-code",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export function Paper({ children }: { children: ReactNode }) {
@@ -45,12 +50,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${display.variable} ${sans.variable} h-full antialiased `}
+      className={`${display.variable} ${sans.variable} ${code.variable} h-full antialiased `}
     >
-      <body className="">
+      <body>
         <ReactLenis root options={{ lerp: 0.2 }}>
-          <Lenis />
-
           <Paper>
             <TooltipOverlay />
 
