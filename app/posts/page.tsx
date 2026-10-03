@@ -1,4 +1,5 @@
 import Emoji from "@/components/ui/Emoji";
+import Image from "next/image";
 import Link from "next/link";
 import { getPosts } from "./loader";
 
@@ -26,7 +27,10 @@ export default async function Posts() {
               href={external ? slug : `/p/${slug}`}
               target={external ? "_blank" : "_self"}
               rel="noopener noreferrer"
-              className={`flex flex-col gap-sm bg-bg-secondary p-sm px-md after:bg-accent-secondary shadow-md ${metadata.featured && "lg:col-span-2"}`}
+              className={
+                `flex flex-col gap-sm bg-bg-secondary p-sm px-md after:bg-accent-secondary shadow-md`
+                // + (metadata.featured ? " lg:col-span-2" : "")
+              }
               style={{ clipPath }}
             >
               <u>
@@ -42,6 +46,14 @@ export default async function Posts() {
                   )}
                 </div>
 
+                {/*<Image
+                  src={metadata.banner}
+                  height={48}
+                  width={48}
+                  className="w-full max-w-72 max-h-72 mx-auto"
+                  alt={metadata.title}
+                />*/}
+
                 <h1 className="text-xl py-sm">{metadata.title}</h1>
               </u>
 
@@ -50,6 +62,14 @@ export default async function Posts() {
                   ? metadata.description
                   : metadata.description.slice(0, 375) + "..."}
               </p>
+
+              <Image
+                src={metadata.banner}
+                height={48}
+                width={48}
+                className="w-full max-w-72 max-h-72 mx-auto"
+                alt={metadata.title}
+              />
 
               <div className="flex flex-wrap gap-xxs">
                 {metadata.tags.slice(0, 3).map((tag) => {

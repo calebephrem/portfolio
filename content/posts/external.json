@@ -1,7 +1,7 @@
 [
   {
     "title": "Why I chose Void Linux",
-    "description": "Four years of distro hopping, from Mint to Gentoo to a taste of LFS, and what a dev actually wants from their OS turned out to be simpler than expected.",
+    "description": "Four years of distro hopping, from Mint to Gentoo to a taste of LFS, and what a dev actually wants from their OS turned out to be simpler than expected",
     "banner": "https://w0.peakpx.com/wallpaper/614/33/HD-wallpaper-enter-the-void-void-09-enter-the-void-void-logo-orange-xbps-void-linux-logo-outer-space-dark-bsd-void-blue.jpg",
     "date": "September 12, 2026",
     "authors": [
@@ -12,7 +12,7 @@
       }
     ],
     "featured": false,
-    "tags": ["linux"],
+    "tags": ["linux", "void"],
     "link": "https://louiszn.fyi/posts/why-i-chose-void",
     "readingTime": "8 min read"
   }
