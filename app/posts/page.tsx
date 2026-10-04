@@ -28,7 +28,7 @@ export default async function Posts() {
               target={external ? "_blank" : "_self"}
               rel="noopener noreferrer"
               className={
-                `flex flex-col gap-sm bg-bg-secondary p-sm px-md after:bg-accent-secondary shadow-md`
+                `flex flex-col gap-sm bg-bg-secondary p-sm px-md shadow-md secondary`
                 // + (metadata.featured ? " lg:col-span-2" : "")
               }
               style={{ clipPath }}
@@ -54,7 +54,9 @@ export default async function Posts() {
                   alt={metadata.title}
                 />*/}
 
-                <h1 className="text-xl py-sm">{metadata.title}</h1>
+                <h1 className="text-xl py-sm">
+                  {external ? `"${metadata.title}"` : metadata.title}
+                </h1>
               </u>
 
               <p className="text-fg-secondary grow">

@@ -3,11 +3,12 @@ import Emoji from "@/components/ui/Emoji";
 import TwitterCard, { TwitterCardProps } from "@/components/ui/TwitterCard";
 import type { Emoji as EmojiType } from "@/lib/emojis";
 import staticData from "@/lib/staticdata";
+import rehypeShiki from "@shikijs/rehype";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Markdown, { Components } from "react-markdown";
+import { Components, MarkdownAsync } from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkDirective from "remark-directive";
 import remarkDirectiveRehype from "remark-directive-rehype";
@@ -157,10 +158,10 @@ export default async function Post({
           <div>{post.metadata.readingTime}</div>
 
           <Link
-            href={`${staticData.links.github}/edit/main/content/posts/${slug}.md`}
+            href={`${staticData.links.github}/portfolio/edit/main/content/posts/${slug}.md`}
             target="_blank"
             rel="noopener noreferrer"
-            className="after:bg-accent-secondary flex items-center gap-xs"
+            className="flex items-center gap-xs"
           >
             <Emoji name="typewriter" />
 
@@ -170,14 +171,14 @@ export default async function Post({
       </u>
 
       <article className="markdown">
-        <Markdown
+        <MarkdownAsync
           remarkPlugins={[
             remarkDirective,
             remarkDirectiveRehype,
             customAlerts,
             remarkGfm,
           ]}
-          rehypePlugins={[rehypeRaw]}
+          rehypePlugins={[rehypeRaw, [rehypeShiki, { theme: "github-light" }]]}
           components={
             {
               card: (props: TwitterCardProps) => <TwitterCard {...props} />,
@@ -188,7 +189,7 @@ export default async function Post({
           }
         >
           {post.content}
-        </Markdown>
+        </MarkdownAsync>
       </article>
     </div>
   );

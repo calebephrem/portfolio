@@ -230,7 +230,7 @@ export default async function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
                 key={title}
-                className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md after:bg-accent-secondary shadow-md"
+                className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md shadow-md secondary"
                 style={{ clipPath }}
               >
                 <Image
@@ -261,7 +261,7 @@ export default async function Home() {
           href={staticData.links.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="after:hidden"
+          className="bg-none"
         >
           <Tooltip
             text={"@" + staticData.links.github.split("/").pop()}
