@@ -161,7 +161,7 @@ export default async function Post({
             href={`${staticData.links.github}/portfolio/edit/main/content/posts/${slug}.md`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-xs"
+            className="flex items-center gap-xs secondary"
           >
             <Emoji name="typewriter" />
 
@@ -184,6 +184,9 @@ export default async function Post({
               card: (props: TwitterCardProps) => <TwitterCard {...props} />,
               emoji: ({ name }: { name: string }) => (
                 <Emoji name={name as EmojiType} />
+              ),
+              a: ({ ...props }) => (
+                <a {...props} target="_blank" rel="noopener noreferrer" />
               ),
             } as Components
           }

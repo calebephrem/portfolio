@@ -167,7 +167,7 @@ pm2 start index.js -i max
 ```
 
 > [!NOTE]
-> Without `-i`, PM2 runs a single process and doesn't cluster anything.
+> Without `-i <processes>`, PM2 runs a single process and doesn't cluster anything.
 
 ## Conclusion
 

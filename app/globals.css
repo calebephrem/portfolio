@@ -293,6 +293,14 @@ html.lenis body {
           @apply text-orange-500;
         }
       }
+
+      &.markdown-alert-note {
+        @apply border-blue-400 bg-blue-400/10;
+
+        .markdown-alert-title {
+          @apply text-blue-500;
+        }
+      }
     }
 
     table {
