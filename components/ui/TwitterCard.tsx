@@ -21,7 +21,7 @@ export default function TwitterCard({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-between after:hidden bg-bg-secondary py-md px-lg  no-underline! hover:bg-bg-tertiary gap-lg"
+      className="flex items-center justify-between bg-none bg-bg-secondary py-md px-lg  no-underline! hover:bg-bg-tertiary gap-lg"
       style={{
         clipPath:
           "polygon(0.5% 0.5%, 50% 1.8%, 99.5% 0.5%, 98.5% 50%, 99.5% 99.5%, 50% 98.2%, 0.5% 99.5%, 1.5% 50%)",

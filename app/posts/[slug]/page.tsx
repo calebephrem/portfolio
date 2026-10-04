@@ -158,10 +158,10 @@ export default async function Post({
           <div>{post.metadata.readingTime}</div>
 
           <Link
-            href={`${staticData.links.github}/edit/main/content/posts/${slug}.md`}
+            href={`${staticData.links.github}/portfolio/edit/main/content/posts/${slug}.md`}
             target="_blank"
             rel="noopener noreferrer"
-            className="after:bg-accent-secondary flex items-center gap-xs"
+            className="flex items-center gap-xs"
           >
             <Emoji name="typewriter" />
 

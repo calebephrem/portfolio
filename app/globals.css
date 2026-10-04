@@ -77,21 +77,25 @@ html.lenis body {
   }
 
   a {
-    @apply relative z-0 p-xxs;
+    @apply relative z-0 p-xxs transition-all;
 
-    box-decoration-break: clone;
+    background-image: linear-gradient(
+      var(--accent-primary),
+      var(--accent-primary)
+    );
+    background-repeat: no-repeat;
+    background-position: 0 90%;
+    background-size: 0% 85%;
 
-    -webkit-box-decoration-break: clone;
-
-    &::after {
-      content: "";
-      clip-path: polygon(1% 10%, 99% 3%, 97% 92%, 2% 97%);
-
-      @apply absolute left-0 top-0 h-full w-0 bg-accent-primary transition-all -z-10;
+    &:hover {
+      background-size: 100% 85%;
     }
 
-    &:hover::after {
-      width: calc(100% + 5px);
+    &.secondary {
+      background-image: linear-gradient(
+        var(--accent-secondary),
+        var(--accent-secondary)
+      );
     }
   }
 
