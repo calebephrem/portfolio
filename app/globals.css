@@ -258,7 +258,7 @@ html.lenis body {
     }
 
     code {
-      @apply bg-bg-secondary px-xxs font-code;
+      @apply bg-bg-secondary px-xxs font-code text-sm;
     }
     pre code {
       @apply block p-sm;
