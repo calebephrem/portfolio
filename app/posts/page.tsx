@@ -8,9 +8,16 @@ export default async function Posts() {
 
   return (
     <div className="min-h-[80dvh] flex flex-col gap-lg">
-      <h1 className="text-5xl outlined text-accent-primary text-center">
-        Posts <Emoji name="sipspin" size={36} />
-      </h1>
+      <div className="flex flex-col items-center gap-md">
+        <h1 className="text-5xl outlined text-accent-primary">
+          Posts <Emoji name="sipspin" size={36} />
+        </h1>
+
+        <p>
+          Posts about all kinds of <span className="circled">cool stuff</span> I
+          came across
+        </p>
+      </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-sm">
         {posts.map(({ slug, metadata, external }, i) => {

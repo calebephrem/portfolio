@@ -18,7 +18,7 @@ export default function Header() {
         <h1 className="text-3xl">Caleb</h1>
       </Link>
 
-      <nav className="text-md flex items-center gap-md font-display">
+      <nav className="flex items-center gap-md font-display">
         <Tooltip text="Posts!">
           <Link href={`/posts`}>Posts</Link>
         </Tooltip>
