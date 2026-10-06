@@ -18,7 +18,7 @@ html.lenis body {
   --fg-secondary: #686666;
   --fg-tertiary: #8f8f9f;
   --accent-primary: #93c5fd;
-  --accent-secondary: #fde78b;
+  --accent-secondary: #f0e080;
   --border: #5f4f6f;
 
   --p-xxs: 0.25rem;
@@ -322,6 +322,26 @@ html.lenis body {
       tr:nth-child(even) {
         @apply bg-bg-secondary hover:bg-bg-tertiary;
       }
+    }
+  }
+
+  .circled {
+    @apply relative inline-block;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -0.3em -0.4em;
+      background-color: var(--accent-primary);
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80' preserveAspectRatio='none'%3E%3Cpath d='M30 12 C70 2 150 3 180 22 C200 38 190 62 150 70 C100 80 40 74 15 55 C0 40 8 20 40 10 C60 4 85 2 105 5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        center / 100% 100% no-repeat;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 80' preserveAspectRatio='none'%3E%3Cpath d='M30 12 C70 2 150 3 180 22 C200 38 190 62 150 70 C100 80 40 74 15 55 C0 40 8 20 40 10 C60 4 85 2 105 5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        center / 100% 100% no-repeat;
+      pointer-events: none;
+    }
+
+    &.secondary::after {
+      background-color: var(--accent-secondary);
     }
   }
 }

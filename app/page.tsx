@@ -14,7 +14,7 @@ export default async function Home() {
           </Tooltip>
         </div>
 
-        <div className="flex justify-center flex-col gap-md">
+        <div className="flex flex-col gap-md">
           <h1 className="text-5xl">
             Hello, {"I'm"}{" "}
             <span className="text-accent-primary outlined">
@@ -22,11 +22,11 @@ export default async function Home() {
             </span>
           </h1>
 
-          <p className="text-md">
+          <p>
             <u>A creative developer</u> based in{" "}
-            <mark className="secondary">Ethiopia</mark>, making and building
-            things that work and {"don't"} hurt to look at. When {"I'm"} not
-            working, you can find me exploring new coffee spots or{" "}
+            <span className="circled secondary">Ethiopia</span>, making and
+            building things that work and {"don't"} hurt to look at. When{" "}
+            {"I'm"} not working, you can find me exploring new coffee spots or{" "}
             <mark>contributing to open source projects :3</mark>
           </p>
         </div>
