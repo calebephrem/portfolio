@@ -24,9 +24,9 @@ export default async function Home() {
 
           <p>
             <u>A creative developer</u> based in{" "}
-            <span className="circled secondary">Ethiopia</span>, making and
-            building things that work and {"don't"} hurt to look at. When{" "}
-            {"I'm"} not working, you can find me exploring new coffee spots or{" "}
+            <mark className="secondary">Ethiopia</mark>, making and building
+            things that work and {"don't"} hurt to look at. When {"I'm"} not
+            working, you can find me exploring new coffee spots or{" "}
             <mark>contributing to open source projects :3</mark>
           </p>
         </div>
