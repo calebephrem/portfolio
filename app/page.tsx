@@ -1,5 +1,6 @@
 import Emoji from "@/components/ui/Emoji";
 import Tooltip from "@/components/ui/Tooltip";
+import { clipPaths } from "@/lib/constants";
 import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,7 +9,7 @@ export default async function Home() {
   return (
     <div className="flex flex-col gap-lg">
       <div className="flex gap-lg flex-col items-center md:flex-row">
-        <div className="dotted min-w-fit shadow-md">
+        <div className="border-2 border-dotted border-accent-secondary min-w-fit shadow-md">
           <Tooltip text="Me :3">
             <Image src="/me.jpg" height={24} width={220} alt="me" />
           </Tooltip>
@@ -162,26 +163,17 @@ export default async function Home() {
               label: "Bruno",
               icon: "https://avatars.githubusercontent.com/u/114530840?s=200&v=4",
             },
-          ].map(({ label, icon }, i) => {
-            const clipPath = [
-              "polygon(2% 4%, 98% 2%, 96% 94%, 3% 97%)",
-              "polygon(1% 2%, 99% 4%, 97% 96%, 2% 92%)",
-              "polygon(3% 3%, 97% 1%, 98% 95%, 1% 98%)",
-              "polygon(2% 1%, 96% 3%, 99% 97%, 4% 93%)",
-            ][i % 4];
+          ].map(({ label, icon }, i) => (
+            <div
+              key={label}
+              className="flex items-center gap-sm bg-bg-secondary overflow-hidden p-sm hover:bg-bg-tertiary "
+              style={{ clipPath: clipPaths[i % clipPaths.length] }}
+            >
+              <Image src={icon} height={24} width={24} alt={label} />
 
-            return (
-              <div
-                key={label}
-                className="flex items-center gap-sm bg-bg-secondary overflow-hidden p-sm hover:bg-bg-tertiary dotted border-accent-primary!"
-                style={{ clipPath }}
-              >
-                <Image src={icon} height={24} width={24} alt={label} />
-
-                <span>{label}</span>
-              </div>
-            );
-          })}
+              <span>{label}</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -216,39 +208,30 @@ export default async function Home() {
                 "Advanced Discord developer assistant for coding, documentation lookup, and more",
               link: "https://github.com/open-devhub/quillbot",
             },
-          ].map(({ banner, title, description, link }, i) => {
-            const clipPath = [
-              "polygon(0.5% 0.5%, 50% 1.8%, 99.5% 0.5%, 98.5% 50%, 99.5% 99.5%, 50% 98.2%, 0.5% 99.5%, 1.5% 50%)",
-              "polygon(1% 0.5%, 50% 2%, 99% 1%, 98% 50%, 99.5% 99%, 50% 98%, 0.5% 99.5%, 1% 50%)",
-              "polygon(0.5% 1%, 50% 1.5%, 99.5% 0.5%, 99% 50%, 99% 99.5%, 50% 98.5%, 1% 99%, 0.5% 50%)",
-              "polygon(1% 0.5%, 50% 1.8%, 99.5% 1%, 98.5% 50%, 99% 99%, 50% 98.2%, 0.5% 99.5%, 1% 50%)",
-            ][i % 4];
+          ].map(({ banner, title, description, link }, i) => (
+            <Link
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={title}
+              className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md shadow-md secondary"
+              style={{ clipPath: clipPaths[i % clipPaths.length] }}
+            >
+              <Image
+                src={banner}
+                height={54}
+                width={54}
+                alt={title}
+                className="w-full max-w-24 lg:max-w-18"
+              />
 
-            return (
-              <Link
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={title}
-                className="flex items-center flex-col sm:flex-row gap-md bg-bg-secondary p-sm px-md shadow-md secondary"
-                style={{ clipPath }}
-              >
-                <Image
-                  src={banner}
-                  height={54}
-                  width={54}
-                  alt={title}
-                  className="w-full max-w-24 lg:max-w-18"
-                />
+              <div className="flex flex-col gap-xs">
+                <h1 className="text-2xl">{title}</h1>
 
-                <div className="flex flex-col \gap-xs">
-                  <h1 className="text-2xl">{title}</h1>
-
-                  <p>{description}</p>
-                </div>
-              </Link>
-            );
-          })}
+                <p>{description}</p>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
 

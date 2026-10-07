@@ -207,10 +207,6 @@ html.lenis body {
     }
   }
 
-  .dotted {
-    @apply border-2 border-dotted border-accent-secondary;
-  }
-
   .tooltip {
     @apply fixed pointer-events-none z-50 text-sm py-xs px-sm shadow-md transition-transform;
 

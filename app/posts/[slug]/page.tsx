@@ -1,6 +1,7 @@
 import { customAlerts } from "@/components/ui/customAlerts";
 import Emoji from "@/components/ui/Emoji";
 import TwitterCard, { TwitterCardProps } from "@/components/ui/TwitterCard";
+import { clipPaths } from "@/lib/constants";
 import type { Emoji as EmojiType } from "@/lib/emojis";
 import staticData from "@/lib/staticdata";
 import rehypeShiki from "@shikijs/rehype";
@@ -99,24 +100,15 @@ export default async function Post({
 
         <div className="flex items-center gap-sm">
           <div className="flex flex-wrap shrink-0 gap-xxs">
-            {post.metadata.tags.map((tag, i) => {
-              const clipPath = [
-                "polygon(2% 4%, 98% 2%, 96% 94%, 3% 97%)",
-                "polygon(1% 2%, 99% 4%, 97% 96%, 2% 92%)",
-                "polygon(3% 3%, 97% 1%, 98% 95%, 1% 98%)",
-                "polygon(2% 1%, 96% 3%, 99% 97%, 4% 93%)",
-              ][i % 4];
-
-              return (
-                <div
-                  key={tag}
-                  className="flex items-center gap-sm bg-bg-secondary overflow-hidden dotted border-accent-primary! p-xs hover:bg-bg-tertiary"
-                  style={{ clipPath }}
-                >
-                  <span className="whitespace-nowrap"># {tag}</span>
-                </div>
-              );
-            })}
+            {post.metadata.tags.map((tag, i) => (
+              <div
+                key={tag}
+                className="flex items-center gap-sm bg-bg-secondary overflow-hidden p-xs hover:bg-bg-tertiary"
+                style={{ clipPath: clipPaths[i % clipPaths.length] }}
+              >
+                <span className="whitespace-nowrap"># {tag}</span>
+              </div>
+            ))}
           </div>
 
           <div className="w-full h-px bg-bg-tertiary" />
@@ -145,7 +137,7 @@ export default async function Post({
                   height={36}
                   width={36}
                   alt={author.name}
-                  className="rounded-full dotted border-accent-primary!"
+                  className="rounded-full"
                 />
 
                 <u>{author.name}</u>
