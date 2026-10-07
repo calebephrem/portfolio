@@ -160,7 +160,7 @@ Percentage of requests served within a certain time
 
 ## Better Clustering With PM2
 
-Instead of manually running clustering, production can better handle using the [pm2 npm package](http://npmjs.com/package/pm2). PM2 is a production process manager for Node.js applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks. It's as easy as:
+Instead of manually running clustering, production can better handle using the [pm2 npm package](http://npmjs.com/package/pm2). "PM2 is a production process manager for Node.js/Bun applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks" (PM2). It's as easy as:
 
 ```sh
 pm2 start index.js -i max
