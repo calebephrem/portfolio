@@ -1,6 +1,7 @@
 import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
+import Emoji from "../ui/Emoji";
 import Tooltip from "../ui/Tooltip";
 
 export default function Footer() {
@@ -18,19 +19,19 @@ export default function Footer() {
           </Link>
           . Licensed under{" "}
           <Tooltip text="© 2026 Caleb Ephrem">
-            <u>
-              <Link
-                href="https://raw.githubusercontent.com/calebephrem/portfolio/refs/heads/main/LICENSE"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                MIT License.
-              </Link>
-            </u>
+            <Link
+              href="https://raw.githubusercontent.com/calebephrem/portfolio/refs/heads/main/LICENSE"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <u>MIT License.</u>
+            </Link>
           </Tooltip>
         </span>
 
-        <span>Artwork & Content All Rights Reserved.</span>
+        <Link href="/credits">
+          <u>Credits</u> <Emoji name="panda_heart" />
+        </Link>
       </div>
 
       <div className="flex items-center gap-xxs">

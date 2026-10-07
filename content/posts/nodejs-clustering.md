@@ -11,6 +11,9 @@ Imagine the `/api/login` endpoint you made, of a Node.js backend, got hit with l
 
 According to the [Node.js docs](https://nodejs.org/api/cluster.html), clusters of Node.js processes can be used to run multiple instances of Node.js that distribute workloads among their application threads. It basically allows you to create many workers that share the same port, using all (or some) of the available CPU cores. The `cluster` module has been part of Node.js since v0.8, and is stable in current versions.
 
+:::card{title="Cluster" description="Clusters of Node.js processes can be used to run multiple instances of Node.js that can distribute workloads among their application threads." footer="nodejs.org" img="https://topdev.vn/blog/wp-content/uploads/2019/04/nodejs-la-gi-768x491.jpg" link="https://nodejs.org/docs/latest-v24.x/api/cluster.html"}
+:::
+
 ## Why Use Clustering
 
 Node.js runs your JavaScript code on a single thread, so one process can only use one CPU core. On an 4 cored server, that leaves 3 cores sitting on the couch eating chips while one is fighting for its life :emoji{name="giggle"}. <mark>Clustering can be used to ensure all CPU cores are used to distribute work across all workers.</mark>
@@ -22,6 +25,9 @@ When you have alot of incoming HTTP requests that require heavy computation. It 
 Let's test that out, shall we?
 
 ## Tests
+
+> [!INFO]
+> The test below uses [the hono web framework](https://hono.dev). You can go with [express](http://expressjs.com/) or whatever you're comfortable with.
 
 ### Without Clustering
 
@@ -93,18 +99,19 @@ Percentage of requests served within a certain time
 
 ```ts
 import cluster from "cluster";
-import os from "os";
-import path from "path";
+import { cpus } from "os";
+import { join } from "path";
+import { cwd } from "process";
 
 // how many cpu cores we have
-const cpus = os.cpus().length;
+const cores = cpus().length;
 
 cluster.setupPrimary({
-  exec: path.join(process.cwd(), "index.ts"), // our index.ts
+  exec: join(cwd(), "index.ts"), // our index.ts
 });
 
-for (let i = 0; i < cpus; i++) {
-  // forking -> new worker
+for (let i = 0; i < cores; i++) {
+  // forking = new worker
   cluster.fork();
 }
 
