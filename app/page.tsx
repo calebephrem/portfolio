@@ -265,14 +265,14 @@ export default async function Home() {
         >
           <Tooltip
             text={"@" + staticData.links.github.split("/").pop()}
-            className="w-full max-h-56"
+            className="w-full"
           >
             <Image
               src="https://ghchart.rshah.org/4375ad/calebephrem"
               height={24}
               width={24}
               alt="GitHub Activity"
-              className="w-full"
+              className="w-full max-h-56"
             />
           </Tooltip>
         </Link>
