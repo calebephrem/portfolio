@@ -14,8 +14,7 @@ export default async function Posts() {
         </h1>
 
         <p>
-          Posts about all kinds of <span className="circled">cool stuff</span> I
-          came across
+          Posts about all kinds of <u>cool stuff</u> I came across
         </p>
       </div>
 

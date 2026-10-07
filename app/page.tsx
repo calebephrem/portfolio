@@ -24,9 +24,9 @@ export default async function Home() {
 
           <p>
             <u>A creative developer</u> based in{" "}
-            <span className="circled secondary">Ethiopia</span>, making and
-            building things that work and {"don't"} hurt to look at. When{" "}
-            {"I'm"} not working, you can find me exploring new coffee spots or{" "}
+            <mark className="secondary">Ethiopia</mark>, making and building
+            things that work and {"don't"} hurt to look at. When {"I'm"} not
+            working, you can find me exploring new coffee spots or{" "}
             <mark>contributing to open source projects :3</mark>
           </p>
         </div>
@@ -265,14 +265,14 @@ export default async function Home() {
         >
           <Tooltip
             text={"@" + staticData.links.github.split("/").pop()}
-            className="w-full max-h-56"
+            className="w-full"
           >
             <Image
               src="https://ghchart.rshah.org/4375ad/calebephrem"
               height={24}
               width={24}
               alt="GitHub Activity"
-              className="w-full"
+              className="w-full max-h-56"
             />
           </Tooltip>
         </Link>
