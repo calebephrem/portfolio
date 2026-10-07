@@ -35,7 +35,7 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          Stuff I like doing <Emoji name="pandaheart" size={28} />
+          Stuff I like doing <Emoji name="panda_heart" size={28} />
         </h1>
 
         <ul>
@@ -237,7 +237,7 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          GitHub Activity <Emoji name="cattyping" size={28} />
+          GitHub Activity <Emoji name="cat_typing" size={28} />
         </h1>
 
         <Link

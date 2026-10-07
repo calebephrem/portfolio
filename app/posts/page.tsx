@@ -11,7 +11,7 @@ export default async function Posts() {
     <div className="min-h-[80dvh] flex flex-col gap-lg">
       <div className="flex flex-col items-center gap-md">
         <h1 className="text-5xl outlined text-accent-primary">
-          Posts <Emoji name="sipspin" size={36} />
+          Posts <Emoji name="sip_spin" size={36} />
         </h1>
 
         <p>

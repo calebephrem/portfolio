@@ -7,7 +7,7 @@ export interface EmojiProps {
   className?: string;
 }
 
-export default function Emoji({ name, size = 20, className }: EmojiProps) {
+export default function Emoji({ name, size = 24, className }: EmojiProps) {
   return (
     <Tooltip text={`:${name}:`}>
       {/* eslint-disable-next-line @next/next/no-img-element */}

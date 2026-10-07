@@ -1,5 +1,6 @@
 import { customAlerts } from "@/components/ui/customAlerts";
 import Emoji from "@/components/ui/Emoji";
+import Tooltip from "@/components/ui/Tooltip";
 import TwitterCard, { TwitterCardProps } from "@/components/ui/TwitterCard";
 import { clipPaths } from "@/lib/constants";
 import type { Emoji as EmojiType } from "@/lib/emojis";
@@ -157,7 +158,7 @@ export default async function Post({
           >
             <Emoji name="typewriter" />
 
-            <span>Edit post</span>
+            <Tooltip text="Edit this post on GitHub">Edit post</Tooltip>
           </Link>
         </div>
       </u>
