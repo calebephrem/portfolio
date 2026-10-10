@@ -15,7 +15,7 @@ export default function Credits() {
     <div className="min-h-[80dvh] flex flex-col gap-lg">
       <div className="flex flex-col items-center gap-md">
         <h1 className="text-5xl outlined text-accent-primary">
-          Credits <Emoji name="panda_heart" size={36} />
+          Credits <Emoji name="heart" size={36} />
         </h1>
 
         <p>Credits to all who made this site a site</p>
@@ -91,7 +91,7 @@ export default function Credits() {
 
           <p>
             <Credit link="https://louiszn.fyi">Louiszn</Credit> for suggesting
-            layout/spacing, font family, and a <Emoji name="blobcat_eyeblink" />
+            layout/spacing, font family, and a <Emoji name="blink" />
           </p>
 
           <p>
@@ -100,7 +100,7 @@ export default function Credits() {
               transferring
             </Credit>{" "}
             the <Link href="https://caleb.is-a.dev">caleb.is-a.dev</Link>{" "}
-            subdomain over to my account <Emoji name="panda_heart" />
+            subdomain over to my account <Emoji name="heart" />
           </p>
         </div>
       </div>

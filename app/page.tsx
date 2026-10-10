@@ -35,14 +35,12 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          Stuff I like doing <Emoji name="panda_heart" size={28} />
+          Stuff I like doing <Emoji name="heart" size={28} />
         </h1>
 
         <ul>
           <li>
-            Building stuff in <u>TypeScript, Next.js, and Tailwind</u>. Making
-            it look good is the easy part. Making it not fall over is the actual
-            job.
+            Building stuff in <u>TypeScript, Next.js, Tailwind, and others</u>.
           </li>
           <li>
             Making bots, extensions, tools, and full stack sites for clients,
@@ -198,7 +196,7 @@ export default async function Home() {
               title: "Quantum VSCode Theme",
               description:
                 "Beautify your IDE with the best combos of blue, lime, yellow, purple and more!",
-              link: "https://marketplace.visualstudio.com/items?itemName=CalebEphrem.quantum",
+              link: "/r/quantum-vscode",
             },
             {
               banner:
@@ -237,7 +235,7 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          GitHub Activity <Emoji name="cat_typing" size={28} />
+          GitHub Activity <Emoji name="typing" size={28} />
         </h1>
 
         <Link

@@ -30,7 +30,7 @@ export default function Footer() {
         </span>
 
         <Link href="/credits">
-          <u>Credits</u> <Emoji name="panda_heart" />
+          <u>Credits</u> <Emoji name="heart" />
         </Link>
       </div>
 
