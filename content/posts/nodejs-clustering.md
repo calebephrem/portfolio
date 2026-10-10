@@ -14,22 +14,22 @@ According to the [Node.js docs](https://nodejs.org/api/cluster.html), clusters o
 :::card{title="Cluster" description="Clusters of Node.js processes can be used to run multiple instances of Node.js that can distribute workloads among their application threads." footer="nodejs.org" img="https://topdev.vn/blog/wp-content/uploads/2019/04/nodejs-la-gi-768x491.jpg" link="https://nodejs.org/docs/latest-v24.x/api/cluster.html"}
 :::
 
-## Why Use Clustering
+# Why Use Clustering
 
 Node.js runs your JavaScript code on a single thread, so one process can only use one CPU core. On an 4 cored server, that leaves 3 cores sitting on the couch eating chips while one is fighting for its life :emoji{name="giggle"}. <mark>Clustering can be used to ensure all CPU cores are used to distribute work across all workers.</mark>
 
-## When To Use Clustering
+# When To Use Clustering
 
 When you have alot of incoming HTTP requests that require heavy computation. It helps with distributing the load to independant workers, making the response time faster with less errors. Note that it won't help that much if your app mostly waits on databases or APIs, since Node.js already handles those things well on a single thread.
 
 Let's test that out, shall we?
 
-## Tests
+# Tests
 
 > [!INFO]
 > The test below uses [the hono web framework](https://hono.dev). You can go with [express](http://expressjs.com/) or whatever you're comfortable with.
 
-### Without Clustering
+## Without Clustering
 
 `index.ts`:
 
@@ -93,7 +93,7 @@ Percentage of requests served within a certain time
 > [!TIP]
 > `loadtest` ran on 2 cores here and each core gets the full `-c` value, so `-c 500` means 1000 concurrent clients in total.
 
-### With Clustering
+## With Clustering
 
 `index.ts` stays the same, `cluster.ts`:
 
@@ -151,7 +151,7 @@ Percentage of requests served within a certain time
  100%      26603 ms (longest request)
 ```
 
-### Summary
+## Summary
 
 | Metric                | Without Clustering    | With Clustering       | Benefit of Clustering           |
 | --------------------- | --------------------- | --------------------- | ------------------------------- |
@@ -165,7 +165,7 @@ Percentage of requests served within a certain time
 | 99th Percentile (p99) | 30,219 ms             | 26,391 ms             | 12.7% faster                    |
 | Max Latency (p100)    | 30,220 ms             | 26,603 ms             | ~3.6 seconds lower peak latency |
 
-## Better Clustering With PM2
+# Better Clustering With PM2
 
 Instead of manually running clustering, production can better handle using the [pm2 npm package](http://npmjs.com/package/pm2). "PM2 is a production process manager for Node.js/Bun applications with a built-in load balancer. It allows you to keep applications alive forever, to reload them without downtime and to facilitate common system admin tasks" (PM2). It's as easy as:
 
@@ -176,7 +176,7 @@ pm2 start index.js -i max
 > [!NOTE]
 > Without `-i <processes>`, PM2 runs a single process and doesn't cluster anything.
 
-## Conclusion
+# Conclusion
 
 Node.js runs your JavaScript on a single thread, so on a multi-core server most of your CPU sits idle while one core handles everything. Clustering fixes that by summoning workers per core, all sharing the same port, with the master process handling the workers and spawning another one on crash.
 
@@ -187,7 +187,7 @@ In our tests, the same machine and the same app code went from timing out on 381
 
 For production, you can just skip the `cluster.ts` file and use PM2 (`pm2 start index.js -i max`). You get clustering, crash recovery, and some other additional features out of the box.
 
-## Sources
+# Sources
 
 - "Cluster." _Node.js_, [nodejs.org/api/cluster.html](https://nodejs.org/api/cluster.html).
 - Loban, Volodymyr. "Clustering in Node.js." _Medium_, 22 Sep. 2024, [medium.com/@vloban/clustering-in-node-js-4e0bf17b7f0b](https://medium.com/@vloban/clustering-in-node-js-4e0bf17b7f0b).
