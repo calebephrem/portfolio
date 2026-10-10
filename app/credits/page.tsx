@@ -21,42 +21,6 @@ export default function Credits() {
         <p>Credits to all who made this site a site</p>
       </div>
 
-      {/*<div className="grid lg:grid-cols-2 gap-sm">
-        {[
-          {
-            title: "Portfolio",
-            description:
-              "a snapshot of who I am as a developer. My style, my craft, and my ongoing evolution.",
-            link: `/r/portfolio`,
-          },
-          {
-            title: "Quantum VSCode Theme",
-            description:
-              "Beautify your IDE with the best combos of blue, lime, yellow, purple and more!",
-            link: "https://marketplace.visualstudio.com/items?itemName=CalebEphrem.quantum",
-          },
-          {
-            title: "QuillBot",
-            description:
-              "Advanced Discord developer assistant for coding, documentation lookup, and more",
-            link: "https://github.com/open-devhub/quillbot",
-          },
-        ].map(({ title, description, link }, i) => (
-          <Link
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            key={title}
-            className="flex flex-col gap-xs bg-bg-secondary p-md shadow-md secondary"
-            style={{ clipPath: clipPaths[i % clipPaths.length] }}
-          >
-            <h1 className="text-2xl">{title}</h1>
-
-            <p>{description}</p>
-          </Link>
-        ))}
-      </div>*/}
-
       <div className="flex flex-col gap-md">
         <div className="flex flex-col gap-sm">
           <h1 className="text-2xl">Inspiration</h1>
@@ -110,6 +74,16 @@ export default function Credits() {
             <Credit link="https://emoji.gg/">emoji.gg</Credit>{" "}
             <Emoji name="nuke" />
           </p>
+
+          <p>
+            Some images (like my pfp) are from{" "}
+            <Credit link="https://pinterest.com">Pinterest</Credit>
+          </p>
+
+          <p>
+            88x31 buttons from{" "}
+            <Credit link="https://louiszn.fyi">Louiszn</Credit>
+          </p>
         </div>
 
         <div className="flex flex-col gap-sm">
@@ -118,6 +92,15 @@ export default function Credits() {
           <p>
             <Credit link="https://louiszn.fyi">Louiszn</Credit> for suggesting
             layout/spacing, font family, and a <Emoji name="blobcat_eyeblink" />
+          </p>
+
+          <p>
+            <Credit link="https://calebden.io">Caleb Denio</Credit> for
+            <Credit link="https://github.com/is-a-dev/register/pull/673">
+              transferring
+            </Credit>{" "}
+            the <Link href="https://caleb.is-a.dev">caleb.is-a.dev</Link>{" "}
+            subdomain over to my account <Emoji name="panda_heart" />
           </p>
         </div>
       </div>
