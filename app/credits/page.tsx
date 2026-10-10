@@ -45,9 +45,10 @@ export default function Credits() {
             </Credit>{" "}
             for making the entire website,{" "}
             <Credit link="https://www.cloudflare.com/">Cloudflare</Credit> for
-            hosting it entirely for free, and{" "}
-            <Credit link="https://github.com">GitHub</Credit> for hosting the
-            source code of this site for free as well.
+            hosting it entirely for free,{" "}
+            <Credit link="https://is-a.dev">is-a.dev</Credit> for the nice
+            subdomain, and <Credit link="https://github.com">GitHub</Credit> for
+            hosting the source code of this site for free as well.
           </p>
         </div>
 
@@ -76,13 +77,34 @@ export default function Credits() {
           </p>
 
           <p>
-            Some images (like my pfp) are from{" "}
-            <Credit link="https://pinterest.com">Pinterest</Credit>
+            Image {'"me"'} (red panda standing with its feet looking up) by{" "}
+            <Credit link="https://www.pinterest.com/ruachuonggio/">
+              ruachuonggio
+            </Credit>{" "}
+            on{" "}
+            <Credit link="https://www.pinterest.com/pin/589267932532734665/">
+              Pinterest
+            </Credit>
           </p>
 
           <p>
-            88x31 buttons from{" "}
-            <Credit link="https://louiszn.fyi">Louiszn</Credit>
+            Pfp (red panda drinking coke) by{" "}
+            <Credit link="https://www.pinterest.com/xmorslnx/">xmorslnx</Credit>{" "}
+            on{" "}
+            <Credit link="https://www.pinterest.com/pin/880805639640685446/">
+              Pinterest
+            </Credit>
+          </p>
+
+          <p>
+            88x31 button of this site by{" "}
+            <Credit link="https://unsplash.com/@nikol_royce?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              ran liwen
+            </Credit>{" "}
+            on{" "}
+            <Credit link="https://unsplash.com/photos/a-red-panda-sleeping-on-top-of-a-wooden-fence-4-a-KjMTAkE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+              Unsplash
+            </Credit>
           </p>
         </div>
 
@@ -91,16 +113,14 @@ export default function Credits() {
 
           <p>
             <Credit link="https://louiszn.fyi">Louiszn</Credit> for suggesting
-            layout/spacing, font family, and a <Emoji name="blink" />
+            layout/spacing, font family, and a <Emoji name="cet" />
           </p>
 
           <p>
             <Credit link="https://calebden.io">Caleb Denio</Credit> for
-            <Credit link="https://github.com/is-a-dev/register/pull/673">
-              transferring
-            </Credit>{" "}
-            the <Link href="https://caleb.is-a.dev">caleb.is-a.dev</Link>{" "}
-            subdomain over to my account <Emoji name="heart" />
+            transferring the{" "}
+            <Link href="https://caleb.is-a.dev">caleb.is-a.dev</Link> subdomain
+            over to my account <Emoji name="heart" />
           </p>
         </div>
       </div>

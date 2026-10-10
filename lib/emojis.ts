@@ -12,7 +12,7 @@ export const emojis = {
   typewriter: "https://cdn3.emoji.gg/emojis/13912-vintagetypewriter.png",
   arrow: "https://cdn3.emoji.gg/emojis/471087-arrow-down.png",
   nuke: "https://cdn3.emoji.gg/emojis/13239-nuke.gif",
-  blink: "https://cdn3.emoji.gg/emojis/29020-blobcat-eyeblink.gif",
+  cet: "https://cdn3.emoji.gg/emojis/29020-blobcat-eyeblink.gif",
 };
 
 export type Emoji = keyof typeof emojis;
