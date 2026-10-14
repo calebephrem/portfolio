@@ -30,29 +30,18 @@ export default function Footer() {
         </span>
 
         <Link href="/credits">
-          <u>Credits</u> <Emoji name="panda_heart" />
+          <u>Credits</u> <Emoji name="heart" />
         </Link>
       </div>
 
       <div className="flex items-center gap-xxs">
-        <Link
-          href="https://voidlinux.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="-rotate-5"
-        >
-          <Tooltip text="Void Linux">
-            <Image src="/void.webp" alt="Void Linux" width={88} height={31} />
-          </Tooltip>
-        </Link>
-
         <Link
           href="https://youtu.be/dQw4w9WgXcQ"
           target="_blank"
           rel="noopener noreferrer"
           className="rotate-2"
         >
-          <Tooltip text="Made with my own two paws!">
+          <Tooltip text=":D">
             <Image
               src="/paws.gif"
               alt="Made with my own two paws!"
