@@ -151,7 +151,7 @@ export default async function Post({
           <div>{post.metadata.readingTime}</div>
 
           <Link
-            href={`${staticData.links.github}/portfolio/edit/main/content/posts/${slug}.md`}
+            href={`/r/portfolio/edit/main/content/posts/${slug}.md`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-xs secondary"
