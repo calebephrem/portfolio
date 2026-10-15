@@ -264,7 +264,7 @@ export default async function Home() {
           Find me online <Emoji name="coffee" size={28} />
         </h1>
 
-        <div className="flex items-center gap-md flex-wrap">
+        <div className="flex items-center gap-md flex-wrap lg:flex-nowrap">
           {[
             {
               icon: "https://img.icons8.com/?size=100&id=106562&format=png&color=000000",
@@ -302,7 +302,7 @@ export default async function Home() {
               target="_blank"
               rel="noopener noreferrer"
               key={label}
-              className="flex items-center gap-md bg-bg-secondary p-sm"
+              className="flex items-center gap-sm bg-bg-secondary p-sm"
             >
               <Image
                 src={icon}
@@ -312,7 +312,7 @@ export default async function Home() {
                 className="shrink-0 w-8"
               />
 
-              <span>{label}</span>
+              <span className="whitespace-nowrap">{label}</span>
             </Link>
           ))}
         </div>
