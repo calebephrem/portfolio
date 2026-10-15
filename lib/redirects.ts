@@ -24,7 +24,7 @@ const redirects: { sources: string[]; destination: string }[] = [
   },
   {
     sources: ["/p/:slug"],
-    destination: `/posts/:slug*`,
+    destination: `/posts/:slug`,
   },
 
   {
@@ -32,7 +32,7 @@ const redirects: { sources: string[]; destination: string }[] = [
     destination: `${staticData.links.github}/repositories`,
   },
   {
-    sources: ["/repo/:repo", "/r/:repo"],
+    sources: ["/repo/:repo*", "/r/:repo*"],
     destination: `${staticData.links.github}/:repo*`,
   },
 ];
