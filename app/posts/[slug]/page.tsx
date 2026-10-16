@@ -1,7 +1,7 @@
+import TwitterCard, { CardProps } from "@/components/ui/Card";
 import { customAlerts } from "@/components/ui/customAlerts";
 import Emoji from "@/components/ui/Emoji";
 import Tooltip from "@/components/ui/Tooltip";
-import TwitterCard, { TwitterCardProps } from "@/components/ui/TwitterCard";
 import { clipPaths } from "@/lib/constants";
 import type { Emoji as EmojiType } from "@/lib/emojis";
 import staticData from "@/lib/staticdata";
@@ -16,6 +16,7 @@ import remarkDirective from "remark-directive";
 import remarkDirectiveRehype from "remark-directive-rehype";
 import remarkGfm from "remark-gfm";
 import { getPost, getPosts } from "../loader";
+import { Card } from "../page";
 
 export async function generateMetadata({
   params,
@@ -86,7 +87,8 @@ export default async function Post({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = await getPost(slug);
+  const posts = await getPosts();
+  const post = posts.find((p) => p.slug === slug);
 
   if (!post) notFound();
 
@@ -121,10 +123,8 @@ export default async function Post({
 
         <p>{post.metadata.description}</p>
 
-        <div className="flex items-center gap-md">
+        <div className="grid grid-cols-2 md:grid-cols-4 items-center w-fit gap-sm">
           <div className="flex items-center gap-sm">
-            {/*<Emoji name="typewriter" size={32} />*/}
-
             {post.metadata.authors.map((author) => (
               <Link
                 href={author.social}
@@ -174,7 +174,7 @@ export default async function Post({
           rehypePlugins={[rehypeRaw, [rehypeShiki, { theme: "github-light" }]]}
           components={
             {
-              card: (props: TwitterCardProps) => <TwitterCard {...props} />,
+              card: (props: CardProps) => <TwitterCard {...props} />,
               emoji: ({ name }: { name: string }) => (
                 <Emoji name={name as EmojiType} />
               ),
@@ -187,6 +187,26 @@ export default async function Post({
           {post.content}
         </MarkdownAsync>
       </article>
+
+      <div className="flex flex-col gap-sm">
+        <div className="flex items-center gap-sm">
+          <Emoji name="arrow" />
+
+          <h1 className="text-3xl">Read more</h1>
+
+          <Emoji name="arrow" />
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-sm">
+          {posts
+            // TODO: uncomment the line below (and remove this one) on the next post
+            // .filter((post) => post.slug !== slug)
+            .slice(0, 3)
+            .map((post, i) => (
+              <Card post={post} i={i} key={i} />
+            ))}
+        </div>
+      </div>
     </div>
   );
 }

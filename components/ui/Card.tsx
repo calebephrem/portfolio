@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export interface TwitterCardProps {
+export interface CardProps {
   title: string;
   description: string;
   img: string;
@@ -9,19 +9,19 @@ export interface TwitterCardProps {
   footer: string;
 }
 
-export default function TwitterCard({
+export default function Card({
   title,
   description,
   img,
   link,
   footer,
-}: TwitterCardProps) {
+}: CardProps) {
   return (
     <Link
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex items-center justify-between bg-none bg-bg-secondary py-md px-lg  no-underline! hover:bg-bg-tertiary gap-lg"
+      className="flex flex-col sm:flex-row items-center justify-between bg-none bg-bg-secondary py-md px-lg  no-underline! hover:bg-bg-tertiary gap-lg"
       style={{
         clipPath:
           "polygon(0.5% 0.5%, 50% 1.8%, 99.5% 0.5%, 98.5% 50%, 99.5% 99.5%, 50% 98.2%, 0.5% 99.5%, 1.5% 50%)",

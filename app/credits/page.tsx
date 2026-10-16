@@ -99,7 +99,7 @@ export default function Credits() {
           </p>
 
           <p>
-            Pfp (red panda drinking coke) by{" "}
+            Pfp (red panda sipping coke) by{" "}
             <Credit link="https://www.pinterest.com/xmorslnx/">xmorslnx</Credit>{" "}
             on{" "}
             <Credit link="https://www.pinterest.com/pin/880805639640685446/">
