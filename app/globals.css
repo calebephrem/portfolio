@@ -261,7 +261,7 @@ html.lenis body {
       @apply bg-bg-secondary px-xxs font-code text-sm;
     }
     pre code {
-      @apply block p-sm;
+      @apply block p-sm text-wrap;
     }
 
     blockquote {

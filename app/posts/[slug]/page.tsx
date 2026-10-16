@@ -1,7 +1,7 @@
+import TwitterCard, { CardProps } from "@/components/ui/Card";
 import { customAlerts } from "@/components/ui/customAlerts";
 import Emoji from "@/components/ui/Emoji";
 import Tooltip from "@/components/ui/Tooltip";
-import TwitterCard, { TwitterCardProps } from "@/components/ui/TwitterCard";
 import { clipPaths } from "@/lib/constants";
 import type { Emoji as EmojiType } from "@/lib/emojis";
 import staticData from "@/lib/staticdata";
@@ -123,10 +123,8 @@ export default async function Post({
 
         <p>{post.metadata.description}</p>
 
-        <div className="flex items-center gap-md">
+        <div className="grid grid-cols-2 md:grid-cols-4 items-center w-fit gap-sm">
           <div className="flex items-center gap-sm">
-            {/*<Emoji name="typewriter" size={32} />*/}
-
             {post.metadata.authors.map((author) => (
               <Link
                 href={author.social}
@@ -176,7 +174,7 @@ export default async function Post({
           rehypePlugins={[rehypeRaw, [rehypeShiki, { theme: "github-light" }]]}
           components={
             {
-              card: (props: TwitterCardProps) => <TwitterCard {...props} />,
+              card: (props: CardProps) => <TwitterCard {...props} />,
               emoji: ({ name }: { name: string }) => (
                 <Emoji name={name as EmojiType} />
               ),
