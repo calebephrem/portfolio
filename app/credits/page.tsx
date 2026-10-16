@@ -56,14 +56,24 @@ export default function Credits() {
           <h1 className="text-2xl">Fonts</h1>
 
           <p>
-            <Credit link="https://fonts.google.com/specimen/Caveat+Brush?preview.script=Latn">
+            <Credit link="https://fonts.google.com/specimen/Caveat+Brush">
               Caveat Brush
             </Credit>{" "}
-            for the heading texts, and{" "}
-            <Credit link="https://fonts.google.com/specimen/Patrick+Hand?preview.script=Latn">
+            for heading texts.
+          </p>
+
+          <p>
+            <Credit link="https://fonts.google.com/specimen/Patrick+Hand">
               Patrick Hand
             </Credit>{" "}
             for body/long content.
+          </p>
+
+          <p>
+            <Credit link="https://fonts.google.com/specimen/Fira+Code">
+              Fira Code
+            </Credit>{" "}
+            for code blocks.
           </p>
         </div>
 
@@ -85,6 +95,7 @@ export default function Credits() {
             <Credit link="https://www.pinterest.com/pin/589267932532734665/">
               Pinterest
             </Credit>
+            .
           </p>
 
           <p>
@@ -94,10 +105,11 @@ export default function Credits() {
             <Credit link="https://www.pinterest.com/pin/880805639640685446/">
               Pinterest
             </Credit>
+            .
           </p>
 
           <p>
-            88x31 button of this site by{" "}
+            <Credit link="/88x31.jpg">88x31 button of this site</Credit> by{" "}
             <Credit link="https://unsplash.com/@nikol_royce?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
               ran liwen
             </Credit>{" "}
@@ -105,6 +117,7 @@ export default function Credits() {
             <Credit link="https://unsplash.com/photos/a-red-panda-sleeping-on-top-of-a-wooden-fence-4-a-KjMTAkE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
               Unsplash
             </Credit>
+            .
           </p>
         </div>
 
@@ -119,8 +132,8 @@ export default function Credits() {
           <p>
             <Credit link="https://calebden.io">Caleb Denio</Credit> for
             transferring the{" "}
-            <Link href="https://caleb.is-a.dev">caleb.is-a.dev</Link> subdomain
-            over to my account <Emoji name="heart" />
+            <Credit link="https://caleb.is-a.dev">caleb.is-a.dev</Credit>{" "}
+            subdomain over to my account <Emoji name="heart" />
           </p>
         </div>
       </div>
