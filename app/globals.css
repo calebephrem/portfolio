@@ -175,7 +175,7 @@ html.lenis body {
   }
 
   ::-webkit-scrollbar {
-    @apply w-1;
+    @apply w-1 h-1;
   }
 
   ::-webkit-scrollbar-track {
@@ -299,24 +299,26 @@ html.lenis body {
       }
     }
 
-    table {
-      /*@apply border-separate border-spacing-sm;*/
+    .table-wrapper {
+      @apply overflow-x-auto lg:overflow-x-hidden;
 
-      th {
-        @apply font-display font-normal text-xl bg-bg-tertiary;
-      }
+      table {
+        th {
+          @apply font-display font-normal text-xl bg-bg-tertiary;
+        }
 
-      th,
-      td {
-        @apply p-sm border-b border-accent-primary;
-      }
+        th,
+        td {
+          @apply p-sm border-b border-accent-primary;
+        }
 
-      tr {
-        @apply whitespace-nowrap hover:bg-bg-secondary;
-      }
+        tr {
+          @apply whitespace-nowrap hover:bg-bg-secondary;
+        }
 
-      tr:nth-child(even) {
-        @apply bg-bg-secondary hover:bg-bg-tertiary;
+        tr:nth-child(even) {
+          @apply bg-bg-secondary hover:bg-bg-tertiary;
+        }
       }
     }
   }

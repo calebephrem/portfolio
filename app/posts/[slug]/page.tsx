@@ -181,6 +181,11 @@ export default async function Post({
               a: ({ ...props }) => (
                 <a {...props} target="_blank" rel="noopener noreferrer" />
               ),
+              table: ({ children, ...props }) => (
+                <div className="table-wrapper">
+                  <table {...props}>{children}</table>
+                </div>
+              ),
             } as Components
           }
         >
