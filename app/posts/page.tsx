@@ -10,7 +10,7 @@ export function Card({ post, i }: { post: PostData; i: number }) {
   return (
     <Link
       key={slug}
-      href={external ? slug : `/p/${slug}`}
+      href={external ? slug : `/posts/${slug}`}
       target={external ? "_blank" : "_self"}
       rel="noopener noreferrer"
       className={

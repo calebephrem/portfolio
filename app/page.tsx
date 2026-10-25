@@ -48,9 +48,9 @@ export default async function Home() {
             now.
           </li>
           <li>
-            Trying to write code the next person can actually read, since{" "}
-            {"that's"} usually just me in three months having forgotten how any
-            of it works <Emoji name="giggle" />
+            Trying to write code the next person can read, since {"that's"}{" "}
+            usually me in three months having forgotten how any of it works{" "}
+            <Emoji name="giggle" />
           </li>
           <li>
             <mark className="secondary">

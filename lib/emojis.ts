@@ -8,11 +8,14 @@ export const emojis = {
   coffee: "https://cdn3.emoji.gg/emojis/40920-sip.gif",
   angel: "https://cdn3.emoji.gg/emojis/501919-florkangel.png",
   sipspin: "https://cdn3.emoji.gg/emojis/75754-pepesipspin.gif",
-  // sip: "https://cdn3.emoji.gg/emojis/37657-sip.png",
   typewriter: "https://cdn3.emoji.gg/emojis/13912-vintagetypewriter.png",
   arrow: "https://cdn3.emoji.gg/emojis/471087-arrow-down.png",
   nuke: "https://cdn3.emoji.gg/emojis/13239-nuke.gif",
   cet: "https://cdn3.emoji.gg/emojis/29020-blobcat-eyeblink.gif",
+  redstone: "https://cdn3.emoji.gg/emojis/21630-redstone.png",
+  twitter: "https://cdn3.emoji.gg/emojis/215782-neon-twitter-bird.png",
+  facebook: "https://cdn3.emoji.gg/emojis/80154-facebook.png",
+  linkedin: "https://cdn3.emoji.gg/emojis/64718-linkedin-pixel.png",
 };
 
 export type Emoji = keyof typeof emojis;
