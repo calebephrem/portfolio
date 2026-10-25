@@ -1,5 +1,6 @@
 import Emoji from "@/components/ui/Emoji";
 import { clipPaths } from "@/lib/constants";
+import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
 import { getPosts, PostData } from "./loader";
@@ -10,7 +11,11 @@ export function Card({ post, i }: { post: PostData; i: number }) {
   return (
     <Link
       key={slug}
-      href={external ? slug : `/posts/${slug}`}
+      href={
+        external
+          ? `${staticData.site.shortUrl}/e/${metadata.id}`
+          : `/posts/${slug}`
+      }
       target={external ? "_blank" : "_self"}
       rel="noopener noreferrer"
       className={

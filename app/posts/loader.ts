@@ -10,6 +10,7 @@ import z from "zod";
 export interface PostData {
   slug: string;
   metadata: Omit<z.infer<typeof postSchema>, "authors"> & {
+    id?: string;
     authors: Author[];
     readingTime: string;
   };

@@ -18,3 +18,5 @@
 
 /p /posts 302
 /p/* /posts/:splat 302
+
+/e/* /external/:splat 302
