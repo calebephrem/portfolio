@@ -17,6 +17,7 @@ import remarkDirectiveRehype from "remark-directive-rehype";
 import remarkGfm from "remark-gfm";
 import { getPost, getPosts } from "../loader";
 import { Card } from "../page";
+import CopyLink from "./CopyLink";
 
 export async function generateMetadata({
   params,
@@ -123,7 +124,7 @@ export default async function Post({
 
         <p>{post.metadata.description}</p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 items-center w-fit gap-sm">
+        <div className="flex flex-wrap items-center gap-sm md:gap-md">
           <div className="flex items-center gap-sm">
             {post.metadata.authors.map((author) => (
               <Link
@@ -154,12 +155,40 @@ export default async function Post({
             href={`/r/portfolio/edit/main/content/posts/${slug}.md`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-xs secondary"
+            className="flex items-center gap-xs secondary w-fit"
           >
             <Emoji name="typewriter" />
 
             <Tooltip text="Edit this post on GitHub">Edit post</Tooltip>
           </Link>
+
+          <CopyLink slug={slug} />
+
+          <div className="flex items-center gap-xs">
+            <Link
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${post.metadata.title}\n\n${post.metadata.description}`)}&url=${encodeURIComponent(`${staticData.site.shortUrl}/p/${slug}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Emoji name="twitter" />
+            </Link>
+
+            <Link
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${staticData.site.shortUrl}/p/${slug}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Emoji name="facebook" />
+            </Link>
+
+            <Link
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${staticData.site.shortUrl}/p/${slug}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Emoji name="linkedin" />
+            </Link>
+          </div>
         </div>
       </u>
 

@@ -2,7 +2,8 @@ const staticData = {
   name: "Caleb Ephrem",
 
   site: {
-    url: "https://calev.pages.dev",
+    url: "https://caleb.is-a.dev",
+    shortUrl: "https://clb.is-a.dev",
     description:
       "A creative developer based in Ethiopia, making and building things that work and don't hurt to look at.",
   },
