@@ -9,7 +9,7 @@ export default function CopyLink({ slug }: { slug: string }) {
     <div
       className="flex items-center gap-xs secondary"
       onClick={() =>
-        navigator.clipboard.writeText(`${staticData.site.shortUrl}/p/${slug}`)
+        navigator.clipboard.writeText(`${staticData.site.url}/p/${slug}`)
       }
     >
       <Emoji name="redstone" />

@@ -166,7 +166,7 @@ export default async function Post({
 
           <div className="flex items-center gap-xs">
             <Link
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${post.metadata.title}\n\n${post.metadata.description}`)}&url=${encodeURIComponent(`${staticData.site.shortUrl}/p/${slug}`)}`}
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${post.metadata.title}\n\n${post.metadata.description}`)}&url=${encodeURIComponent(`${staticData.site.url}/p/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -174,7 +174,7 @@ export default async function Post({
             </Link>
 
             <Link
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${staticData.site.shortUrl}/p/${slug}`)}`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${staticData.site.url}/p/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -182,7 +182,7 @@ export default async function Post({
             </Link>
 
             <Link
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${staticData.site.shortUrl}/p/${slug}`)}`}
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${staticData.site.url}/p/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
