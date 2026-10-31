@@ -20,4 +20,4 @@
 /b/* /blog/:splat 302
 /posts /blog 302
 /p/* /blog/:splat 302
-/post/* /blog/:splat 302
+/posts/* /blog/:splat 302
