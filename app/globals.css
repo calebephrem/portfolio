@@ -303,7 +303,7 @@ html.lenis body {
       @apply overflow-x-auto lg:overflow-x-hidden;
 
       table {
-          @apply w-full;
+        @apply w-full;
         th {
           @apply font-display font-normal text-xl bg-bg-tertiary;
         }
