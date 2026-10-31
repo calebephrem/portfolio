@@ -15,5 +15,22 @@
     "tags": ["linux", "void"],
     "link": "https://louiszn.fyi/posts/why-i-chose-void",
     "readingTime": "8 min read"
+  },
+  {
+    "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
+    "description": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
+    "banner": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/posts/2025/07/security.png",
+    "date": "July 7, 2025",
+    "authors": [
+      {
+        "name": "Khuong",
+        "avatar": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/commons/avatar.jpg",
+        "social": "https://x.com/lamngockhuong"
+      }
+    ],
+    "featured": false,
+    "tags": ["security", "javascript", "signatures"],
+    "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
+    "readingTime": "1 min read"
   }
 ]
