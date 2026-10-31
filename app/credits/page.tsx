@@ -87,6 +87,12 @@ export default function Credits() {
           </p>
 
           <p>
+            Banner images of posts from{" "}
+            <Credit link="https://unsplash.com/">Unsplash</Credit> and{" "}
+            <Credit link="https://www.pexels.com/">Pexels</Credit>.
+          </p>
+
+          <p>
             Image {'"me"'} (red panda standing with its feet looking up) by{" "}
             <Credit link="https://www.pinterest.com/ruachuonggio/">
               ruachuonggio
