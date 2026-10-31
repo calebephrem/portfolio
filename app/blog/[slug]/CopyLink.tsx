@@ -9,12 +9,12 @@ export default function CopyLink({ slug }: { slug: string }) {
     <div
       className="flex items-center gap-xs secondary"
       onClick={() =>
-        navigator.clipboard.writeText(`${staticData.site.url}/p/${slug}`)
+        navigator.clipboard.writeText(`${staticData.site.url}/b/${slug}`)
       }
     >
       <Emoji name="redstone" />
 
-      <Tooltip text="Copy post link!">
+      <Tooltip text="Copy link!">
         <u className="cursor-pointer">Copy link</u>
       </Tooltip>
     </div>

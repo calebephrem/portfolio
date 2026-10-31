@@ -1,6 +1,6 @@
 import z from "zod";
 
-export const postSchema = z.object({
+export const blogSchema = z.object({
   title: z.string().nonempty(),
   description: z.string().min(10),
   banner: z.url(),

@@ -87,7 +87,7 @@ export default function Credits() {
           </p>
 
           <p>
-            Banner images of posts from{" "}
+            Banner images of blog posts from{" "}
             <Credit link="https://unsplash.com/">Unsplash</Credit> and{" "}
             <Credit link="https://www.pexels.com/">Pexels</Credit>.
           </p>
