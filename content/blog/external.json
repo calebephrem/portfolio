@@ -11,10 +11,10 @@
         "social": "https://codeberg.org/louiszn"
       }
     ],
-    "featured": false,
     "tags": ["linux", "void"],
     "link": "https://louiszn.fyi/posts/why-i-chose-void",
-    "readingTime": "8 min read"
+    "readingTime": "8 min read",
+    "featured": true
   },
   {
     "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
@@ -28,9 +28,9 @@
         "social": "https://x.com/lamngockhuong"
       }
     ],
-    "featured": false,
     "tags": ["security", "javascript", "signatures"],
     "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
-    "readingTime": "1 min read"
+    "readingTime": "1 min read",
+    "featured": false
   }
 ]

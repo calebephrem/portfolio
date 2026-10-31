@@ -231,7 +231,7 @@ export default async function BlogPost({
           <Emoji name="arrow" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-sm">
+        <div className="flex flex-col gap-sm">
           {blogs
             .filter((blog) => blog.slug !== slug)
             .slice(0, 3)

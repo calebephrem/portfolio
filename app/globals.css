@@ -76,7 +76,7 @@ html.lenis body {
     @apply cursor-pointer;
   }
 
-  a {
+  a:not(.undecorated) {
     @apply relative z-0 p-xxs transition-all;
 
     background-image: linear-gradient(
