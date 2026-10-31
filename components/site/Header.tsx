@@ -6,7 +6,7 @@ import Tooltip from "../ui/Tooltip";
 export default function Header() {
   return (
     <header className="flex items-center justify-between py-sm mb-sm">
-      <Link href="/" className="flex items-center gap-sm">
+      <Link href="/" className="hidden md:flex items-center gap-sm">
         <Image
           src="/pfp.jpg"
           height={36}
