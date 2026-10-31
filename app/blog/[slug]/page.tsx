@@ -15,7 +15,7 @@ import rehypeRaw from "rehype-raw";
 import remarkDirective from "remark-directive";
 import remarkDirectiveRehype from "remark-directive-rehype";
 import remarkGfm from "remark-gfm";
-import { getPost, getPosts } from "../loader";
+import { getBlog, getBlogs } from "../loader";
 import { Card } from "../page";
 import CopyLink from "./CopyLink";
 
@@ -25,11 +25,11 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const post = await getPost(slug);
+  const blog = await getBlog(slug);
 
-  if (!post) return { title: "Not Found" };
+  if (!blog) return { title: "Not Found" };
 
-  const { title, description, banner, authors } = post.metadata;
+  const { title, description, banner, authors } = blog.metadata;
 
   return {
     title,
@@ -41,7 +41,7 @@ export async function generateMetadata({
     openGraph: {
       type: "article",
       locale: "en_US",
-      url: `${staticData.site.url}/posts/${slug}`,
+      url: `${staticData.site.url}/blog/${slug}`,
       siteName: staticData.name,
       title,
       description,
@@ -77,34 +77,34 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  const posts = await getPosts();
+  const blog = await getBlogs();
 
-  return posts.map(({ slug }) => ({ slug }));
+  return blog.map(({ slug }) => ({ slug }));
 }
 
-export default async function Post({
+export default async function BlogPost({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const posts = await getPosts();
-  const post = posts.find((p) => p.slug === slug);
+  const blogs = await getBlogs();
+  const blog = blogs.find((p) => p.slug === slug);
 
-  if (!post) notFound();
+  if (!blog) notFound();
 
   return (
     <div className="flex flex-col gap-md">
       <u className="flex flex-col gap-md py-md">
-        <Link href="/posts" className="w-fit flex items-center gap-sm">
+        <Link href="/blog" className="w-fit flex items-center gap-sm">
           <Emoji name="arrow" className="rotate-90" />
 
-          <span>Back to Posts</span>
+          <span>Back to Blog</span>
         </Link>
 
         <div className="flex items-center gap-sm">
           <div className="flex flex-wrap shrink-0 gap-xxs">
-            {post.metadata.tags.map((tag, i) => (
+            {blog.metadata.tags.map((tag, i) => (
               <div
                 key={tag}
                 className="flex items-center gap-sm bg-bg-secondary overflow-hidden p-xs hover:bg-bg-tertiary"
@@ -119,14 +119,14 @@ export default async function Post({
         </div>
 
         <h1 className="text-5xl outlined text-accent-primary">
-          {post.metadata.title}
+          {blog.metadata.title}
         </h1>
 
-        <p>{post.metadata.description}</p>
+        <p>{blog.metadata.description}</p>
 
         <div className="flex flex-wrap items-center gap-sm md:gap-md">
           <div className="flex items-center gap-sm">
-            {post.metadata.authors.map((author) => (
+            {blog.metadata.authors.map((author) => (
               <Link
                 href={author.social}
                 target="_blank"
@@ -147,26 +147,26 @@ export default async function Post({
             ))}
           </div>
 
-          <div>{new Date(post.metadata.date).toLocaleDateString()}</div>
+          <div>{new Date(blog.metadata.date).toLocaleDateString()}</div>
 
-          <div>{post.metadata.readingTime}</div>
+          <div>{blog.metadata.readingTime}</div>
 
           <Link
-            href={`/r/portfolio/edit/main/content/posts/${slug}.md`}
+            href={`/r/portfolio/edit/main/content/blog/${slug}.md`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-xs secondary w-fit"
           >
             <Emoji name="typewriter" />
 
-            <Tooltip text="Edit this post on GitHub">Edit post</Tooltip>
+            <Tooltip text="Edit this blog on GitHub">Edit blog</Tooltip>
           </Link>
 
           <CopyLink slug={slug} />
 
           <div className="flex items-center gap-xs">
             <Link
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${post.metadata.title}\n\n${post.metadata.description}`)}&url=${encodeURIComponent(`${staticData.site.url}/p/${slug}`)}`}
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${blog.metadata.title}\n\n${blog.metadata.description}`)}&url=${encodeURIComponent(`${staticData.site.url}/b/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -174,7 +174,7 @@ export default async function Post({
             </Link>
 
             <Link
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${staticData.site.url}/p/${slug}`)}`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`${staticData.site.url}/b/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -182,7 +182,7 @@ export default async function Post({
             </Link>
 
             <Link
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${staticData.site.url}/p/${slug}`)}`}
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${staticData.site.url}/b/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -218,7 +218,7 @@ export default async function Post({
             } as Components
           }
         >
-          {post.content}
+          {blog.content}
         </MarkdownAsync>
       </article>
 
@@ -232,11 +232,11 @@ export default async function Post({
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-sm">
-          {posts
-            .filter((post) => post.slug !== slug)
+          {blogs
+            .filter((blog) => blog.slug !== slug)
             .slice(0, 3)
-            .map((post, i) => (
-              <Card post={post} i={i} key={i} />
+            .map((blog, i) => (
+              <Card blog={blog} i={i} key={i} />
             ))}
         </div>
       </div>

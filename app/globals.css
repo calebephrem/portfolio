@@ -275,7 +275,7 @@ html.lenis body {
       }
 
       &.markdown-alert-danger {
-        @apply border-red-400 bg-red-400/10;
+        @apply border-red-400 hover:bg-red-400/20 bg-red-400/10;
 
         .markdown-alert-title {
           @apply text-red-500;
@@ -283,7 +283,7 @@ html.lenis body {
       }
 
       &.markdown-alert-warning {
-        @apply border-orange-400 bg-orange-400/10;
+        @apply border-orange-400 hover:bg-orange-400/20 bg-orange-400/10;
 
         .markdown-alert-title {
           @apply text-orange-500;
@@ -291,7 +291,7 @@ html.lenis body {
       }
 
       &.markdown-alert-note {
-        @apply border-blue-400 bg-blue-400/10;
+        @apply border-blue-400 hover:bg-blue-400/20 bg-blue-400/10;
 
         .markdown-alert-title {
           @apply text-blue-500;
@@ -303,6 +303,7 @@ html.lenis body {
       @apply overflow-x-auto lg:overflow-x-hidden;
 
       table {
+        @apply w-full;
         th {
           @apply font-display font-normal text-xl bg-bg-tertiary;
         }

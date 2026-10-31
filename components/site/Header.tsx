@@ -19,8 +19,8 @@ export default function Header() {
       </Link>
 
       <nav className="flex items-center gap-md font-display">
-        <Tooltip text="Posts!">
-          <Link href={`/posts`}>Posts</Link>
+        <Tooltip text="Blog posts!">
+          <Link href={`/blog`}>Blog</Link>
         </Tooltip>
 
         <Tooltip text="Email me!">

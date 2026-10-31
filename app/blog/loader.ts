@@ -1,15 +1,15 @@
 import { Author, authors as authorsData } from "@/content/authors";
-import externalPosts from "@/content/posts/external.json" with { type: "json" };
-import { postSchema } from "@/schemas/posts";
+import externalBlogs from "@/content/blog/external.json" with { type: "json" };
+import { blogSchema } from "@/schemas/blog";
 import fs from "fs/promises";
 import matter from "gray-matter";
 import path, { join } from "path";
 import readingTime from "reading-time";
 import z from "zod";
 
-export interface PostData {
+export interface BlogData {
   slug: string;
-  metadata: Omit<z.infer<typeof postSchema>, "authors"> & {
+  metadata: Omit<z.infer<typeof blogSchema>, "authors"> & {
     authors: Author[];
     readingTime: string;
   };
@@ -17,23 +17,17 @@ export interface PostData {
   external?: boolean;
 }
 
-// type ExternalPost = Omit<z.infer<typeof postSchema>, "authors"> & {
-//   link: string;
-//   readingTime: string;
-//   authors: Author[];
-// };
-
-export async function getPosts(): Promise<PostData[]> {
-  const postsDir = join(process.cwd(), "content", "posts");
-  const files = (await fs.readdir(postsDir)).filter((f) => f.endsWith(".md"));
-  const posts: PostData[] = [];
+export async function getBlogs(): Promise<BlogData[]> {
+  const blogsDir = join(process.cwd(), "content", "blog");
+  const files = (await fs.readdir(blogsDir)).filter((f) => f.endsWith(".md"));
+  const blogs: BlogData[] = [];
 
   for (const file of files) {
     const slug = path.basename(file, path.extname(file));
-    const filePath = join(postsDir, file);
+    const filePath = join(blogsDir, file);
     const raw = await fs.readFile(filePath, "utf-8");
     const { data, content } = matter(raw);
-    const result = postSchema.safeParse(data);
+    const result = blogSchema.safeParse(data);
 
     if (!result.success) continue;
 
@@ -44,7 +38,7 @@ export async function getPosts(): Promise<PostData[]> {
 
     // console.log(authors);
 
-    posts.push({
+    blogs.push({
       slug,
       metadata: {
         ...meta,
@@ -55,22 +49,22 @@ export async function getPosts(): Promise<PostData[]> {
     });
   }
 
-  for (const post of externalPosts) {
-    posts.push({
-      slug: post.link,
-      metadata: { ...post, date: new Date(post.date) },
-      content: post.description,
+  for (const blog of externalBlogs) {
+    blogs.push({
+      slug: blog.link,
+      metadata: { ...blog, date: new Date(blog.date) },
+      content: blog.description,
       external: true,
     });
   }
 
-  return posts.sort(
+  return blogs.sort(
     (a, b) => b.metadata.date.getTime() - a.metadata.date.getTime(),
   );
 }
 
-export async function getPost(slug: string): Promise<PostData | undefined> {
-  const all = await getPosts();
+export async function getBlog(slug: string): Promise<BlogData | undefined> {
+  const all = await getBlogs();
 
   return all.find((p) => p.slug === slug);
 }

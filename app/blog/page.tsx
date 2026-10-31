@@ -2,15 +2,15 @@ import Emoji from "@/components/ui/Emoji";
 import { clipPaths } from "@/lib/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { getPosts, PostData } from "./loader";
+import { BlogData, getBlogs } from "./loader";
 
-export function Card({ post, i }: { post: PostData; i: number }) {
-  const { slug, external, metadata } = post;
+export function Card({ blog, i }: { blog: BlogData; i: number }) {
+  const { slug, external, metadata } = blog;
 
   return (
     <Link
       key={slug}
-      href={external ? slug : `/posts/${slug}`}
+      href={external ? slug : `/blog/${slug}`}
       target={external ? "_blank" : "_self"}
       rel="noopener noreferrer"
       className={
@@ -86,14 +86,14 @@ export function Card({ post, i }: { post: PostData; i: number }) {
   );
 }
 
-export default async function Posts() {
-  const posts = await getPosts();
+export default async function Blog() {
+  const blogs = await getBlogs();
 
   return (
     <div className="min-h-[80dvh] flex flex-col gap-lg">
       <div className="flex flex-col items-center gap-md">
         <h1 className="text-5xl outlined text-accent-primary">
-          Posts <Emoji name="sipspin" size={36} />
+          Blog <Emoji name="sipspin" size={36} />
         </h1>
 
         <p>
@@ -102,8 +102,8 @@ export default async function Posts() {
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-sm">
-        {posts.map((post: PostData, i) => (
-          <Card post={post} i={i} key={i} />
+        {blogs.map((blog: BlogData, i) => (
+          <Card blog={blog} i={i} key={i} />
         ))}
       </div>
     </div>
