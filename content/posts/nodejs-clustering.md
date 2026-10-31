@@ -1,7 +1,7 @@
 ---
 title: "Node.js Clustering"
 description: "Use every CPU core in your Node.js server with the cluster Node.js module"
-banner: https://topdev.vn/blog/wp-content/uploads/2019/04/nodejs-la-gi-768x491.jpg
+banner: https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D
 authors: [Caleb]
 date: October 4, 2026
 tags: [Node.js, clusters, workers]
