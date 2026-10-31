@@ -233,8 +233,7 @@ export default async function Post({
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-sm">
           {posts
-            // TODO: uncomment the line below (and remove this one) on the next post
-            // .filter((post) => post.slug !== slug)
+            .filter((post) => post.slug !== slug)
             .slice(0, 3)
             .map((post, i) => (
               <Card post={post} i={i} key={i} />
