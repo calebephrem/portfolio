@@ -257,6 +257,15 @@ html.lenis body {
       @apply marker:text-accent-primary;
     }
 
+    iframe {
+      @apply mx-auto max-w-160 h-auto;
+      aspect-ratio: 16 / 9;
+    }
+
+    .twitter-tweet {
+      @apply mx-auto;
+    }
+
     code {
       @apply bg-bg-secondary px-xxs font-code text-sm;
     }
