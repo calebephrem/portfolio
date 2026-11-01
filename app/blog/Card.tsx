@@ -51,9 +51,9 @@ export function Card({ blog, i }: { blog: BlogData; i: number }) {
         </u>
 
         <p className="text-fg-secondary grow">
-          {metadata.description.length < 375
-            ? metadata.description
-            : metadata.description.slice(0, 375) + "..."}
+          {metadata.deck.length < 375
+            ? metadata.deck
+            : metadata.deck.slice(0, 375) + "..."}
         </p>
 
         <div className="flex flex-wrap gap-xxs">

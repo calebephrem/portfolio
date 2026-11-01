@@ -1,6 +1,6 @@
 ---
 title: "15 GitHub Repositories You’ll Wish You Found Sooner"
-description: 15 GitHub repos that have more value than most other paid courses combined
+deck: 15 GitHub repos that have more value than most other paid courses combined
 banner: https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large
 authors: [Caleb]
 date: October 3, 2026

@@ -29,11 +29,11 @@ export async function generateMetadata({
 
   if (!blog) return { title: "Not Found" };
 
-  const { title, description, banner, authors } = blog.metadata;
+  const { title, deck, banner, authors } = blog.metadata;
 
   return {
     title,
-    description,
+    description: deck,
     authors: authors.map(({ name, social: url }) => ({ name, url })),
     creator: staticData.name,
     publisher: staticData.name,
@@ -44,7 +44,7 @@ export async function generateMetadata({
       url: `${staticData.site.url}/blog/${slug}`,
       siteName: staticData.name,
       title,
-      description,
+      description: deck,
       images: [
         {
           url: banner,
@@ -58,7 +58,7 @@ export async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       title,
-      description,
+      description: deck,
       images: [banner],
     },
 
@@ -122,7 +122,7 @@ export default async function BlogPost({
           {blog.metadata.title}
         </h1>
 
-        <p>{blog.metadata.description}</p>
+        <p>{blog.metadata.deck}</p>
 
         <div className="flex flex-wrap items-center gap-sm md:gap-md">
           <div className="flex items-center gap-sm">
@@ -166,7 +166,7 @@ export default async function BlogPost({
 
           <div className="flex items-center gap-xs">
             <Link
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${blog.metadata.title}\n\n${blog.metadata.description}`)}&url=${encodeURIComponent(`${staticData.site.url}/b/${slug}`)}`}
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${blog.metadata.title}\n\n${blog.metadata.deck}`)}&url=${encodeURIComponent(`${staticData.site.url}/b/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >

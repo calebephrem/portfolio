@@ -1,8 +1,8 @@
 import z from "zod";
 
 export const blogSchema = z.object({
-  title: z.string().nonempty(),
-  description: z.string().min(10),
+  title: z.string().min(2),
+  deck: z.string().min(10),
   banner: z.url(),
   authors: z.array(z.string()).default(["Caleb"]),
   featured: z.boolean().default(false),
