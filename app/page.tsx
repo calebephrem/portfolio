@@ -98,7 +98,7 @@ export default async function Home() {
             },
             {
               label: "Framer Motion",
-              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
+              icon: "https://img.icons8.com/?size=100&id=XKFRdQOs24QU&format=png&color=000000",
             },
             {
               label: "Bootstrap",
