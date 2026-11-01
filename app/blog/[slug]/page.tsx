@@ -207,6 +207,7 @@ export default async function BlogPost({
               emoji: ({ name }: { name: string }) => (
                 <Emoji name={name as EmojiType} />
               ),
+
               a: ({ ...props }) => (
                 <a {...props} target="_blank" rel="noopener noreferrer" />
               ),
@@ -214,6 +215,20 @@ export default async function BlogPost({
                 <div className="table-wrapper">
                   <table {...props}>{children}</table>
                 </div>
+              ),
+              img: ({ alt, width, height, src, ...props }) => (
+                <span className="flex flex-col items-center">
+                  <Image
+                    src={String(src)}
+                    width={Number(width) || 1000}
+                    height={Number(height) || 1000}
+                    alt={alt ?? ""}
+                    {...props}
+                    className="h-auto w-auto max-w-xl"
+                  />
+
+                  <span className="text-fg-tertiary">{alt}</span>
+                </span>
               ),
             } as Components
           }

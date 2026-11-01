@@ -21,12 +21,11 @@ html.lenis body {
   --accent-secondary: #f0e080;
   --border: #5f4f6f;
 
-  --p-xxs: 0.25rem;
-  --p-xs: 0.5rem;
-  --p-sm: 0.75rem;
-  --p-md: 1.5rem;
-  --p-lg: 3rem;
-  --p-xl: 6rem;
+  --xxs: 0.25rem;
+  --xs: 0.5rem;
+  --sm: 0.75rem;
+  --md: 1.5rem;
+  --lg: 3rem;
 }
 
 @theme {
@@ -44,12 +43,11 @@ html.lenis body {
   --font-sans: var(--font-sans);
   --font-code: var(--font-code);
 
-  --spacing-xxs: var(--p-xxs);
-  --spacing-xs: var(--p-xs);
-  --spacing-sm: var(--p-sm);
-  --spacing-md: var(--p-md);
-  --spacing-lg: var(--p-lg);
-  --spacing-xl: var(--p-xl);
+  --spacing-xxs: var(--xxs);
+  --spacing-xs: var(--xs);
+  --spacing-sm: var(--sm);
+  --spacing-md: var(--md);
+  --spacing-lg: var(--lg);
 }
 
 @layer base {
@@ -258,7 +256,7 @@ html.lenis body {
     }
 
     iframe {
-      @apply mx-auto max-w-160 h-auto;
+      @apply mx-auto max-w-xl h-auto;
       aspect-ratio: 16 / 9;
     }
 
