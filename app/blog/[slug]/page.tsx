@@ -15,8 +15,8 @@ import rehypeRaw from "rehype-raw";
 import remarkDirective from "remark-directive";
 import remarkDirectiveRehype from "remark-directive-rehype";
 import remarkGfm from "remark-gfm";
+import { Card } from "../Card";
 import { getBlog, getBlogs } from "../loader";
-import { Card } from "../page";
 import CopyLink from "./CopyLink";
 
 export async function generateMetadata({
