@@ -93,6 +93,8 @@ export default async function BlogPost({
 
   if (!blog) notFound();
 
+  const { content, metadata } = blog;
+
   return (
     <div className="flex flex-col gap-md">
       <u className="flex flex-col gap-md py-md">
@@ -104,7 +106,7 @@ export default async function BlogPost({
 
         <div className="flex items-center gap-sm">
           <div className="flex flex-wrap shrink-0 gap-xxs">
-            {blog.metadata.tags.map((tag, i) => (
+            {metadata.tags.map((tag, i) => (
               <div
                 key={tag}
                 className="flex items-center gap-sm bg-bg-secondary overflow-hidden p-xs hover:bg-bg-tertiary"
@@ -116,17 +118,23 @@ export default async function BlogPost({
           </div>
 
           <div className="w-full h-px bg-bg-tertiary" />
+
+          <div className="flex items-center gap-xxs shrink-0">
+            <Emoji name="read" size={32} />
+
+            {metadata.featured && <Emoji name="fire" size={32} />}
+          </div>
         </div>
 
         <h1 className="text-5xl outlined text-accent-primary">
-          {blog.metadata.title}
+          {metadata.title}
         </h1>
 
-        <p>{blog.metadata.deck}</p>
+        <p>{metadata.deck}</p>
 
         <div className="flex flex-wrap items-center gap-sm md:gap-md">
           <div className="flex items-center gap-sm">
-            {blog.metadata.authors.map((author) => (
+            {metadata.authors.map((author) => (
               <Link
                 href={author.social}
                 target="_blank"
@@ -147,9 +155,9 @@ export default async function BlogPost({
             ))}
           </div>
 
-          <div>{new Date(blog.metadata.date).toLocaleDateString()}</div>
+          <div>{new Date(metadata.date).toLocaleDateString()}</div>
 
-          <div>{blog.metadata.readingTime}</div>
+          <div>{metadata.readingTime}</div>
 
           <Link
             href={`/r/portfolio/edit/main/content/blog/${slug}.md`}
@@ -166,7 +174,7 @@ export default async function BlogPost({
 
           <div className="flex items-center gap-xs">
             <Link
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${blog.metadata.title}\n\n${blog.metadata.deck}`)}&url=${encodeURIComponent(`${staticData.site.url}/b/${slug}`)}`}
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`${metadata.title}\n\n${metadata.deck}`)}&url=${encodeURIComponent(`${staticData.site.url}/b/${slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -233,7 +241,7 @@ export default async function BlogPost({
             } as Components
           }
         >
-          {blog.content}
+          {content}
         </MarkdownAsync>
       </article>
 
