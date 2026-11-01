@@ -8,7 +8,7 @@ tags: [open-source, github, papers, resources]
 featured: true
 ---
 
-<iframe width="1391" height="783" src="https://www.youtube.com/embed/cgOPg5cCr2g" title="16 Cool GitHub Repos You WILL Use (no pressure)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1391" height="783" src="https://www.youtube-nocookie.com/embed/cgOPg5cCr2g" title="16 Cool GitHub Repos You WILL Use (no pressure)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 GitHub has lots of other things to offer than just storing code. Among the gazillions of public repos available on GitHub, these ones have more value than you might expect. This is a collection of great resources, books, roadmap, research papers, blogs, free and open-source software, recommended websites for programmers, ML resources, and much more!
 
