@@ -123,3 +123,8 @@ GitHub has lots of other things to offer than just storing code. Among the gazil
 # The End...
 
 Just a tiny fraction of what you can find on GitHub. There are dozens of repos filled with useful resources, interesting ideas, and things you probably didn’t even know existed. Hopefully, you found something worth bookmarking, exploring, or sharing, and maybe the next time you’re looking for something, you’ll check GitHub before opening another site :emoji{name="giggle"}
+
+# Sources
+
+- “16 Cool GitHub Repos You WILL Use (No Pressure).” _YouTube_, uploaded by The Coding Sloth, 23 Jun. 2025, [youtu.be/cgOPg5cCr2g](https://youtu.be/cgOPg5cCr2g).
+- Torres, Daniela. “The Best GitHub Repos for Learning to Code in 2026.” _daily.dev_, 26 Aug. 2026, [daily.dev/blog/best-github-repos-for-learning-to-code](https://daily.dev/blog/best-github-repos-for-learning-to-code/).
