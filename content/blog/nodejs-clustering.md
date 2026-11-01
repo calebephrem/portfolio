@@ -1,6 +1,6 @@
 ---
 title: "Node.js Clustering"
-description: "Learn how to use every CPU core in your Node.js server with the cluster Node.js module"
+deck: "Learn how to use every CPU core in your Node.js server with the cluster Node.js module"
 banner: https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D
 authors: [Caleb]
 date: October 4, 2026

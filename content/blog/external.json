@@ -1,7 +1,7 @@
 [
   {
     "title": "Why I chose Void Linux",
-    "description": "Four years of distro hopping, from Mint to Gentoo to a taste of LFS, and what a dev actually wants from their OS turned out to be simpler than expected",
+    "deck": "Four years of distro hopping, from Mint to Gentoo to a taste of LFS, and what a dev actually wants from their OS turned out to be simpler than expected",
     "banner": "https://images.pexels.com/photos/11034131/pexels-photo-11034131.jpeg",
     "date": "September 12, 2026",
     "authors": [
@@ -18,7 +18,7 @@
   },
   {
     "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
-    "description": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
+    "deck": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
     "banner": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/posts/2025/07/security.png",
     "date": "July 7, 2025",
     "authors": [

@@ -1,6 +1,6 @@
 ---
 title: "15 GitHub Repositories You’ll Wish You Found Sooner"
-description: 15 GitHub repos that have more value than most other paid courses combined
+deck: 15 GitHub repos that have more value than most other paid courses combined
 banner: https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large
 authors: [Caleb]
 date: October 3, 2026
@@ -8,9 +8,11 @@ tags: [open-source, github, papers, resources]
 featured: true
 ---
 
+<iframe width="1391" height="783" src="https://www.youtube.com/embed/cgOPg5cCr2g" title="16 Cool GitHub Repos You WILL Use (no pressure)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 GitHub has lots of other things to offer than just storing code. Among the gazillions of public repos available on GitHub, these ones have more value than you might expect. This is a collection of great resources, books, roadmap, research papers, blogs, free and open-source software, recommended websites for programmers, ML resources, and much more!
 
-![x](https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large)
+![15 GitHub Repos Every Developer Needs](https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large)
 
 # 1. [Awesome Lists](https://github.com/sindresorhus/awesome) by [Sindre Sorhus](https://github.com/sindresorhus)
 
@@ -123,3 +125,8 @@ GitHub has lots of other things to offer than just storing code. Among the gazil
 # The End...
 
 Just a tiny fraction of what you can find on GitHub. There are dozens of repos filled with useful resources, interesting ideas, and things you probably didn’t even know existed. Hopefully, you found something worth bookmarking, exploring, or sharing, and maybe the next time you’re looking for something, you’ll check GitHub before opening another site :emoji{name="giggle"}
+
+# Sources
+
+- “16 Cool GitHub Repos You WILL Use (No Pressure).” _YouTube_, uploaded by The Coding Sloth, 23 Jun. 2025, [youtu.be/cgOPg5cCr2g](https://youtu.be/cgOPg5cCr2g).
+- Torres, Daniela. “The Best GitHub Repos for Learning to Code in 2026.” _daily.dev_, 26 Aug. 2026, [daily.dev/blog/best-github-repos-for-learning-to-code](https://daily.dev/blog/best-github-repos-for-learning-to-code/).

@@ -53,7 +53,7 @@ export async function getBlogs(): Promise<BlogData[]> {
     blogs.push({
       slug: blog.link,
       metadata: { ...blog, date: new Date(blog.date) },
-      content: blog.description,
+      content: blog.deck,
       external: true,
     });
   }
