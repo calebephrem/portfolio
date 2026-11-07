@@ -18,6 +18,7 @@ export const emojis = {
   linkedin: "https://cdn3.emoji.gg/emojis/64718-linkedin-pixel.png",
   read: "https://cdn3.emoji.gg/emojis/668887-afrogisreadingabook.png",
   fire: "https://cdn3.emoji.gg/emojis/391906-fire.gif",
+  mail: "https://cdn3.emoji.gg/emojis/528759-halloweenmailbox.gif",
 };
 
 export type Emoji = keyof typeof emojis;

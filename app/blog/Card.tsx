@@ -12,7 +12,7 @@ export function Card({ blog, i }: { blog: BlogData; i: number }) {
       key={slug}
       href={external ? slug : `/blog/${slug}`}
       target={external ? "_blank" : "_self"}
-      rel="noopener noreferrer"
+      rel="noopener"
       className="flex flex-col md:flex-row gap-sm md:gap-md undecorated bg-bg-secondary p-md shadow-md hover:bg-bg-tertiary"
 
       style={{ clipPath: clipPaths[i % clipPaths.length] }}

@@ -131,7 +131,7 @@ export default function Credits() {
           <h1 className="text-2xl">Friends</h1>
 
           <p>
-            <Credit link="https://louiszn.fyi">Louiszn</Credit> for suggesting
+            <Credit link="https://louiszn.fyi">Louis</Credit> for suggesting
             layout/spacing, font family, and a <Emoji name="cet" />
           </p>
 

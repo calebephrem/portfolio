@@ -32,7 +32,7 @@ export default function Header() {
             href={`/r/portfolio`}
             target="_blank"
             rel="noopener noreferrer"
-            className="after:rotate-y-180"
+            className="secondary"
           >
             {"</>"}
           </Link>

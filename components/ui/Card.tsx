@@ -20,7 +20,7 @@ export default function Card({
     <Link
       href={link}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener"
       className="flex flex-col sm:flex-row items-center justify-between bg-none bg-bg-secondary py-md px-lg  no-underline! hover:bg-bg-tertiary gap-lg"
       style={{
         clipPath:
