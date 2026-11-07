@@ -32,7 +32,7 @@ export function Paper({ children }: { children: ReactNode }) {
     <div
       className="w-screen h-full min-h-screen px-md"
       style={{
-        backgroundImage: `linear-gradient(to bottom, transparent 31px, #a5f3fc 31px, #a5f3fc 32px)`,
+        backgroundImage: `linear-gradient(to bottom, transparent 31px, #a5f3ff 31px, #a5f3ff 32px)`,
         backgroundSize: "100% 32px",
       }}
     >

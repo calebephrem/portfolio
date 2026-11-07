@@ -1,5 +1,5 @@
 ---
-title: "15 GitHub Repositories You’ll Wish You Found Sooner"
+title: "GitHub Repositories You’ll Wish You Found Sooner"
 deck: 15 GitHub repos that have more value than most other paid courses combined
 banner: https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large
 authors: [Caleb]
@@ -120,6 +120,13 @@ GitHub has lots of other things to offer than just storing code. Among the gazil
 [eriklindernoren/ML-From-Scratch](https://github.com/eriklindernoren/ML-From-Scratch) is a collection of machine learning algorithms implemented from scratch using Python. It lets you see how common ML techniques actually work under the hood, making it a great resource for learning the fundamentals without relying on ready-made libraries.
 
 :::card{title="ML From Scratch" description="Machine Learning From Scratch. Bare bones NumPy implementations of machine learning models and algorithms with a focus on accessibility. Aims to cover everything from linear regression to deep learning." footer="github.com" img="https://opengraph.githubassets.com/1/eriklindernoren/ML-From-Scratch" link="https://github.com/eriklindernoren/ML-From-Scratch"}
+:::
+
+# 16. [DevOps Daily](https://github.com/The-DevOps-Daily/devops-daily) by [The DevOps Daily](https://github.com/The-DevOps-Daily)
+
+[The-DevOps-Daily/devops-daily](https://github.com/The-DevOps-Daily/devops-daily) is an open-source platform for learning DevOps through articles, tutorials, guides, and hands-on exercises. It also features quizzes, interview questions, games, flashcards, and resources covering topics like Docker, Kubernetes, Linux, Terraform, and many more, making it a great resource for anyone looking to improve their DevOps skills.
+
+:::card{title="DevOps Daily" description="The latest news, tutorials, and guides for DevOps professionals." footer="github.com" img="https://opengraph.githubassets.com/1/The-DevOps-Daily/devops-daily" link="https://github.com/The-DevOps-Daily/devops-daily"}
 :::
 
 # The End...

@@ -21,3 +21,5 @@
 /posts /blog 302
 /p/* /blog/:splat 302
 /posts/* /blog/:splat 302
+
+/blog/15-amazing-github-repos /blog/amazing-github-repos 302
