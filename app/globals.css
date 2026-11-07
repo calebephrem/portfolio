@@ -173,7 +173,7 @@
   }
 
   ::-webkit-scrollbar-track {
-    @applly bg-bg-secondary;
+    @apply bg-bg-secondary;
   }
 
   ::-webkit-scrollbar-thumb {
