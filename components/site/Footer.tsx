@@ -15,6 +15,17 @@ export default function Footer() {
         <Link href="/credits">
           <u>Credits</u> <Emoji name="heart" />
         </Link>
+
+        <Link href="/r/portfolio" target="_blank" rel="noopener noreferrer">
+          <u>Repo</u> <Emoji name="typing" />
+        </Link>
+
+        <Link
+          href={`mailto:${staticData.links.email}`}
+          rel="noopener noreferrer"
+        >
+          <u>Email me!</u> <Emoji name="mail" />
+        </Link>
       </div>
 
       <div className="flex flex-col md:flex-row gap-sm items-center justify-between">
