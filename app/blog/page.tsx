@@ -1,4 +1,5 @@
 import Emoji from "@/components/ui/Emoji";
+import Link from "next/link";
 import { Card } from "./Card";
 import { BlogData, getBlogs } from "./loader";
 
@@ -15,6 +16,10 @@ export default async function Blog() {
         <p>
           Posts about all kinds of <u>cool stuff</u> I came across
         </p>
+
+        <Link href="/blog/feed.xml" target="_blank" className="secondary">
+          <Emoji name="rss" /> Follow along with RSS
+        </Link>
       </div>
 
       <div className="flex flex-col gap-sm">

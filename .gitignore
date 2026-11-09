@@ -19,6 +19,7 @@
 
 # production
 /build
+public/blog
 
 # misc
 .DS_Store

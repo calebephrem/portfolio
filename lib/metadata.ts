@@ -55,6 +55,12 @@ const metadata: Metadata = {
     },
   },
 
+  alternates: {
+    types: {
+      "application/rss+xml": "/blog/rss.xml",
+    },
+  },
+
   verification: {
     google: "f4SeOxUQ_1aIA-WkAI3UDdzhjLx35I6FKYNWUJueqrU",
   },
