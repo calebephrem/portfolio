@@ -12,8 +12,6 @@ featured: true
 
 GitHub has lots of other things to offer than just storing code. Among the gazillions of public repos available on GitHub, these ones have more value than you might expect. This is a collection of great resources, books, roadmap, research papers, blogs, free and open-source software, recommended websites for programmers, ML resources, and much more!
 
-![15 GitHub Repos Every Developer Needs](https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large)
-
 # 1. [Awesome Lists](https://github.com/sindresorhus/awesome) by [Sindre Sorhus](https://github.com/sindresorhus)
 
 [sindresorhus/awesome](https://github.com/sindresorhus/awesome) is basically a huge collection of useful stuff for developers. It contains links to hundreds of carefully picked resources covering programming languages, tools, learning materials, software, and much much more. Think of it as a giant index of interesting things on the internet, all organized in one GitHub repository.
@@ -132,6 +130,9 @@ GitHub has lots of other things to offer than just storing code. Among the gazil
 # The End...
 
 Just a tiny fraction of what you can find on GitHub. There are dozens of repos filled with useful resources, interesting ideas, and things you probably didn’t even know existed. Hopefully, you found something worth bookmarking, exploring, or sharing, and maybe the next time you’re looking for something, you’ll check GitHub before opening another site :emoji{name="giggle"}
+
+> [!TIP]
+> If you have a favorite resource that is missing from this list, feel free to add it by [editing the blog file](/r/portfolio/edit/main/content/blog/amazing-github-repos.md) and submitting a pull request to the `main` branch.
 
 # Sources
 
