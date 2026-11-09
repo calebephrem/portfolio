@@ -27,6 +27,7 @@ const feed = new Feed({
   copyright: "Caleb",
   updated: posts[0]?.metadata.date,
   feed: `${staticData.site.url}/blog/feed.xml`,
+  favicon: `${staticData.site.url}/pfp.jpg`,
   author: {
     avatar: `${staticData.site.url}/pfp.jpg`,
     name: "Caleb Ephrem",
