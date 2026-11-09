@@ -11,7 +11,7 @@ Imagine the `/api/login` endpoint you made, of a Node.js backend, got hit with l
 
 According to the [Node.js docs](https://nodejs.org/api/cluster.html), clusters of Node.js processes can be used to run multiple instances of Node.js that distribute workloads among their application threads. It basically allows you to create many workers that share the same port, using all (or some) of the available CPU cores. The `cluster` module has been part of Node.js since v0.8, and is stable in current versions.
 
-:::card{title="Cluster" description="Clusters of Node.js processes can be used to run multiple instances of Node.js that can distribute workloads among their application threads." footer="nodejs.org" img="https://topdev.vn/blog/wp-content/uploads/2019/04/nodejs-la-gi-768x491.jpg" link="https://nodejs.org/docs/latest-v24.x/api/cluster.html"}
+:::card{title="Cluster" description="Clusters of Node.js processes can be used to run multiple instances of Node.js that can distribute workloads among their application threads." footer="nodejs.org" img="https://nodejs.org/static/logos/nodejsHex.svg" link="https://nodejs.org/docs/latest-v24.x/api/cluster.html"}
 :::
 
 # Why Use Clustering
