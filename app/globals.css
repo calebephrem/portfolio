@@ -156,8 +156,12 @@
     }
   }
 
-  ul {
+  ul,
+  ol {
     @apply list-disc pl-md;
+  }
+  ol {
+    @apply list-decimal;
   }
 
   img {

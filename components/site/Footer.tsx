@@ -69,6 +69,7 @@ export default function Footer() {
             </Tooltip>
           </Link>
 
+          {/* TODO: update button (site is no longer up) */}
           <Link
             href="https://louiszn.fyi"
             target="_blank"

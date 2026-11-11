@@ -25,7 +25,7 @@ export function Card({ blog, i }: { blog: BlogData; i: number }) {
         alt={metadata.title}
       />
 
-      <div className="flex flex-col gap-sm">
+      <div className="flex flex-col gap-sm w-full">
         <u>
           <div className="flex items-center gap-sm">
             <span className="text-fg-tertiary">

@@ -1,22 +1,5 @@
 [
   {
-    "title": "Why I chose Void Linux",
-    "deck": "Four years of distro hopping, from Mint to Gentoo to a taste of LFS, and what a dev actually wants from their OS turned out to be simpler than expected",
-    "banner": "https://images.pexels.com/photos/11034131/pexels-photo-11034131.jpeg",
-    "date": "September 12, 2026",
-    "authors": [
-      {
-        "name": "Louis",
-        "avatar": "https://codeberg.org/avatars/361296a08ca278b4ebc77cc94c96ee410e44e0597de738f61b95fdba9d2eefea",
-        "social": "https://codeberg.org/louiszn"
-      }
-    ],
-    "tags": ["linux", "void"],
-    "link": "https://louiszn.fyi/posts/why-i-chose-void",
-    "readingTime": "8 min read",
-    "featured": true
-  },
-  {
     "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
     "deck": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
     "banner": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/posts/2025/07/security.png",
