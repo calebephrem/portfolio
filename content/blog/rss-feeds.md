@@ -88,7 +88,7 @@ You can find more about the comparision between Feedly and Inoreader [here](http
 
 # Conclusion
 
-RSS is just a way to subscribe to that websites you like. An RSS reader checks those feeds for you and gathers every new post in one place, so you skip the manual checking every day. Some popular RSS readers to start with are Feedly and Inoreader. Tiy can start small with 5 to 10 subscribed sources (feeds), and see if it works well for you.
+RSS is just a way to subscribe to that websites you like. An RSS reader checks those feeds for you and gathers every new post in one place, so you skip the manual checking every day. Some popular RSS readers to start with are Feedly and Inoreader. You can start small with 5 to 10 subscribed sources (feeds), and see if it works well for you.
 
 Some advantages of using RSS feeds are: no algorithmic feeds, saves you lots of time, helps you stay more anonymous with still getting all of the new content right in your dashboard, and enables you to read posts while being offline. And some trade-offs of using RSS feeds are: information overload if you subscribe to way too many active sites, some sites choosing to show a truncated version of the full article, lack of adoption of RSS feeds in most modern sites, and publishers getting very limited metrics of their audience.
 
