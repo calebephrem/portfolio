@@ -1,5 +1,5 @@
 ---
-title: "GitHub Repositories You’ll Wish You Found Sooner"
+title: GitHub Repositories You’ll Wish You Found Sooner
 deck: 15 GitHub repos that have more value than most other paid courses combined
 banner: https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large
 authors: [Caleb]
