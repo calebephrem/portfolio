@@ -304,6 +304,14 @@
           @apply text-blue-500;
         }
       }
+
+      &.markdown-alert-tip {
+        @apply border-green-400 hover:bg-green-400/20 bg-green-400/10;
+
+        .markdown-alert-title {
+          @apply text-green-500;
+        }
+      }
     }
 
     .table-wrapper {

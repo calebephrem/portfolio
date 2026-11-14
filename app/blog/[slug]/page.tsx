@@ -224,20 +224,30 @@ export default async function BlogPost({
                   <table {...props}>{children}</table>
                 </div>
               ),
-              img: ({ alt, width, height, src, ...props }) => (
-                <span className="flex flex-col items-center">
+              img: ({ alt, width, height, src, ...props }) =>
+                // @ts-expect-error has type any
+                props["data-strict"] ? (
                   <Image
                     src={String(src)}
+                    alt={alt ?? ""}
                     width={Number(width) || 1000}
                     height={Number(height) || 1000}
-                    alt={alt ?? ""}
                     {...props}
-                    className="h-auto w-auto max-w-xl"
                   />
+                ) : (
+                  <span className="flex flex-col items-center">
+                    <Image
+                      src={String(src)}
+                      width={Number(width) || 1000}
+                      height={Number(height) || 1000}
+                      alt={alt ?? ""}
+                      {...props}
+                      className="h-auto w-auto max-w-xl"
+                    />
 
-                  <span className="text-fg-tertiary">{alt}</span>
-                </span>
-              ),
+                    <span className="text-fg-tertiary">{alt}</span>
+                  </span>
+                ),
             } as Components
           }
         >

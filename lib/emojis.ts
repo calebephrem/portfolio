@@ -20,6 +20,7 @@ export const emojis = {
   fire: "https://cdn3.emoji.gg/emojis/391906-fire.gif",
   mail: "https://cdn3.emoji.gg/emojis/528759-halloweenmailbox.gif",
   rss: "https://cdn3.emoji.gg/emojis/680306-rss.png",
+  hug: "https://cdn3.emoji.gg/emojis/6928-pandahug.png",
 };
 
 export type Emoji = keyof typeof emojis;

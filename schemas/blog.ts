@@ -3,7 +3,7 @@ import z from "zod";
 export const blogSchema = z.object({
   title: z.string().min(2),
   deck: z.string().min(10),
-  banner: z.url(),
+  banner: z.string(),
   authors: z.array(z.string()).default(["Caleb"]),
   featured: z.boolean().default(false),
   date: z.coerce.date().default(() => new Date()),
