@@ -3,7 +3,7 @@ title: 88x31 Buttons
 deck: A tiny piece of 90s web culture
 banner: /img/88x31-buttons.png
 authors: [Caleb]
-date: November 12, 2026
+date: November 14, 2026
 tags: [web, culture, internet]
 ---
 
