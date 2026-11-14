@@ -86,6 +86,16 @@ You can find more about the comparision between Feedly and Inoreader [here](http
 - **Lack of adoption** - Not everyone uses RSS feeds, many modern web platforms don't even support RSS (often requires subscribing through email), and only a very small slice of the internet users use RSS as well.
 - **Very limited analytics for publishers** - Publishers don't see who subscribed to their RSS, most of the time, usually just subscriber count, making it harder to track analytics about the subscribed readers.
 
+# How I Use Them
+
+I use [Feedly](https://feedly.com/) to follow the blogs I like, split into two folders:
+
+- **Dev Blogs:** individual developer's writings, like [The Pragmatic Engineer](https://blog.pragmaticengineer.com/) and [Cassidy Williams](https://cassidoo.co/tag/technical/).
+- **Company Blogs:** blogs from companies, like [Canva Engineering Blog](https://www.canva.dev/blog/engineering/) and [Discord Blog](https://discord.com/category/engineering).
+
+> [!TIP]
+> If you like the things I post and want to include me in your subscriptions, here's [my RSS feed](/blog/rss.xml) :emoji{name="hug"}
+
 # Conclusion
 
 RSS is just a way to subscribe to that websites you like. An RSS reader checks those feeds for you and gathers every new post in one place, so you skip the manual checking every day. Some popular RSS readers to start with are Feedly and Inoreader. You can start small with 5 to 10 subscribed sources (feeds), and see if it works well for you.

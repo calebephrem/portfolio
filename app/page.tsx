@@ -198,14 +198,14 @@ export default async function Home() {
                 "Beautify your IDE with the best combos of blue, lime, yellow, purple and more!",
               link: "/r/quantum-vscode",
             },
-            {
-              banner:
-                "https://github.com/open-devhub/quillbot/blob/main/assets/icon.png?raw=true",
-              title: "QuillBot",
-              description:
-                "Advanced Discord developer assistant for coding, documentation lookup, and more",
-              link: "https://github.com/open-devhub/quillbot",
-            },
+            // {
+            //   banner:
+            //     "https://github.com/open-devhub/quillbot/blob/main/assets/icon.png?raw=true",
+            //   title: "QuillBot",
+            //   description:
+            //     "Advanced Discord developer assistant for coding, documentation lookup, and more",
+            //   link: "https://github.com/open-devhub/quillbot",
+            // },
           ].map(({ banner, title, description, link }, i) => (
             <Link
               href={link}
