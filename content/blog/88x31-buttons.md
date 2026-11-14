@@ -25,7 +25,7 @@ This all was [the browser wars](https://en.wikipedia.org/wiki/Browser_wars) if y
 
 By the mid 2000s, these web badges started fading out, because personal sites were losing ground for social media, [RSS Feeds](/blog/rss-feeds), publishing and newsletter sites.
 
-And starting in the late 2010s, people tired of algorithm based social media grew more, and platforms like [Neocities](https://neocities.org/browse?tag=88x31) provided people a place to build the old creativity of making handmade personal websites of the old web. Buttons came back with them, but now with a different purpose.
+And starting in the late 2010s, people tired of algorithm based social media grew more, and platforms like [Neocities](https://neocities.org/browse?tag=88x31) provided people a place to build the handmade personal websites like the ones from the old web. Buttons came back with them, but now with a different purpose.
 
 :::card{title="Neocities" description="Create and surf awesome websites for free." footer="neocities.org" img="https://neocities.org/img/og/index.jpg" link="https://neocities.org/"}
 :::
