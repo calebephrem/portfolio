@@ -9,7 +9,7 @@ export default function NotFound() {
 
       <mark className="secondary">
         The page {"you're"} looking for has vanished into the afterlife{" "}
-        <Emoji name="angel" size={24} />
+        <Emoji name="angel" />
       </mark>
     </div>
   );
