@@ -4,8 +4,12 @@ import { clipPaths } from "@/lib/constants";
 import staticData from "@/lib/staticdata";
 import Image from "next/image";
 import Link from "next/link";
+import { Card } from "./blog/Card";
+import { BlogData, getBlogs } from "./blog/loader";
 
 export default async function Home() {
+  const blogs = await getBlogs();
+
   return (
     <div className="flex flex-col gap-lg">
       <div className="flex gap-lg flex-col items-center md:flex-row">
@@ -35,7 +39,7 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          Stuff I like doing <Emoji name="heart" size={28} />
+          Stuff I like doing <Emoji name="heart" size={30} />
         </h1>
 
         <ul>
@@ -100,10 +104,7 @@ export default async function Home() {
               label: "Framer Motion",
               icon: "https://img.icons8.com/?size=100&id=XKFRdQOs24QU&format=png&color=000000",
             },
-            {
-              label: "Bootstrap",
-              icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
-            },
+
             {
               label: "React Bits",
               icon: "https://github.com/DavidHDev/react-bits/blob/main/public/favicon-32x32.png?raw=true",
@@ -235,7 +236,7 @@ export default async function Home() {
 
       <div className="flex flex-col gap-md">
         <h1 className="text-3xl">
-          GitHub Activity <Emoji name="typing" size={28} />
+          GitHub activity <Emoji name="typing" size={30} />
         </h1>
 
         <Link
@@ -257,6 +258,18 @@ export default async function Home() {
             />
           </Tooltip>
         </Link>
+      </div>
+
+      <div className="flex flex-col gap-md">
+        <h1 className="text-3xl">
+          Latest posts <Emoji name="sipspin" size={30} />
+        </h1>
+
+        <div className="grid grid-cols-3 gap-sm">
+          {blogs.slice(0, 3).map((blog: BlogData, i) => (
+            <Card blog={blog} i={i} key={i} mini={true} />
+          ))}
+        </div>
       </div>
 
       <div className="flex flex-col gap-md">

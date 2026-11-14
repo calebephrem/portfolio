@@ -264,12 +264,12 @@ export default async function BlogPost({
           <Emoji name="arrow" />
         </div>
 
-        <div className="flex flex-col gap-sm">
+        <div className="grid grid-cols-3 gap-sm">
           {blogs
             .filter((blog) => blog.slug !== slug)
-            .slice(0, 3)
+            .slice(0, 6)
             .map((blog, i) => (
-              <Card blog={blog} i={i} key={i} />
+              <Card blog={blog} i={i} key={i} mini={true} />
             ))}
         </div>
       </div>

@@ -5,6 +5,8 @@ import { BlogData, getBlogs } from "./loader";
 
 export default async function Blog() {
   const blogs = await getBlogs();
+  // TODO: increase the `showAsBig` var by 1 whenever a new blog gets posted, only until 5
+  const showAsBig = 2;
 
   return (
     <div className="min-h-[80dvh] flex flex-col gap-lg">
@@ -23,9 +25,15 @@ export default async function Blog() {
       </div>
 
       <div className="flex flex-col gap-sm">
-        {blogs.map((blog: BlogData, i) => (
+        {blogs.slice(0, showAsBig).map((blog: BlogData, i) => (
           <Card blog={blog} i={i} key={i} />
         ))}
+
+        <div className="grid grid-cols-3 gap-sm">
+          {blogs.slice(showAsBig).map((blog: BlogData, i) => (
+            <Card blog={blog} i={i} key={i} mini={true} />
+          ))}
+        </div>
       </div>
     </div>
   );

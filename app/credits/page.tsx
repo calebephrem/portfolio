@@ -117,7 +117,7 @@ export default function Credits() {
           <p>
             <Credit link="/88x31.jpg">88x31 button of this site</Credit> by{" "}
             <Credit link="https://www.pinterest.com/isufferaveryday/">
-              ran liwen
+              Aves
             </Credit>{" "}
             on{" "}
             <Credit link="https://www.pinterest.com/pin/1136877499702662135/">

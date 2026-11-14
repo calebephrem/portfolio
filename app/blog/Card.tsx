@@ -4,7 +4,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogData } from "./loader";
 
-export function Card({ blog, i }: { blog: BlogData; i: number }) {
+export function Card({
+  blog,
+  i,
+  mini = false,
+}: {
+  blog: BlogData;
+  i: number;
+  mini?: boolean;
+}) {
   const { slug, external, metadata } = blog;
 
   return (
@@ -17,13 +25,15 @@ export function Card({ blog, i }: { blog: BlogData; i: number }) {
 
       style={{ clipPath: clipPaths[i % clipPaths.length] }}
     >
-      <Image
-        src={metadata.banner}
-        height={48}
-        width={48}
-        className="w-full max-w-84 max-h-72 mx-auto md:mx-0"
-        alt={metadata.title}
-      />
+      {!mini && (
+        <Image
+          src={metadata.banner}
+          height={48}
+          width={48}
+          className="w-full max-w-84 max-h-72 mx-auto md:mx-0"
+          alt={metadata.title}
+        />
+      )}
 
       <div className="flex flex-col gap-sm w-full">
         <u>
@@ -34,14 +44,14 @@ export function Card({ blog, i }: { blog: BlogData; i: number }) {
 
             <div className="w-full h-px bg-bg-tertiary" />
 
-            <div className="flex items-center gap-xxs">
+            <div className="flex items-center gap-xxs shrink-0">
               {external ? (
-                <Emoji name="arrow" size={32} className="-rotate-145" />
+                <Emoji name="arrow" className="-rotate-145" />
               ) : (
-                <Emoji name="read" size={32} />
+                <Emoji name="read" />
               )}
 
-              {metadata.featured && <Emoji name="fire" size={36} />}
+              {metadata.featured && <Emoji name="fire" />}
             </div>
           </div>
 
@@ -57,7 +67,7 @@ export function Card({ blog, i }: { blog: BlogData; i: number }) {
         </p>
 
         <div className="flex flex-wrap gap-xxs">
-          {metadata.tags.slice(0, 5).map((tag) => (
+          {metadata.tags.slice(0, mini ? 3 : 5).map((tag) => (
             <div
               key={tag}
               className="flex items-center gap-sm bg-bg-tertiary overflow-hidden p-xxs"
