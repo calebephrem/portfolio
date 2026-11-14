@@ -69,20 +69,15 @@ export default function Footer() {
             </Tooltip>
           </Link>
 
-          {/* TODO: update button (site is no longer up) */}
-          <Link
-            href="https://louiszn.fyi"
-            target="_blank"
-            rel="noopener"
-            className="-rotate-3"
-          >
-            <Tooltip text="Cutie oreo">
-              <Image
-                src="https://louiszn.fyi/assets/88x31/me.png"
-                alt="Oreo cat"
-                width={88}
-                height={31}
-              />
+          <Link href="/blog/88x31-buttons" className="-rotate-3">
+            <Tooltip text="Pumkin pie">
+              <Image src="/88x31.jpg" alt="Pumkin pie" width={88} height={31} />
+            </Tooltip>
+          </Link>
+
+          <Link href="/blog/feed.xml" className="-rotate-3">
+            <Tooltip text="RSS Feed!">
+              <Image src="/rss.gif" alt="RSS" width={88} height={31} />
             </Tooltip>
           </Link>
         </div>

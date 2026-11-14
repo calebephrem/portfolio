@@ -5,6 +5,7 @@ banner: https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=1374
 authors: [Caleb]
 date: October 4, 2026
 tags: [Node.js, clusters, workers]
+featured: true
 ---
 
 Imagine the `/api/login` endpoint you made, of a Node.js backend, got hit with lots of login requests. Each one looks up the user by email, verifies the password against a legacy `bcrypt` hash, re-hashes it with `Argon2id`, verifies an MFA code, then issues a JWT. If you use a pure JavaScript implementation like `bcryptjs`, all of that hashing runs on the main (master) thread. The server has, let's say, 4 CPU cores, but Node.js runs your JavaScript code on a single thread, so it can only use one core for all of these requests. When it's under heavy load, <mark class="secondary">the server either drops or delays requests</mark>, and clustering fixes this by running one worker per core.

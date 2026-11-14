@@ -13,7 +13,7 @@ Hiya, on this blog post, we're going to be covering what RSS feeds are, how they
 
 According to Wikipedia, RSS (RDF Site Summary, Rich Site Summary or Really Simple Syndication) is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format, created in March 1999 by engineers at [Netscape](https://en.wikipedia.org/wiki/Netscape).
 
-:::card{title="RSS" description="RSS (RDF Site Summary, Rich Site Summary or Really Simple Syndication) is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format." footer="en.wikipedia.org" img="https://thumb.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/250px-Feed-icon.svg.png" link="https://en.wikipedia.org/wiki/RSS"}
+:::card{title="RSS" description="RSS (RDF Site Summary, Rich Site Summary or Really Simple Syndication) is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format." footer="en.wikipedia.org" img="https://thumb.wikimedia.org/wikipedia/en/thumb/4/43/Feed-icon.svg/1280px-Feed-icon.svg.png" link="https://en.wikipedia.org/wiki/RSS"}
 :::
 
 Basically, RSS is a way to subscribe to changes that happen to websites, such as blogs, podcasts, news, any type of frequently updated content (most of the time). For example, you subscribe to channels on YouTube so that you don't miss any videos uploaded by your favorite channels. But how do you subscribe to changes to a website? Manually checking every website consumes a lot of time, emails get cluttered, and other options don't always work well. To these issues, RSS was the answer. Thanks to RSS readers, <mark class="secondary">all of the new posts are automatically gathered in our dashboard waiting for us to open them and read.</mark>
@@ -97,5 +97,5 @@ Well, this was a short overview of RSS feeds, see you in the next post!
 # Sources
 
 - "How Do RSS Feeds Work?" _RSS.com_, 6 May. 2026, [rss.com/blog/how-do-rss-feeds-work/](https://rss.com/blog/how-do-rss-feeds-work/)
-- Nguyen, Kevin. “Feedly vs Inoreader for developers in 2026.” _daily.dev_, 1 Nov. 2026, [https://daily.dev/blog/feedly-vs-inoreader-for-developers/](https://daily.dev/blog/feedly-vs-inoreader-for-developers/).
+- Nguyen, Kevin. “Feedly vs Inoreader for developers in 2026.” _daily.dev_, 1 Nov. 2026, [daily.dev/blog/feedly-vs-inoreader-for-developers/](https://daily.dev/blog/feedly-vs-inoreader-for-developers/).
 - "RSS." _Wikipedia_, [en.wikipedia.org/wiki/RSS](https://en.wikipedia.org/wiki/RSS)
