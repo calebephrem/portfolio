@@ -16,6 +16,10 @@ export default function Footer() {
           <u>Credits</u> <Emoji name="heart" />
         </Link>
 
+        <Link href="/ai">
+          <u>AI</u> <Emoji name="bot" />
+        </Link>
+
         <Link href="/r/portfolio" target="_blank" rel="noopener noreferrer">
           <u>Repo</u> <Emoji name="typing" />
         </Link>
@@ -75,7 +79,7 @@ export default function Footer() {
             </Tooltip>
           </Link>
 
-          <Link href="/blog/feed.xml" className="-rotate-3">
+          <Link href="/blog/feed.xml" className="rotate-2">
             <Tooltip text="RSS Feed!">
               <Image src="/rss.gif" alt="RSS" width={88} height={31} />
             </Tooltip>

@@ -1,14 +1,6 @@
+import Markdown from "@/components/site/Markdown";
 import Emoji from "@/components/ui/Emoji";
-import Link from "next/link";
-import { ReactNode } from "react";
-
-function Credit({ link, children }: { link: string; children: ReactNode }) {
-  return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
-      <u>{children}</u>
-    </Link>
-  );
-}
+import content from "./content.md";
 
 export default function Credits() {
   return (
@@ -19,130 +11,11 @@ export default function Credits() {
         </h1>
 
         <p>Credits to all who made this site a site</p>
+
+        <p className="text-fg-secondary">Last updated: November 14, 2026</p>
       </div>
 
-      <div className="flex flex-col gap-md">
-        <div className="flex flex-col gap-sm">
-          <h1 className="text-2xl">Inspiration</h1>
-
-          <p>
-            This website design is inspired by{" "}
-            <Credit link="https://sarthakrawat-1.github.io/sketchbook-ui/">
-              {"Sarthak Rawat's"} Sketchbook UI Components
-            </Credit>
-            , though {"it's"} made without looking at any of its source code.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-sm">
-          <h1 className="text-2xl">Tools & Frameworks</h1>
-
-          <p>
-            <Credit link="https://nextjs.org">Next.js</Credit>,{" "}
-            <Credit link="http://tailwindcss.com/">Tailwind CSS</Credit> and{" "}
-            <Credit link="https://github.com/remarkjs/react-markdown">
-              React Markdown
-            </Credit>{" "}
-            for making the entire website,{" "}
-            <Credit link="https://www.cloudflare.com/">Cloudflare</Credit> for
-            hosting it entirely for free,{" "}
-            <Credit link="https://is-a.dev">is-a.dev</Credit> for the nice
-            subdomain, and <Credit link="https://github.com">GitHub</Credit> for
-            hosting the source code of this site for free as well.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-sm">
-          <h1 className="text-2xl">Fonts</h1>
-
-          <p>
-            <Credit link="https://fonts.google.com/specimen/Caveat+Brush">
-              Caveat Brush
-            </Credit>{" "}
-            for heading texts.
-          </p>
-
-          <p>
-            <Credit link="https://fonts.google.com/specimen/Patrick+Hand">
-              Patrick Hand
-            </Credit>{" "}
-            for body/long content.
-          </p>
-
-          <p>
-            <Credit link="https://fonts.google.com/specimen/Fira+Code">
-              Fira Code
-            </Credit>{" "}
-            for code blocks.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-sm">
-          <h1 className="text-2xl">Images</h1>
-
-          <p>
-            Emojis used in this website are all from{" "}
-            <Credit link="https://emoji.gg/">emoji.gg</Credit>{" "}
-            <Emoji name="nuke" />
-          </p>
-
-          <p>
-            Banner images of blog posts from{" "}
-            <Credit link="https://unsplash.com/">Unsplash</Credit> and{" "}
-            <Credit link="https://www.pexels.com/">Pexels</Credit>.
-          </p>
-
-          <p>
-            Image {'"me"'} (red panda standing with its feet looking up) by{" "}
-            <Credit link="https://www.pinterest.com/ruachuonggio/">
-              ruachuonggio
-            </Credit>{" "}
-            on{" "}
-            <Credit link="https://www.pinterest.com/pin/589267932532734665/">
-              Pinterest
-            </Credit>
-            .
-          </p>
-
-          <p>
-            Pfp (red panda sipping coke) by{" "}
-            <Credit link="https://www.pinterest.com/xmorslnx/">xmorslnx</Credit>{" "}
-            on{" "}
-            <Credit link="https://www.pinterest.com/pin/880805639640685446/">
-              Pinterest
-            </Credit>
-            .
-          </p>
-
-          <p>
-            <Credit link="/88x31.jpg">88x31 button of this site</Credit> by{" "}
-            <Credit link="https://www.pinterest.com/isufferaveryday/">
-              Aves
-            </Credit>{" "}
-            on{" "}
-            <Credit link="https://www.pinterest.com/pin/1136877499702662135/">
-              Pinterest
-            </Credit>
-            .
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-sm">
-          <h1 className="text-2xl">Friends</h1>
-
-          <p>
-            <Credit link="https://codeberg.org/louiszn">Louis</Credit> for
-            suggesting layout/spacing, font family, and a <Emoji name="cet" />
-          </p>
-
-          <p>
-            <Credit link="https://calebden.io">Caleb Denio</Credit> for
-            transferring the{" "}
-            <Credit link="https://caleb.is-a.dev">caleb.is-a.dev</Credit>{" "}
-            subdomain over to my account <Emoji name="heart" />
-          </p>
-        </div>
-      </div>
+      <Markdown>{content}</Markdown>
     </div>
   );
 }
