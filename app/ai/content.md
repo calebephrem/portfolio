@@ -23,3 +23,7 @@ I'm not a professional blogger or something, but how I use AI for my [blog posts
 4. Review It.
 5. Send it to an AI model to check for grammatic and spelling errors (since I'm not native english speaker), improve some weird wordings, and reduce some over explanations to make things concise.
 6. Then do one last review, and publish.
+
+# Questions?
+
+If anything changes, I'll update this page to let you know. If you have any questions or concerns, you can find my contact info [on the homepage](/).

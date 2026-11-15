@@ -11,6 +11,8 @@ export default function Credits() {
         </h1>
 
         <p>Credits to all who made this site a site</p>
+
+        <p className="text-fg-secondary">Last updated: November 14, 2026</p>
       </div>
 
       <Markdown>{content}</Markdown>
