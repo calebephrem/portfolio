@@ -15,5 +15,22 @@
     "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
     "readingTime": "1 min read",
     "featured": false
+  },
+  {
+    "title": "Nothing Beats Kindness",
+    "deck": "Why kindness matter at work",
+    "banner": "https://substackcdn.com/image/fetch/$s_!kn3P!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffa9d0675-e9ba-4904-addd-d031f47d0b41_1600x800.png",
+    "date": "November 13, 2025",
+    "authors": [
+      {
+        "name": "Teiva",
+        "avatar": "https://substackcdn.com/image/fetch/$s_!XdES!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe800897a-277b-458c-a1a2-48b8b1b8d70c_500x500.png",
+        "social": "https://substack.com/@teivah"
+      }
+    ],
+    "tags": ["personal", "advice", "signatures"],
+    "link": "https://read.thecoder.cafe/p/nothing-beats-kindness",
+    "readingTime": "2 min read",
+    "featured": true
   }
 ]
