@@ -16,6 +16,10 @@ export default function Footer() {
           <u>Credits</u> <Emoji name="heart" />
         </Link>
 
+        <Link href="/ai">
+          <u>AI</u> <Emoji name="bot" />
+        </Link>
+
         <Link href="/r/portfolio" target="_blank" rel="noopener noreferrer">
           <u>Repo</u> <Emoji name="typing" />
         </Link>
