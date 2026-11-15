@@ -6,7 +6,7 @@ import { BlogData, getBlogs } from "./loader";
 export default async function Blog() {
   const blogs = await getBlogs();
   // TODO: increase the `showAsBig` var by 1 whenever a new blog gets posted, only until 5
-  const showAsBig = 2;
+  const showAsBig = 3;
 
   return (
     <div className="min-h-[80dvh] flex flex-col gap-lg">

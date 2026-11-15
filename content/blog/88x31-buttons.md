@@ -38,7 +38,8 @@ First, search for 88x31 button to add. Then on your website footer, add somethin
 <a href="https://caleb.is-a.dev/" target="_blank" rel="noopener">
   <img
     src="https://caleb.is-a.dev/88x31.jpg"
-    alt="Caleb"
+    alt="Pumkin pie"
+    title="Pumkin pie"
     width="88"
     height="31"
   />
@@ -51,6 +52,7 @@ Which basically adds a small 88x31 button on your footer:
 <img
     src="https://caleb.is-a.dev/88x31.jpg"
     alt="Pumkin pie"
+    title="Pumkin pie"
     width="88"
     height="31"
     data-strict="true"
@@ -76,16 +78,37 @@ No rules, but most people go with some kinds of mix between:
 - Their favorite technologies, tools, or platforms
 - Maybe their favorite games, or whatever they're into
 
-You can always [search on google](https://www.google.com/search?q=88x31+button+collection) for some cool badges to add to your website.
-
 # Make Your Own
 
 If you want your friends to link to you on their personal sites, you need a button as well. Here are two options:
 
-- Search for an image online (you might need to resize/crop it to be 88x31), or
-- Draw one from scratch in any image editor
+## 1. Search for an image online
 
-Name it to a name that's easy to remember, like `badge.png` or `88x31.png`, and put it somewhere stable because other friends will be pointing at it.
+[Search for a button collections on google](https://www.google.com/search?q=88x31+button+collection) to find one (you might need to resize/crop it to be 88x31). You can find some cool badges on websites like:
+
+- [yesterweb.org](https://yesterweb.org/graphics/buttons) - button collection
+- [jamesg.blog](https://jamesg.blog/buttons) - button collection
+- [neocities.org](https://neocities.org/browse?tag=88x31) - collection of websites with buttons
+- [cooltext.com](https://cooltext.com/) - custom text buttons
+
+<a href="https://cooltext.com/" target="_blank" rel="noopener" class="undecorated w-fit">
+<img
+    src="/img/yeehaw.png"
+    alt="Yee haw!"
+    title="Yee haw!"
+    width="88"
+    height="31"
+    data-strict="true"
+  />
+</a>
+
+## 2. Draw one from scratch
+
+Make or draw one in any image editor.
+
+## Then?
+
+Name your button to a name that's easy to remember, like `badge.png` or `88x31.png`, and put it somewhere stable because other friends will be pointing at it.
 
 # Self Hosting vs Hotlinking
 
@@ -98,8 +121,6 @@ Two ways to show a friend's button (behaving differently):
 I usually like to hotlink friends and self host other stuff. Pick whatever you're comfy with.
 
 # Go Make One
-
-And yeah, that's it. Small image with a link showing your interests, that's what web badges are for. Old idea but still fun, with now even a better idea: your website is you, and other people's websites are neighbors or friends.
 
 Go make or find a button, add a few to your personal site footer, and if you want, send me yours so I can add it to mine ;]
 
