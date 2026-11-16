@@ -8,7 +8,7 @@ Welcome to my personal **developer portfolio**, built with **Next.js**, **TypeSc
 
 ## Features
 
-- Responsive & fast
+- Responsive & fast (SSG)
 - Built with modern tooling
 - Minimal & elegant UI
 - Minimal animations
@@ -21,10 +21,6 @@ Welcome to my personal **developer portfolio**, built with **Next.js**, **TypeSc
 
 If you like my work or want to collaborate, feel free to reach out!
 
-- ⌬ [Portfolio](https://caleb.is-a.dev)
-- ⌬ [GitHub](https://caleb.is-a.dev/github)
-- ⌬ [discord](https://caleb.is-a.dev/discord)
-- ⌬ [X](https://caleb.is-a.dev/x)
-- ⌬ [Email](mailto:calebephrem@proton.me)
+[Portfolio](https://caleb.is-a.dev) ⌬ [GitHub](https://caleb.is-a.dev/github) ⌬ [Discord](https://caleb.is-a.dev/discord) ⌬ [X](https://caleb.is-a.dev/x) ⌬ [Email](mailto:calebephrem@proton.me)
 
-> _“Code is poetry written in logic" 🎭_
+> _“Code is poetry written in logic and syntax" 🎭_
