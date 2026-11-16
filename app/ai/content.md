@@ -2,7 +2,7 @@ Made this page to follow the [AI Manifesto](https://www.bydamo.la/p/ai-manifesto
 
 # Code
 
-I made this website mostly by hand (see [credits](/credits)), but some specific parts like regex and css clip paths (and maybe some others) are written by AI. For example:
+I made this website mostly by hand (see [credits](/credits)), but some specific parts like regex and css clip paths (and some others) are written by AI. For example:
 
 ```ts
 export const clipPaths = [

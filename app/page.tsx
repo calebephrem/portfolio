@@ -292,7 +292,7 @@ export default async function Home() {
             {
               icon: "https://img.icons8.com/?size=100&id=0vJNjSJWpHy7&format=png&color=000000",
               label: "Discord Server",
-              link: "https://devhub.vercel.app/join",
+              link: "/ds",
             },
             {
               icon: "https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=FFFFFF",
