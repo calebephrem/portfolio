@@ -265,7 +265,7 @@ export default async function Home() {
           Latest posts <Emoji name="sipspin" size={30} />
         </h1>
 
-        <div className="grid grid-cols-3 gap-sm">
+        <div className="grid md:grid-cols-3 gap-sm">
           {blogs.slice(0, 3).map((blog: BlogData, i) => (
             <Card blog={blog} i={i} key={i} mini={true} />
           ))}
