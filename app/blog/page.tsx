@@ -29,7 +29,7 @@ export default async function Blog() {
           <Card blog={blog} i={i} key={i} />
         ))}
 
-        <div className="grid grid-cols-3 gap-sm">
+        <div className="grid md:grid-cols-3 gap-sm">
           {blogs.slice(showAsBig).map((blog: BlogData, i) => (
             <Card blog={blog} i={i} key={i} mini={true} />
           ))}
