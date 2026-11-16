@@ -31,7 +31,7 @@ export default function Footer() {
           </Tooltip>
         </span>
 
-        <div className="flex flex-wrap justify-center items-center gap-xxs">
+        <div className="flex flex-wrap justify-center items-center gap-xs">
           <Link href="/blog">
             <u>Blog</u> <Emoji name="sipspin" />
           </Link>

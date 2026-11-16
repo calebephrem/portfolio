@@ -18,7 +18,7 @@ export function Card({
   return (
     <Link
       key={slug}
-      href={external ? slug : `/blog/${slug}`}
+      href={external ? slug : `/b/${slug}`}
       target={external ? "_blank" : "_self"}
       rel="noopener"
       className="flex flex-col md:flex-row gap-sm md:gap-md undecorated bg-bg-secondary p-md shadow-md hover:bg-bg-tertiary"
