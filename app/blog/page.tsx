@@ -5,8 +5,8 @@ import { BlogData, getBlogs } from "./loader";
 
 export default async function Blog() {
   const blogs = await getBlogs();
-  // TODO: increase the `showAsBig` var by 1 whenever a new blog gets posted, only until 5
-  const showAsBig = 3;
+  // latest 10 posts are considered not-old
+  const newPosts = 10;
 
   return (
     <div className="min-h-[80dvh] flex flex-col gap-lg">
@@ -24,16 +24,28 @@ export default async function Blog() {
         </Link>
       </div>
 
-      <div className="flex flex-col gap-sm">
-        {blogs.slice(0, showAsBig).map((blog: BlogData, i) => (
-          <Card blog={blog} i={i} key={i} />
-        ))}
-
-        <div className="grid md:grid-cols-3 gap-sm">
-          {blogs.slice(showAsBig).map((blog: BlogData, i) => (
-            <Card blog={blog} i={i} key={i} mini={true} />
+      <div className="flex flex-col gap-md">
+        <div className="flex flex-col gap-sm">
+          {blogs.slice(0, newPosts).map((blog: BlogData, i) => (
+            <Card blog={blog} i={i} key={i} />
           ))}
         </div>
+
+        {blogs.slice(newPosts).length ? (
+          <>
+            <h1 className="text-3xl">
+              Older posts <Emoji name="cool" size={30} />
+            </h1>
+
+            <div className="grid md:grid-cols-3 gap-sm">
+              {blogs.slice(newPosts).map((blog: BlogData, i) => (
+                <Card blog={blog} i={i} key={i} mini={true} />
+              ))}
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );

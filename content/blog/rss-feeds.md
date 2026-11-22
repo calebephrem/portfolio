@@ -1,7 +1,7 @@
 ---
 title: RSS Feeds
 deck: What RSS is, how it works, and which readers to use to follow your favorite blogs
-banner: https://images.unsplash.com/photo-1638428355507-89456d0fafd5?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D
+banner: https://images.unsplash.com/photo-1638428355507-89456d0fafd5
 authors: [Caleb]
 date: November 12, 2026
 tags: [RSS, feeds, readers]

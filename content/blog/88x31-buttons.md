@@ -5,6 +5,7 @@ banner: /img/88x31-buttons.png
 authors: [Caleb]
 date: November 14, 2026
 tags: [web, culture, internet]
+featured: true
 ---
 
 Hello there, on today's post, we're going to be going through a small culture of the web, 88x31 buttons, which I learned about them from my friend, [Louis](https://codeberg.org/louiszn).
