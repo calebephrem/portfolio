@@ -88,10 +88,12 @@ You can find more about the comparision between Feedly and Inoreader [here](http
 
 # How I Use Them
 
-I use [Feedly](https://feedly.com/) to follow the blogs I like, split into two folders:
+I used to use [Feedly](https://feedly.com/) to follow the blogs I like, but I recently moved to [Inoreader](https://www.inoreader.com/) for more free resources and ad-free experience. I usually split my followed resources into folders:
 
 - **Dev Blogs:** individual developer's writings, like [The Pragmatic Engineer](https://blog.pragmaticengineer.com/) and [Cassidy Williams](https://cassidoo.co/tag/technical/).
+- **Org Dev Blogs:** educational developer blog from different organizations/companies, like [CSS-Tricks](https://css-tricks.com/) and [JavaScript Weekly](https://javascriptweekly.com/) (though I check these ones less often)
 - **Company Blogs:** blogs from companies, like [Canva Engineering Blog](https://www.canva.dev/blog/engineering/) and [Discord Blog](https://discord.com/category/engineering).
+- **Newsletters:** pretty obvious, like [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/) and [rendezvous with cassidoo](https://cassidoo.co/newsletter/)
 
 > [!TIP]
 > If you like the things I post and want to include me in your subscriptions, here's [my RSS feed](/blog/rss.xml) :emoji{name="hug"}
