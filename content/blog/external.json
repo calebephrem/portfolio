@@ -1,22 +1,5 @@
 [
   {
-    "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
-    "deck": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
-    "banner": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/posts/2025/07/security.png",
-    "date": "July 7, 2025",
-    "authors": [
-      {
-        "name": "Khuong",
-        "avatar": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/commons/avatar.jpg",
-        "social": "https://x.com/lamngockhuong"
-      }
-    ],
-    "tags": ["security", "javascript", "signatures"],
-    "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
-    "readingTime": "1 min read",
-    "featured": false
-  },
-  {
     "title": "Nothing Beats Kindness",
     "deck": "Why kindness matter at work",
     "banner": "https://substackcdn.com/image/fetch/$s_!kn3P!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffa9d0675-e9ba-4904-addd-d031f47d0b41_1600x800.png",
@@ -32,5 +15,22 @@
     "link": "https://read.thecoder.cafe/p/nothing-beats-kindness",
     "readingTime": "2 min read",
     "featured": true
+  },
+  {
+    "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
+    "deck": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
+    "banner": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/posts/2025/07/security.png",
+    "date": "July 7, 2025",
+    "authors": [
+      {
+        "name": "Khuong",
+        "avatar": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/commons/avatar.jpg",
+        "social": "https://x.com/lamngockhuong"
+      }
+    ],
+    "tags": ["security", "javascript", "signatures"],
+    "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
+    "readingTime": "1 min read",
+    "featured": false
   }
 ]

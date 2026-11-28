@@ -2,9 +2,13 @@
 title: Node.js Clustering
 deck: Learn how to use every CPU core in your Node.js server with the cluster Node.js module
 banner: https://images.unsplash.com/photo-1627398242454-45a1465c2479
-authors: [Caleb]
+authors:
+  - Caleb
 date: October 4, 2026
-tags: [Node.js, clusters, workers]
+tags:
+  - nodejs
+  - cluster
+  - workers
 featured: true
 ---
 
