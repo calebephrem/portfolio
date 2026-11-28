@@ -10,16 +10,15 @@ import remarkGfm from "remark-gfm";
 const emojiMap: Record<string, string> = emojis;
 
 const components = {
-  card: ({ title, link }: { title?: string; link?: string }) =>
-    link ? (
-      <p>
-        <a href={link}>{title ?? link}</a>
-      </p>
-    ) : null,
+  card: () => <div></div>,
   emoji: ({ name }: { name: string }) => {
     const src = emojiMap[name];
-    // eslint-disable-next-line @next/next/no-img-element
-    return src ? <img src={src} alt={name} width={20} height={20} /> : null;
+    return src ? (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src={src} alt={name} width={20} height={20} />
+    ) : (
+      <div></div>
+    );
   },
 } as Components;
 
