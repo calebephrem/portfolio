@@ -1,5 +1,22 @@
 [
   {
+    "title": "Are Meta’s smart glasses training AI for robots?",
+    "deck": "Over 7 million Ray-Ban Meta glasses were sold in 2025. That’s 7 million cameras recording your life. And conveniently, that footage is exactly what AI needs to learn how to walk, cook, and steal your job.",
+    "banner": "https://pmecdn.protonweb.com/image-transformation/?s=c&image=images/w_2560,h_1440,c_scale/f_auto,q_auto/v1790091968/wp-pme/meta-glasses-01b-1/meta-glasses-01b-1.jpg?_i=AA&width=768&height=431",
+    "date": "September 22, 2026",
+    "authors": [
+      {
+        "name": "Edward Komenda",
+        "avatar": "https://pmecdn.protonweb.com/image-transformation/?s=c&image=image/upload/v1795675752/static/avatars/Edward_Komenda_glkuzn.jpg",
+        "social": "https://proton.me/blog/author/edward-komenda"
+      }
+    ],
+    "tags": ["meta", "ai", "opinion"],
+    "readingTime": "7 min read",
+    "link": "https://proton.me/blog/meta-smart-glasses-ai-robots",
+    "featured": true
+  },
+  {
     "title": "Nothing Beats Kindness",
     "deck": "Why kindness matter at work",
     "banner": "https://substackcdn.com/image/fetch/$s_!kn3P!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffa9d0675-e9ba-4904-addd-d031f47d0b41_1600x800.png",
@@ -12,8 +29,8 @@
       }
     ],
     "tags": ["personal", "advice", "signatures"],
-    "link": "https://read.thecoder.cafe/p/nothing-beats-kindness",
     "readingTime": "2 min read",
+    "link": "https://read.thecoder.cafe/p/nothing-beats-kindness",
     "featured": true
   },
   {
@@ -29,8 +46,8 @@
       }
     ],
     "tags": ["security", "javascript", "signatures"],
-    "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
     "readingTime": "1 min read",
+    "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
     "featured": false
   }
 ]
