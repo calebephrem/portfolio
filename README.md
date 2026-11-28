@@ -1,10 +1,10 @@
-# Portfolio
+# Website
 
-Welcome to my personal **developer portfolio**, built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Lenis**, **Zustand**, and a touch of creativity :3
+Welcome to my personal website, built with **Next.js**, **TypeScript**, **Tailwind CSS**, **Lenis**, **Zustand**, and a touch of creativity :3
 
 **Live Demo:** [caleb.is-a.dev](https://caleb.is-a.dev)
 
-![Portfolio Preview](./public/preview.png)
+![Website Preview](./public/preview.png)
 
 ## Features
 
@@ -21,6 +21,6 @@ Welcome to my personal **developer portfolio**, built with **Next.js**, **TypeSc
 
 If you like my work or want to collaborate, feel free to reach out!
 
-[Portfolio](https://caleb.is-a.dev) ⌬ [GitHub](https://caleb.is-a.dev/github) ⌬ [Discord](https://caleb.is-a.dev/discord) ⌬ [Discord Server](https://caleb.is-a.dev/ds) ⌬ [X](https://caleb.is-a.dev/x) ⌬ [Email](mailto:calebephrem@proton.me)
+[Website](https://caleb.is-a.dev) ⌬ [GitHub](https://caleb.is-a.dev/github) ⌬ [Discord](https://caleb.is-a.dev/discord) ⌬ [Discord Server](https://caleb.is-a.dev/ds) ⌬ [X](https://caleb.is-a.dev/x) ⌬ [Email](mailto:calebephrem@proton.me)
 
 > _“Code is poetry written in logic and syntax" 🎭_

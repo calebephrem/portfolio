@@ -21,7 +21,7 @@ export default function Footer() {
           . Licensed under{" "}
           <Tooltip text="© 2026 Caleb Ephrem">
             <Link
-              href="https://raw.githubusercontent.com/calebephrem/portfolio/refs/heads/main/LICENSE"
+              href="https://raw.githubusercontent.com/calebephrem/website/refs/heads/main/LICENSE"
               target="_blank"
               rel="noopener noreferrer"
               className="secondary"
@@ -44,7 +44,7 @@ export default function Footer() {
             <u>AI</u> <Emoji name="bot" />
           </Link>
 
-          <Link href="/r/portfolio" target="_blank" rel="noopener noreferrer">
+          <Link href="/r/website" target="_blank" rel="noopener noreferrer">
             <u>Repo</u> <Emoji name="typing" />
           </Link>
 
