@@ -185,11 +185,11 @@ export default async function Home() {
           {[
             {
               banner:
-                "https://github.com/calebephrem/portfolio/blob/main/app/icon.svg?raw=true",
-              title: "Portfolio",
+                "https://github.com/calebephrem/website/blob/main/app/icon.svg?raw=true",
+              title: "Website",
               description:
                 "a snapshot of who I am as a developer. My style, my craft, and my ongoing evolution.",
-              link: `/r/portfolio`,
+              link: `/r/website`,
             },
             {
               banner:

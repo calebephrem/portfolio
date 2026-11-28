@@ -29,7 +29,7 @@ export default function Header() {
 
         <Tooltip text="Repo!">
           <Link
-            href={`/r/portfolio`}
+            href={`/r/website`}
             target="_blank"
             rel="noopener noreferrer"
             className="secondary"

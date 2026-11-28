@@ -152,7 +152,7 @@ export default async function BlogPost({
           <div>{metadata.readingTime}</div>
 
           <Link
-            href={`/r/portfolio/edit/main/content/blog/${slug}.md`}
+            href={`/r/website/edit/main/content/blog/${slug}.md`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-xs secondary w-fit"
