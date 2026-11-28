@@ -2,9 +2,13 @@
 title: RSS Feeds
 deck: What RSS is, how it works, and which readers to use to follow your favorite blogs
 banner: https://images.unsplash.com/photo-1638428355507-89456d0fafd5
-authors: [Caleb]
+authors:
+  - Caleb
 date: November 12, 2026
-tags: [RSS, feeds, readers]
+tags:
+  - rss
+  - feed
+  - readers
 ---
 
 Hiya, on this blog post, we're going to be covering what RSS feeds are, how they work, how to use them, some popular RSS readers (aggregator apps), and pros & cons of using RSS feeds.

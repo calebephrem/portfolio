@@ -1,20 +1,20 @@
 [
   {
-    "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
-    "deck": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
-    "banner": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/posts/2025/07/security.png",
-    "date": "July 7, 2025",
+    "title": "Are Meta’s smart glasses training AI for robots?",
+    "deck": "Over 7 million Ray-Ban Meta glasses were sold in 2025. That’s 7 million cameras recording your life. And conveniently, that footage is exactly what AI needs to learn how to walk, cook, and steal your job.",
+    "banner": "https://pmecdn.protonweb.com/image-transformation/?s=c&image=images/w_2560,h_1440,c_scale/f_auto,q_auto/v1790091968/wp-pme/meta-glasses-01b-1/meta-glasses-01b-1.jpg?_i=AA&width=768&height=431",
+    "date": "September 22, 2026",
     "authors": [
       {
-        "name": "Khuong",
-        "avatar": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/commons/avatar.jpg",
-        "social": "https://x.com/lamngockhuong"
+        "name": "Edward Komenda",
+        "avatar": "https://pmecdn.protonweb.com/image-transformation/?s=c&image=image/upload/v1795675752/static/avatars/Edward_Komenda_glkuzn.jpg",
+        "social": "https://proton.me/blog/author/edward-komenda"
       }
     ],
-    "tags": ["security", "javascript", "signatures"],
-    "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
-    "readingTime": "1 min read",
-    "featured": false
+    "tags": ["meta", "ai", "opinion"],
+    "readingTime": "7 min read",
+    "link": "https://proton.me/blog/meta-smart-glasses-ai-robots",
+    "featured": true
   },
   {
     "title": "Nothing Beats Kindness",
@@ -29,8 +29,25 @@
       }
     ],
     "tags": ["personal", "advice", "signatures"],
-    "link": "https://read.thecoder.cafe/p/nothing-beats-kindness",
     "readingTime": "2 min read",
+    "link": "https://read.thecoder.cafe/p/nothing-beats-kindness",
     "featured": true
+  },
+  {
+    "title": "Timing Attack - A Hidden Risk When Comparing Secrets",
+    "deck": "Learn why comparing API keys or signatures using === is insecure, and how a simple timing attack can expose your secrets",
+    "banner": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/posts/2025/07/security.png",
+    "date": "July 7, 2025",
+    "authors": [
+      {
+        "name": "Khuong",
+        "avatar": "https://raw.githubusercontent.com/lamngockhuong/dev-images/main/commons/avatar.jpg",
+        "social": "https://x.com/lamngockhuong"
+      }
+    ],
+    "tags": ["security", "javascript", "signatures"],
+    "readingTime": "1 min read",
+    "link": "https://dev.ngockhuong.com/posts/timing-attack-a-hidden-risk-when-comparing-secrets/",
+    "featured": false
   }
 ]

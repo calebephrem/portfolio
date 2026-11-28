@@ -2,9 +2,13 @@
 title: GitHub Repositories You’ll Wish You Found Sooner
 deck: 15 GitHub repos that have more value than most other paid courses combined
 banner: https://pbs.twimg.com/media/HKTgsFaXYAE-BVH?format=jpg&name=large
-authors: [Caleb]
+authors:
+  - Caleb
 date: October 3, 2026
-tags: [open-source, github, papers, resources]
+tags:
+  - open-source
+  - github
+  - resources
 featured: true
 ---
 

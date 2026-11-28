@@ -22,6 +22,8 @@ export const emojis = {
   rss: "https://cdn3.emoji.gg/emojis/680306-rss.png",
   hug: "https://cdn3.emoji.gg/emojis/6928-pandahug.png",
   bot: "https://cdn3.emoji.gg/emojis/826839-callcenter.png",
+
+  heh: "https://media.tenor.com/COYipAHZ5FAAAAAi/heh-sticker.gif",
 };
 
 export type Emoji = keyof typeof emojis;

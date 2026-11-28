@@ -12,7 +12,7 @@ export default function Credits() {
 
         <p>AI usage for this website</p>
 
-        <p className="text-fg-secondary">Last updated: November 16, 2026</p>
+        <p className="text-fg-secondary">Last updated: November 24, 2026</p>
       </div>
 
       <Markdown>{content}</Markdown>
